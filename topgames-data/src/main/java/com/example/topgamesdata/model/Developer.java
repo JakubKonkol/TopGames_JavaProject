@@ -1,6 +1,15 @@
 package com.example.topgamesdata.model;
 
+
+import jakarta.persistence.*;
+
+@Entity
+@Table(name = "developer")
 public class Developer {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+    @Column(name = "name")
     private String name;
     private String country;
 

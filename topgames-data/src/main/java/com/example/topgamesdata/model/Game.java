@@ -7,17 +7,22 @@ import jakarta.persistence.*;
 
 import java.time.LocalDateTime;
 import java.util.List;
-//@Entity
-//@Table(name = "game")
+@Entity
+@Table(name = "game")
 public class Game {
-//    @Id
-//    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    @Column(name = "name")
     private String name;
     private String description;
     private LocalDateTime releaseDate;
+    @ElementCollection
     private List<Genre> genre;
+    @ElementCollection
     private List<Platform> platform;
+    @OneToOne(fetch = FetchType.EAGER,
+            cascade = CascadeType.ALL)
     private Developer developer;
 
     public Game(Long id,String name, String description, LocalDateTime releaseDate, List<Genre> genre, List<Platform> platform, Developer developer) {
