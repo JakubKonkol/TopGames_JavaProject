@@ -7,18 +7,20 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="topgames-data" />
-        <module name="topgames-service" />
+        <module name="topgames-web-api" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="topgames-data" target="17" />
       <module name="topgames-service" target="17" />
+      <module name="topgames-web-api" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="topgames-data" options="-parameters" />
       <module name="topgames-service" options="-parameters" />
+      <module name="topgames-web-api" options="-parameters" />
     </option>
   </component>
 </project>

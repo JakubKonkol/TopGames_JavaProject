@@ -1,10 +1,10 @@
-package com.example.topgamesservice;
+package com.example.topgameswebapi;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class TopgamesServiceApplicationTests {
+class TopgamesWebApiApplicationTests {
 
     @Test
     void contextLoads() {

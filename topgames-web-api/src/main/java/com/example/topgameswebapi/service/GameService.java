@@ -1,4 +1,4 @@
-package com.example.topgamesservice.service;
+package com.example.topgameswebapi.service;
 
 import com.example.topgamesdata.repositories.GameRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -6,7 +6,10 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class GameService {
-    @Autowired
-    private GameRepository gameRepository;
+    GameRepository gameRepository;
 
+    @Autowired
+    public GameService(GameRepository gameRepository) {
+        this.gameRepository = gameRepository;
+    }
 }
