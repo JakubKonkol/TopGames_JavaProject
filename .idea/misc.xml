@@ -4,6 +4,7 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/topgames-data/pom.xml" />
+        <option value="$PROJECT_DIR$/topgames-service/pom.xml" />
       </list>
     </option>
   </component>
