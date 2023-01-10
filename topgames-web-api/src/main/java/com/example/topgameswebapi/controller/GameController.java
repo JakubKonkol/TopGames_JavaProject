@@ -17,24 +17,30 @@ public class GameController {
     }
     @GetMapping("/getAll")
     public ResponseEntity<List<Game>> getAllGames(){
+//        gameService.createGame(new Game());
         return ResponseEntity.ok(gameService.getAllGames());
     }
-    @DeleteMapping
+    @DeleteMapping("/delete")
     public ResponseEntity<String> deleteGame(@RequestParam(name = "id") Long id){
         gameService.deleteGame(id);
         return ResponseEntity.ok("ok");
     }
-    @PutMapping
+    @PutMapping("/update/{id}")
     public ResponseEntity<String> updateGame(@RequestBody Game game, @PathVariable("id") Long id){
         gameService.updateGame(id, game);
         return ResponseEntity.ok("ok");
     }
-    @PostMapping
+    @PostMapping("/add")
     public ResponseEntity<Game> createGame(@RequestBody Game game){
         return ResponseEntity.ok(gameService.createGame(game));
     }
     @GetMapping("/{id}")
     public ResponseEntity<Game> getGameById(@PathVariable("id") Long id){
         return ResponseEntity.ok(gameService.getGameById(id));
+    }
+    @GetMapping("/deleteAll")
+    public ResponseEntity<String> deleteAllGames(){
+        gameService.deleteAllGames();
+        return ResponseEntity.ok("ok");
     }
 }

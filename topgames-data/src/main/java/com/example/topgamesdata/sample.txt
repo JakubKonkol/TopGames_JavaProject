@@ -1,0 +1,6 @@
+{
+    "name":"God of War: Ragnarök",
+    "description":"The next chapter in the God of War saga",
+    "releaseDate":"2022-02-11T00:00:00.000Z",
+    "developer":"Santa Monica Studio"
+}

@@ -25,8 +25,7 @@ public class Game {
             cascade = CascadeType.ALL)
     private Developer developer;
 
-    public Game(Long id,String name, String description, LocalDateTime releaseDate, List<Genre> genre, List<Platform> platform, Developer developer) {
-        this.id = id;
+    public Game(String name, String description, LocalDateTime releaseDate, List<Genre> genre, List<Platform> platform, Developer developer) {
         this.name = name;
         this.description = description;
         this.releaseDate = releaseDate;
