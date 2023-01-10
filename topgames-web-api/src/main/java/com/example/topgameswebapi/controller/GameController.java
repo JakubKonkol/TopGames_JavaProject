@@ -17,11 +17,10 @@ public class GameController {
     }
     @GetMapping("/getAll")
     public ResponseEntity<List<Game>> getAllGames(){
-//        gameService.createGame(new Game());
         return ResponseEntity.ok(gameService.getAllGames());
     }
-    @DeleteMapping("/delete")
-    public ResponseEntity<String> deleteGame(@RequestParam(name = "id") Long id){
+    @DeleteMapping("/delete/{id}")
+    public ResponseEntity<String> deleteGame(@PathVariable("id") Long id){
         gameService.deleteGame(id);
         return ResponseEntity.ok("ok");
     }
@@ -38,9 +37,14 @@ public class GameController {
     public ResponseEntity<Game> getGameById(@PathVariable("id") Long id){
         return ResponseEntity.ok(gameService.getGameById(id));
     }
-    @GetMapping("/deleteAll")
+    @GetMapping("/dev/deleteAll")
     public ResponseEntity<String> deleteAllGames(){
         gameService.deleteAllGames();
+        return ResponseEntity.ok("ok");
+    }
+    @GetMapping("/dev/addSamples")
+    public ResponseEntity<String> addSamples(){
+        gameService.addSamples();
         return ResponseEntity.ok("ok");
     }
 }

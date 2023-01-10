@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/TopGames_JavaProject.iml" filepath="$PROJECT_DIR$/TopGames_JavaProject.iml" />
       <module fileurl="file://$PROJECT_DIR$/topgames-data/topgames-data.iml" filepath="$PROJECT_DIR$/topgames-data/topgames-data.iml" />
+      <module fileurl="file://$PROJECT_DIR$/topgames-frontend.iml" filepath="$PROJECT_DIR$/topgames-frontend.iml" />
+      <module fileurl="file://$PROJECT_DIR$/topgames-tools/topgames-tools.iml" filepath="$PROJECT_DIR$/topgames-tools/topgames-tools.iml" />
       <module fileurl="file://$PROJECT_DIR$/topgames-web-api/topgames-web-api.iml" filepath="$PROJECT_DIR$/topgames-web-api/topgames-web-api.iml" />
     </modules>
   </component>

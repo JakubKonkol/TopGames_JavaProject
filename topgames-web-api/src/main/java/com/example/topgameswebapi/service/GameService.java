@@ -2,6 +2,7 @@ package com.example.topgameswebapi.service;
 
 import com.example.topgamesdata.model.Game;
 import com.example.topgamesdata.repositories.GameRepository;
+import com.example.topgamestools.tools.SampleData;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -43,6 +44,9 @@ public class GameService {
     }
     public void deleteAllGames(){
         gameRepository.deleteAll();
+    }
+    public void addSamples(){
+        gameRepository.saveAll(SampleData.games);
     }
 
 }

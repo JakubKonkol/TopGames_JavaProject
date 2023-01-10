@@ -9,17 +9,17 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.example</groupId>
-    <artifactId>topgames-web-api</artifactId>
+    <artifactId>topgames-tools</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>topgames-web-api</name>
-    <description>topgames-web-api</description>
+    <name>topgames-tools</name>
+    <description>topgames-tools</description>
     <properties>
         <java.version>17</java.version>
     </properties>
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
+            <artifactId>spring-boot-starter</artifactId>
         </dependency>
 
         <dependency>
@@ -33,18 +33,6 @@
             <version>0.0.1-SNAPSHOT</version>
             <scope>compile</scope>
         </dependency>
-        <dependency>
-            <groupId>org.mariadb.jdbc</groupId>
-            <artifactId>mariadb-java-client</artifactId>
-            <version>3.0.9</version>
-        </dependency>
-        <dependency>
-            <groupId>com.example</groupId>
-            <artifactId>topgames-tools</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-            <scope>compile</scope>
-        </dependency>
-
     </dependencies>
 
     <build>
