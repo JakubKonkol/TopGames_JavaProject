@@ -3,5 +3,6 @@ export interface Game{
     name: string;
     description: string;
     genre: string;
+    developer: string;
     platform: string;
 }
