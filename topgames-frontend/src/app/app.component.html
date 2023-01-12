@@ -13,13 +13,20 @@
   <h1>TopGames</h1>
 </div>
 <div class="game-container">
-  <div class="singleGameView" *ngFor="let game of games">
-    <h3> {{game.name}} </h3>
-    <p> {{game.description}} </p>
-    <p> {{game.genre}} </p>
-    <p> {{game.platform}} </p>
 
+  <div class="singleGameView" *ngFor="let game of games">
+    <div class="info">
+      <h3> {{game.name}} </h3>
+      <p> {{game.description}} </p>
+    </div>
+
+    <div class="buttons">
+    <button class="edit"> EDIT</button> <br>
+    <button class="delete"> DELETE</button>
+    </div>
   </div>
+
+
 </div>
 
 </body>
