@@ -37,12 +37,12 @@ public class GameController {
     public ResponseEntity<Game> getGameById(@PathVariable("id") Long id){
         return ResponseEntity.ok(gameService.getGameById(id));
     }
-    @GetMapping("/dev/deleteAll")
+    @PostMapping("/dev/deleteAll")
     public ResponseEntity<String> deleteAllGames(){
         gameService.deleteAllGames();
         return ResponseEntity.ok("ok");
     }
-    @GetMapping("/dev/addSamples")
+    @PostMapping("/dev/addSamples")
     public ResponseEntity<String> addSamples(){
         gameService.addSamples();
         return ResponseEntity.ok("ok");

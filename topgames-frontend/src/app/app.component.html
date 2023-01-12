@@ -12,6 +12,10 @@
 <div class="title">
   <h1>TopGames</h1>
 </div>
+<div class="navbar">
+  <button (click)="addSamples()"> Add Samples </button>
+  <button (click)="removeSamples()"> Remove Samples </button>
+</div>
 <div class="game-container">
 
   <div class="singleGameView" *ngFor="let game of games">
@@ -21,8 +25,8 @@
     </div>
 
     <div class="buttons">
-    <button class="edit"> EDIT</button> <br>
-    <button class="delete"> DELETE</button>
+      <button class="edit"> EDIT</button> <br>
+    <button (click)="deleteGame(game.id)" class="delete"> DELETE</button>
     </div>
   </div>
 

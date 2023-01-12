@@ -18,4 +18,10 @@ export class GameService {
   public deleteGame(gameId: number): Observable<void> {
     return this.http.delete<void>(`${this.gameUrl}/delete/${gameId}`);
   }
+  public addSamples(): Observable<void> {
+    return this.http.post<void>(`${this.gameUrl}/dev/addSamples`, null);
+  }
+  public removeSamples(): Observable<void> {
+    return this.http.post<void>(`${this.gameUrl}/dev/deleteAll`, null);
+  }
 }

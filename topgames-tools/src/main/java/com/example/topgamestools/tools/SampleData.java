@@ -25,9 +25,7 @@ public class SampleData {
             new Game("Red Dead Redemption 2", "A game about a cowboy", LocalDateTime.of(2018, 10, 26, 0, 0), List.of(Genre.ACTION, Genre.ADVENTURE), List.of(Platform.PLAYSTATION), devs.get(2)),
             new Game("The Witcher 3: Wild Hunt", "A game about a witcher", LocalDateTime.of(2015, 5, 18, 0, 0), List.of(Genre.ACTION, Genre.ADVENTURE, Genre.RPG, Genre.OPEN_WORLD), List.of(Platform.PLAYSTATION), devs.get(3)),
             new Game("Assassin's Creed Valhalla", "A game about a viking", LocalDateTime.of(2020, 11, 10, 0, 0), List.of(Genre.ACTION, Genre.ADVENTURE), List.of(Platform.PLAYSTATION), devs.get(4)),
-            new Game("Dark Souls", "Cool game", LocalDateTime.of(2011, 9, 22, 0, 0), List.of(Genre.ACTION, Genre.ADVENTURE), List.of(Platform.PLAYSTATION), devs.get(5)),
-            new Game("Dark Souls 2", "Cool game", LocalDateTime.of(2014, 3, 11, 0, 0), List.of(Genre.ACTION, Genre.ADVENTURE), List.of(Platform.PLAYSTATION), devs.get(5)),
-            new Game("Dark Souls 3", "Cool game", LocalDateTime.of(2016, 4, 12, 0, 0), List.of(Genre.ACTION, Genre.ADVENTURE), List.of(Platform.PLAYSTATION), devs.get(5))
+            new Game("Dark Souls", "Cool game", LocalDateTime.of(2011, 9, 22, 0, 0), List.of(Genre.ACTION, Genre.ADVENTURE), List.of(Platform.PLAYSTATION), devs.get(5))
 
     ));
 }

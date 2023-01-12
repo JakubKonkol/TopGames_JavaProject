@@ -23,5 +23,29 @@ export class AppComponent implements OnInit {
       }
     );
   }
+  public deleteGame(gameId: number): void {
+    this.gameService.deleteGame(gameId).subscribe(
+      (response: void) => {
+        console.log(response);
+        this.getGames();
+      }
+    );
+  }
+  public addSamples(): void {
+    this.gameService.addSamples().subscribe(
+      (response: void) => {
+        console.log(response);
+        this.getGames();
+      }
+    );
+  }
+  public removeSamples(): void {
+    this.gameService.removeSamples().subscribe(
+      (response: void) => {
+        console.log(response);
+        this.getGames();
+      }
+    );
+  }
 
 }
