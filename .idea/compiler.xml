@@ -7,8 +7,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="topgames-tools" />
-        <module name="topgames-data" />
         <module name="topgames-web-api" />
+        <module name="topgames-data" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

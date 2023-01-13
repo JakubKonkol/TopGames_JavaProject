@@ -16,6 +16,9 @@ export class AppComponent implements OnInit {
     this.getGames();
   }
 
+  public refreshPagePls(){
+    window.location.reload();
+  }
   public getGames(): void {
     this.gameService.getGames().subscribe(
       (response: Game[]) => {
