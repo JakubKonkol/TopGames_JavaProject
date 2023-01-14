@@ -14,9 +14,11 @@
     <h2 class="logo">TOP GAMES</h2>
     <nav>
       <ul>
-        <li><a (click)="addSamples(); refreshPagePls()"> Add samples </a></li>
-        <li><a (click)="openAddGameModal()"> Add game </a></li>
-        <li><a (click)="removeSamples(); refreshPagePls()"> Remove All  </a></li>
+        <li><a (click)="addSamples(); refreshPagePls()"> Add sample games </a></li>
+        <li> <a (click)="addUserSamples(); refreshPagePls()"> Add sample users</a></li>
+        <li><a (click)="removeSamples(); refreshPagePls()"> Remove all games  </a></li>
+        <li> <a (click)="removeUserSamples(); refreshPagePls()"> Remove all users</a></li>
+        <li><a (click)="openAddUserModal()"> Add user </a></li>
       </ul>
     </nav>
   </div>
@@ -40,7 +42,7 @@
                           <p class="modal__text"> name: </p><input type="text" placeholder="{{game.name}}"> <br>
                           <p class="modal__text">release year:</p> <input type="text" placeholder="{{game.releaseDate}}"><br>
                           <p class="modal__text"> description:</p><input type="text" placeholder="{{game.description}}"><br>
-                          <input type="submit" class="modal__btn" value="Edit">
+                          <input disabled type="submit" class="modal__btn" value="Edit">
                           <button class="modal__btn" (click)="closeModal(game)">Close</button>
                         </form>
           </div>
@@ -53,14 +55,16 @@
       <button (click)="deleteGame(game.id); refreshPagePls()" class="delete"> DELETE</button>
       </div>
     </div>
-    <dialog id="createGameModal">
+    <dialog id="createUserModal">
       <div class="modal-container" style="--m-background: var(--global-background);">
         <div class="modal" style="--m-shadow: 0 0 10rem 0">
-          <h1 class="modal__title">Add new game</h1>
-                    <form #addGameForm="ngForm" (ngSubmit)="addGameFromForm(addGameForm)">
-                      <p class="modal__text"> name: </p><input name="gamename" type="text" placeholder="game name"> <br>
-                      <p class="modal__text">release year:</p> <input name="gamerelease" type="text" placeholder="game release year"><br>
-                      <p class="modal__text"> description:</p><input type="text" name="gamedesc" placeholder="game description"><br>
+          <h1 class="modal__title">Add new user</h1>
+                    <form #addUser="ngForm" (ngSubmit)="createUser(addUser)">
+                      <p class="modal__text"> username: </p><input id="username" name="username" type="text" placeholder="username"> <br>
+                      <p class="modal__text"> password: </p><input id="userpass" name="userpass" type="text" placeholder="password"> <br>
+                      <p class="modal__text">email:</p> <input id="useremail" name="useremail" type="text" placeholder="email"><br>
+                      <p class="modal__text">firstname:</p> <input id="userfname" name="userfname" type="text" placeholder="firstname"><br>
+                      <p class="modal__text"> lastname:</p><input id="userlname" type="text" name="userlname" placeholder="lastname"><br>
                       <input type="submit" class="modal__btn" value="Add game">
                       <button class="modal__btn" (click)="closeCreateGameModal()">Close</button>
                     </form>
@@ -73,8 +77,17 @@
 <section class="users">
   <h1 class="userSectionTitle"> Users</h1>
   <div class="user-container">
-    <div class="singleUserView" >
-
+    <div class="singleUserView" *ngFor="let user of users" >
+      <div class="info">
+        <h3> {{user.username}} </h3>
+        <p> {{user.firstName}} {{user.lastName}}</p>
+        <p> ID:{{user.id}}</p>
+        <p> {{user.email}} </p>
+      </div>
+      <div class="buttons">
+        <button class="edit" id="editbuttonUser"> EDIT</button> <br>
+        <button class="delete"> DELETE</button>
+      </div>
     </div>
   </div>
 </section>

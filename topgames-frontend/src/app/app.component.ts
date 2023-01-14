@@ -1,6 +1,8 @@
 import {Component, OnInit} from '@angular/core';
 import {Game} from "./game";
 import {GameService} from "./game.service";
+import {User} from "./user";
+import {UserService} from "./user.service";
 import {HttpErrorResponse} from "@angular/common/http";
 import {NgForm} from "@angular/forms";
 import {Developer} from "./developer";
@@ -13,9 +15,11 @@ import {Developer} from "./developer";
 export class AppComponent implements OnInit {
   title = 'topgames-frontend';
   public games: Game[] = [];
-  constructor(private gameService: GameService) { }
+  public users: User[] = [];
+  constructor(private gameService: GameService, private userService: UserService) { }
   ngOnInit() {
     this.getGames();
+    this.getUsers();
   }
   public refreshPagePls(){
     window.location.reload();
@@ -24,6 +28,13 @@ export class AppComponent implements OnInit {
     this.gameService.getGames().subscribe(
       (response: Game[]) => {
         this.games = response;
+      }
+    );
+  }
+  public getUsers(): void {
+    this.userService.getUsers().subscribe(
+      (response: User[]) => {
+        this.users = response;
       }
     );
   }
@@ -51,11 +62,27 @@ export class AppComponent implements OnInit {
       }
     );
   }
+  public addUserSamples(): void {
+    this.userService.addSamples().subscribe(
+      (response: void) => {
+        console.log(response);
+        this.getUsers();
+      }
+    );
+  }
   public removeSamples(): void {
     this.gameService.removeSamples().subscribe(
       (response: void) => {
         console.log(response);
         this.getGames();
+      }
+    );
+  }
+  public removeUserSamples(): void {
+    this.userService.removeAll().subscribe(
+      (response: void) => {
+        console.log(response);
+        this.getUsers();
       }
     );
   }
@@ -69,8 +96,8 @@ export class AppComponent implements OnInit {
     // @ts-ignore
     modal.style.display = 'none';
   }
-  public openAddGameModal():void{
-    const modal = document.getElementById('createGameModal');
+  public openAddUserModal():void{
+    const modal = document.getElementById('createUserModal');
     // @ts-ignore
     modal.style.display = 'block';
   }
@@ -79,13 +106,20 @@ export class AppComponent implements OnInit {
     // @ts-ignore
     modal.style.display = 'none';
   }
-  public addGameFromForm(form: NgForm): void{
-    this.gameService.addGame(form.value).subscribe(
-      (response: Game) => {
+  public createUser(form: NgForm): void{
+  const user: User = {
+    id: form.value.id,
+    username: form.value.username,
+    password: form.value.userpass,
+    email: form.value.useremail,
+    firstName: form.value.userfname,
+    lastName: form.value.userlname
+    }
+    this.userService.addUser(user).subscribe(
+      (response: User) => {
         console.log(response);
-        this.getGames();
-      }
-    );
+        this.getUsers();
+      });
   }
 
 }

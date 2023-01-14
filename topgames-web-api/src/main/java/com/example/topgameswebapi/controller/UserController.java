@@ -23,12 +23,27 @@ public class UserController {
         return ResponseEntity.ok(userService.getUserById(id));
     }
     @DeleteMapping("/delete/{id}")
-    public ResponseEntity<User> deleteUserById(@PathVariable("id") Long id){
-        return ResponseEntity.ok(userService.deleteUserById(id));
+    public ResponseEntity<String> deleteUserById(@PathVariable("id") Long id){
+        userService.deleteUserById(id);
+        return ResponseEntity.ok("User deleted");
     }
     @PostMapping("/add")
     public ResponseEntity<User> createUser(@RequestBody User user){
         return ResponseEntity.ok(userService.createUser(user));
+    }
+    @PutMapping("/update/{id}")
+    public ResponseEntity<User> updateUserById(@PathVariable("id") Long id, @RequestBody User user){
+        return ResponseEntity.ok(userService.updateUserById(id, user));
+    }
+    @PostMapping("/dev/addSamples")
+    public ResponseEntity<String> addSamples(){
+        userService.addSamples();
+        return ResponseEntity.ok("Samples added");
+    }
+    @PostMapping("/dev/deleteAll")
+    public ResponseEntity<String> deleteAllUsers(){
+        userService.deleteAllUsers();
+        return ResponseEntity.ok("All users deleted");
     }
 
 
