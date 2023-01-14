@@ -9,29 +9,51 @@
   <title>TopGames</title>
 </head>
 <body>
-<div class="title">
-  <h1>TopGames</h1>
-</div>
-<div class="navbar">
-  <button (click)="addSamples(); refreshPagePls()"> Add Samples </button>
-  <button (click)="removeSamples(); refreshPagePls()"> Remove Samples </button>
-</div>
-<div class="game-container">
+<header>
+  <div class="titlePlusNavBar">
+    <h2 class="logo">TOP GAMES</h2>
+    <nav>
+      <ul>
+        <li><a (click)="addSamples(); refreshPagePls()"> Add samples </a></li>
+        <li><a (click)="refreshPagePls()"> Add game </a></li>
+        <li><a (click)="removeSamples(); refreshPagePls()"> Remove All  </a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<section class="games">
+  <h1 class="gameSectionTitle"> Games </h1>
+<div class="game-container" id="game-container-id">
+    <div class="singleGameView" *ngFor="let game of games">
+      <div class="info">
+        <h3> {{game.name}} ({{game.releaseDate}}) </h3>
+        <p> ID:{{game.id}}</p>
+        <p> {{game.developer.name}}</p>
+        <p> {{game.description}} </p>
+      </div>
+      <dialog id="modal{{game.id}}">
+        <div>
+          <h1> {{game.name}} </h1>
+          <p> Elo</p>
+          <button (click)="closeModal(game)"> Close </button>
+        </div>
 
-  <div class="singleGameView" *ngFor="let game of games">
-    <div class="info">
-      <h3> {{game.name}} </h3>
-      <p> {{game.description}} </p>
-    </div>
+      </dialog>
 
-    <div class="buttons">
-      <button class="edit"> EDIT</button> <br>
-    <button (click)="deleteGame(game.id); refreshPagePls()" class="delete"> DELETE</button>
+      <div class="buttons">
+        <button class="edit" (click)="openEditModal(game)" id="editbutton"> EDIT</button> <br>
+      <button (click)="deleteGame(game.id); refreshPagePls()" class="delete"> DELETE</button>
+      </div>
     </div>
   </div>
+</section>
+<section class="users">
+  <h1 class="userSectionTitle"> Users</h1>
+  <div class="user-container">
+    <div class="singleUserView" >
 
-
-</div>
-
+    </div>
+  </div>
+</section>
 </body>
 </html>

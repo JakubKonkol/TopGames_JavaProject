@@ -50,8 +50,8 @@ public class Game {
         return description;
     }
 
-    public LocalDateTime getReleaseDate() {
-        return releaseDate;
+    public int getReleaseDate() {
+        return releaseDate.getYear();
     }
 
     public List<Genre> getGenre() {

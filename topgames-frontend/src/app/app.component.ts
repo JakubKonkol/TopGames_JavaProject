@@ -15,7 +15,6 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     this.getGames();
   }
-
   public refreshPagePls(){
     window.location.reload();
   }
@@ -23,6 +22,14 @@ export class AppComponent implements OnInit {
     this.gameService.getGames().subscribe(
       (response: Game[]) => {
         this.games = response;
+      }
+    );
+  }
+  public addGame(game: Game): void {
+    this.gameService.addGame(game).subscribe(
+      (response: Game) => {
+        console.log(response);
+        this.getGames();
       }
     );
   }
@@ -49,6 +56,16 @@ export class AppComponent implements OnInit {
         this.getGames();
       }
     );
+  }
+  public openEditModal(game: Game): void {
+  const modal = document.getElementById('modal'+game.id);
+  // @ts-ignore
+    modal.style.display = 'block';
+  }
+  public closeModal(game: Game): void {
+    const modal = document.getElementById('modal'+game.id);
+    // @ts-ignore
+    modal.style.display = 'none';
   }
 
 }
