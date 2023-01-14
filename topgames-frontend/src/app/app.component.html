@@ -15,7 +15,7 @@
     <nav>
       <ul>
         <li><a (click)="addSamples(); refreshPagePls()"> Add samples </a></li>
-        <li><a (click)="refreshPagePls()"> Add game </a></li>
+        <li><a (click)="openAddGameModal()"> Add game </a></li>
         <li><a (click)="removeSamples(); refreshPagePls()"> Remove All  </a></li>
       </ul>
     </nav>
@@ -31,11 +31,19 @@
         <p> {{game.developer.name}}</p>
         <p> {{game.description}} </p>
       </div>
+
       <dialog id="modal{{game.id}}">
-        <div>
-          <h1> {{game.name}} </h1>
-          <p> Elo</p>
-          <button (click)="closeModal(game)"> Close </button>
+        <div class="modal-container"style="--m-background: var(--global-background);">
+          <div class="modal" style="--m-shadow: 0 0 10rem 0">
+            <h1 class="modal__title">Edit game</h1>
+                        <form>
+                          <p class="modal__text"> name: </p><input type="text" placeholder="{{game.name}}"> <br>
+                          <p class="modal__text">release year:</p> <input type="text" placeholder="{{game.releaseDate}}"><br>
+                          <p class="modal__text"> description:</p><input type="text" placeholder="{{game.description}}"><br>
+                          <input type="submit" class="modal__btn" value="Edit">
+                          <button class="modal__btn" (click)="closeModal(game)">Close</button>
+                        </form>
+          </div>
         </div>
 
       </dialog>
@@ -45,6 +53,21 @@
       <button (click)="deleteGame(game.id); refreshPagePls()" class="delete"> DELETE</button>
       </div>
     </div>
+    <dialog id="createGameModal">
+      <div class="modal-container" style="--m-background: var(--global-background);">
+        <div class="modal" style="--m-shadow: 0 0 10rem 0">
+          <h1 class="modal__title">Add new game</h1>
+                    <form #addGameForm="ngForm" (ngSubmit)="addGameFromForm(addGameForm)">
+                      <p class="modal__text"> name: </p><input name="gamename" type="text" placeholder="game name"> <br>
+                      <p class="modal__text">release year:</p> <input name="gamerelease" type="text" placeholder="game release year"><br>
+                      <p class="modal__text"> description:</p><input type="text" name="gamedesc" placeholder="game description"><br>
+                      <input type="submit" class="modal__btn" value="Add game">
+                      <button class="modal__btn" (click)="closeCreateGameModal()">Close</button>
+                    </form>
+        </div>
+      </div>
+
+    </dialog>
   </div>
 </section>
 <section class="users">

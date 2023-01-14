@@ -2,6 +2,8 @@ import {Component, OnInit} from '@angular/core';
 import {Game} from "./game";
 import {GameService} from "./game.service";
 import {HttpErrorResponse} from "@angular/common/http";
+import {NgForm} from "@angular/forms";
+import {Developer} from "./developer";
 
 @Component({
   selector: 'app-root',
@@ -66,6 +68,24 @@ export class AppComponent implements OnInit {
     const modal = document.getElementById('modal'+game.id);
     // @ts-ignore
     modal.style.display = 'none';
+  }
+  public openAddGameModal():void{
+    const modal = document.getElementById('createGameModal');
+    // @ts-ignore
+    modal.style.display = 'block';
+  }
+  public closeCreateGameModal(): void{
+    const modal = document.getElementById('createGameModal');
+    // @ts-ignore
+    modal.style.display = 'none';
+  }
+  public addGameFromForm(form: NgForm): void{
+    this.gameService.addGame(form.value).subscribe(
+      (response: Game) => {
+        console.log(response);
+        this.getGames();
+      }
+    );
   }
 
 }
