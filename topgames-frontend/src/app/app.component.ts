@@ -50,14 +50,24 @@ export class AppComponent implements OnInit {
     this.gameService.deleteGame(gameId).subscribe(
       (response: void) => {
         console.log(response);
+        this.ngOnInit();
         this.getGames();
       }
     );
+  }
+  public deleteUser(userId: number):void{
+    this.userService.deleteUser(userId).subscribe(
+      (response:void) => {
+        console.log(response)
+        this.getUsers();
+      }
+    )
   }
   public addSamples(): void {
     this.gameService.addSamples().subscribe(
       (response: void) => {
         console.log(response);
+        this.ngOnInit();
         this.getGames();
       }
     );
@@ -86,13 +96,13 @@ export class AppComponent implements OnInit {
       }
     );
   }
-  public openEditModal(game: Game): void {
-  const modal = document.getElementById('modal'+game.id);
+  public openEditModal(user: User): void {
+  const modal = document.getElementById('modal'+user.id);
   // @ts-ignore
     modal.style.display = 'block';
   }
-  public closeModal(game: Game): void {
-    const modal = document.getElementById('modal'+game.id);
+  public closeModal(user: User): void {
+    const modal = document.getElementById('modal'+user.id);
     // @ts-ignore
     modal.style.display = 'none';
   }
@@ -102,24 +112,27 @@ export class AppComponent implements OnInit {
     modal.style.display = 'block';
   }
   public closeCreateGameModal(): void{
-    const modal = document.getElementById('createGameModal');
+    const modal = document.getElementById('createUserModal');
     // @ts-ignore
     modal.style.display = 'none';
   }
   public createUser(form: NgForm): void{
-  const user: User = {
-    id: form.value.id,
-    username: form.value.username,
-    password: form.value.userpass,
-    email: form.value.useremail,
-    firstName: form.value.userfname,
-    lastName: form.value.userlname
-    }
-    this.userService.addUser(user).subscribe(
+    this.userService.addUser(form.value).subscribe(
+      (response: User) => {
+        console.log(form.value);
+        console.log(response);
+        this.getUsers();
+        form.reset();
+      }
+    );
+  }
+  public editUserById(userId: number, form: NgForm): void{
+    this.userService.editUser(userId, form.value).subscribe(
       (response: User) => {
         console.log(response);
         this.getUsers();
-      });
+      }
+    );
   }
 
 }

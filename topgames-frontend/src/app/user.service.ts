@@ -18,6 +18,9 @@ export class UserService {
   public deleteUser(userId: number): Observable<void> {
     return this.http.delete<void>(`${this.userUrl}/delete/${userId}`);
   }
+  public editUser(userId:number, user: User){
+    return this.http.put<User>(`${this.userUrl}/update/${userId}`, user);
+  }
   public addSamples(): Observable<void> {
     return this.http.post<void>(`${this.userUrl}/dev/addSamples`, null);
   }
