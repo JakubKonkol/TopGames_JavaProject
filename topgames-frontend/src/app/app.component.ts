@@ -121,6 +121,7 @@ export class AppComponent implements OnInit {
       (response: User) => {
         console.log(form.value);
         console.log(response);
+        this.closeCreateGameModal();
         this.getUsers();
         form.reset();
       }
