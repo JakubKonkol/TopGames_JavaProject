@@ -10,12 +10,7 @@ public class LogController {
     Logger logger = LoggerFactory.getLogger(LogController.class);
 
     @RequestMapping("/api/logs")
-    public String index() {
-        logger.trace("A TRACE Message");
-        logger.debug("A DEBUG Message");
-        logger.info("An INFO Message");
-        logger.warn("A WARN Message");
-        logger.error("An ERROR Message");
-        return "tu powinny byc jakies tam logi";
+    public void index() {
+
     }
 }

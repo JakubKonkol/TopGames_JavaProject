@@ -2,11 +2,13 @@ package com.example.topgameswebapi.controller;
 
 import com.example.topgamesdata.model.User;
 import com.example.topgameswebapi.service.UserService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@Slf4j
 @RestController
 @RequestMapping("/api/user")
 public class UserController {
@@ -16,6 +18,7 @@ public class UserController {
     }
     @GetMapping("/getAll")
     public ResponseEntity<List<User>> getAllUsers(){
+        log.info("Got all users");
         return ResponseEntity.ok(userService.getAllUsers());
     }
     @GetMapping("/{id}")
