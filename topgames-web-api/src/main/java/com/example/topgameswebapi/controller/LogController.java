@@ -1,16 +1,14 @@
 package com.example.topgameswebapi.controller;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@RequestMapping("/api/logs")
 public class LogController {
-    Logger logger = LoggerFactory.getLogger(LogController.class);
 
-    @RequestMapping("/api/logs")
-    public void index() {
 
+    public String getLogs(){
+        return "";
     }
 }
