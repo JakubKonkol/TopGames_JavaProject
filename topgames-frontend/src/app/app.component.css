@@ -80,6 +80,7 @@ dialog > div{
   margin: 0 auto;
 }
 .logo{
+  margin-left: -10rem;
   float: left;
   padding: 10px 0;
 }

@@ -17,6 +17,7 @@ export class AppComponent implements OnInit {
   title = 'topgames-frontend';
   public games: Game[] = [];
   public users: User[] = [];
+  showMainContent: boolean = true;
   constructor(private gameService: GameService, private userService: UserService, private router: Router, public route: ActivatedRoute) { }
   ngOnInit() {
     this.getGames();
@@ -135,6 +136,13 @@ export class AppComponent implements OnInit {
         this.getUsers();
       }
     );
+  }
+  public gotoNewPage(){
+    this.showMainContent = false;
+    this.router.navigate(['/log-viewer']);
+  }
+  public goToHome() {
+    this.router.navigate(['/']);
   }
 
 }

@@ -1,2 +1,17 @@
-<p>log-viewer works!</p>
-<router-outlet></router-outlet>
+<div class="container" id="logs">
+  <div class="sett">
+  <h1> Logs</h1> <br>
+  <select [(ngModel)]="selectedLogType" (change)="filterLogs()">
+    <option value="all">All</option>
+    <option value="info">Info</option>
+    <option value="warning">Warning</option>
+    <option value="error">Error</option>
+    <option value="debug">Debug</option>
+  </select>
+  </div>
+  <div class="logsContainer">
+    <div class="singleLogView" *ngFor="let log of filteredLogs" [ngClass]="selectedLogType">
+      {{log}}
+    </div>
+  </div>
+</div>

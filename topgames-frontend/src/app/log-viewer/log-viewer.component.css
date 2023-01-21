@@ -1,0 +1,44 @@
+h1{
+  color: white;
+}
+.sett {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#logs {
+  height: 70vh;
+  overflow-y: scroll;
+  white-space: nowrap;
+  max-width: 100%;
+}
+.singleLogView {
+  height: auto;
+  white-space: nowrap;
+  overflow: hidden;
+  color:white;
+}
+.logsContainer{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-inline: auto;
+
+}
+.all{
+  color: cyan;
+}
+.error {
+  color: red;
+}
+.info {
+  color: yellow;
+}
+.warning {
+  color: orange;
+}
+.debug {
+  color: grey;
+}
+
