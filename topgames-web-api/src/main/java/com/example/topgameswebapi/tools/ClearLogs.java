@@ -1,7 +1,6 @@
 package com.example.topgameswebapi.tools;
 
 import jakarta.annotation.PostConstruct;
-import jakarta.annotation.PreDestroy;
 import org.springframework.stereotype.Component;
 
 import java.nio.file.Path;

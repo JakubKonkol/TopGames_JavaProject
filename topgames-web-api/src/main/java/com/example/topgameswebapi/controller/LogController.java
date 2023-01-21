@@ -1,7 +1,10 @@
 package com.example.topgameswebapi.controller;
 
+import com.example.topgameswebapi.tools.LogFilter;
+import org.apache.coyote.Response;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -17,23 +20,29 @@ import java.util.stream.Collectors;
 public class LogController {
 
     private final Logger logger = LoggerFactory.getLogger(LogController.class);
+    private final LogFilter logFilter = new LogFilter();
 
-    @GetMapping
+    @GetMapping("/all")
     public List<String> getLogs() {
-        List<String> logs = new ArrayList<>();
-
-        Path path = Paths.get("top-games-logs.log");
-        try {
-            logs = java.nio.file.Files.lines(path)
-                    .collect(Collectors.toList());
-        } catch (Exception e) {
-            logger.error("Error reading log file", e);
-        }
-        logs = logs.stream()
-                .filter(log -> log.startsWith("INFO") || log.startsWith("WARN") || log.startsWith("ERROR"))
-                .collect(Collectors.toList());
-
-        return logs;
+        return logFilter.getLogs();
     }
+    @GetMapping("/info")
+    public ResponseEntity<List<String>> getInfoLogs() {
+        return ResponseEntity.ok(logFilter.getInfoLogs(logFilter.getLogs()));
+    }
+    @GetMapping("/warning")
+    public ResponseEntity<List<String>> getWarningLogs() {
+        return ResponseEntity.ok(logFilter.getWarningLogs(logFilter.getLogs()));
+    }
+    @GetMapping("/error")
+    public ResponseEntity<List<String>> getErrorLogs() {
+        return ResponseEntity.ok(logFilter.getErrorLogs(logFilter.getLogs()));
+    }
+    @GetMapping("/debug")
+    public ResponseEntity<List<String>> getDebugLogs() {
+        return ResponseEntity.ok(logFilter.getDebugLogs(logFilter.getLogs()));
+    }
+
+
 }
 

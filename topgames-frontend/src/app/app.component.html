@@ -14,6 +14,7 @@
     <h2 class="logo">TOP GAMES</h2>
     <nav>
       <ul>
+        <li> <a routerLink="/log-viewer"> Logs </a> </li>
         <li><a (click)="addSamples(); refreshPagePls()"> Add sample games </a></li>
         <li> <a (click)="addUserSamples(); refreshPagePls()"> Add sample users</a></li>
         <li><a (click)="removeSamples(); refreshPagePls()"> Remove all games  </a></li>
@@ -93,3 +94,4 @@
 </section>
 </body>
 </html>
+<router-outlet></router-outlet>

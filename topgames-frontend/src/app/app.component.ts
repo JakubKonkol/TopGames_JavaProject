@@ -6,6 +6,7 @@ import {UserService} from "./user.service";
 import {HttpErrorResponse} from "@angular/common/http";
 import {NgForm} from "@angular/forms";
 import {Developer} from "./developer";
+import {ActivatedRoute, Router} from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -16,7 +17,7 @@ export class AppComponent implements OnInit {
   title = 'topgames-frontend';
   public games: Game[] = [];
   public users: User[] = [];
-  constructor(private gameService: GameService, private userService: UserService) { }
+  constructor(private gameService: GameService, private userService: UserService, private router: Router, public route: ActivatedRoute) { }
   ngOnInit() {
     this.getGames();
     this.getUsers();

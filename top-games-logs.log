@@ -1,21 +1,7 @@
 DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.AutoConfigurationPackages'
 DEBUG - Creating shared instance of singleton bean 'org.springframework.data.jpa.util.JpaMetamodelCacheCleanup'
 DEBUG - Creating shared instance of singleton bean 'org.springframework.data.jpa.repository.support.JpaEvaluationContextExtension'
-DEBUG - Creating shared instance of singleton bean 'jpa.named-queries#0'
-DEBUG - Creating shared instance of singleton bean 'jpa.OrderRepository.fragments#0'
-DEBUG - Creating shared instance of singleton bean 'orderRepository'
-DEBUG - Creating new EntityManager for shared EntityManager invocation
-DEBUG - Initializing repository instance for com.example.topgamesdata.repositories.OrderRepository…
-DEBUG - Creating new EntityManager for shared EntityManager invocation
-DEBUG - Finished creation of repository instance for com.example.topgamesdata.repositories.OrderRepository.
-DEBUG - Creating shared instance of singleton bean 'jpa.named-queries#3'
-DEBUG - Creating shared instance of singleton bean 'jpa.DeveloperRepository.fragments#0'
-DEBUG - Creating shared instance of singleton bean 'developerRepository'
-DEBUG - Creating new EntityManager for shared EntityManager invocation
-DEBUG - Initializing repository instance for com.example.topgamesdata.repositories.DeveloperRepository…
-DEBUG - Creating new EntityManager for shared EntityManager invocation
-DEBUG - Finished creation of repository instance for com.example.topgamesdata.repositories.DeveloperRepository.
-DEBUG - Creating shared instance of singleton bean 'jpa.named-queries#4'
+DEBUG - Creating shared instance of singleton bean 'jpa.named-queries#1'
 DEBUG - Creating shared instance of singleton bean 'jpa.AdminsRepository.fragments#0'
 DEBUG - Creating shared instance of singleton bean 'adminsRepository'
 DEBUG - Creating new EntityManager for shared EntityManager invocation
@@ -69,6 +55,20 @@ java.lang.Exception: exception just for purpose of providing stack trace
 DEBUG - Did not find named query Admins.findByUsername
 DEBUG - Creating new EntityManager for shared EntityManager invocation
 DEBUG - Finished creation of repository instance for com.example.topgamesdata.repositories.AdminsRepository.
+DEBUG - Creating shared instance of singleton bean 'jpa.named-queries#2'
+DEBUG - Creating shared instance of singleton bean 'jpa.DeveloperRepository.fragments#0'
+DEBUG - Creating shared instance of singleton bean 'developerRepository'
+DEBUG - Creating new EntityManager for shared EntityManager invocation
+DEBUG - Initializing repository instance for com.example.topgamesdata.repositories.DeveloperRepository…
+DEBUG - Creating new EntityManager for shared EntityManager invocation
+DEBUG - Finished creation of repository instance for com.example.topgamesdata.repositories.DeveloperRepository.
+DEBUG - Creating shared instance of singleton bean 'jpa.named-queries#3'
+DEBUG - Creating shared instance of singleton bean 'jpa.OrderRepository.fragments#0'
+DEBUG - Creating shared instance of singleton bean 'orderRepository'
+DEBUG - Creating new EntityManager for shared EntityManager invocation
+DEBUG - Initializing repository instance for com.example.topgamesdata.repositories.OrderRepository…
+DEBUG - Creating new EntityManager for shared EntityManager invocation
+DEBUG - Finished creation of repository instance for com.example.topgamesdata.repositories.OrderRepository.
 DEBUG - Creating shared instance of singleton bean 'data-jpa.repository-aot-processor'
 DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration'
 DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.websocket.servlet.WebSocketServletAutoConfiguration'
@@ -83,7 +83,7 @@ DEBUG - Creating shared instance of singleton bean 'error'
 DEBUG - Creating shared instance of singleton bean 'beanNameViewResolver'
 DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration$DefaultErrorViewResolverConfiguration'
 DEBUG - Creating shared instance of singleton bean 'spring.web-org.springframework.boot.autoconfigure.web.WebProperties'
-DEBUG - Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration$DefaultErrorViewResolverConfiguration' via constructor to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@35a9782c'
+DEBUG - Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration$DefaultErrorViewResolverConfiguration' via constructor to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@d3957fe'
 DEBUG - Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration$DefaultErrorViewResolverConfiguration' via constructor to bean named 'spring.web-org.springframework.boot.autoconfigure.web.WebProperties'
 DEBUG - Creating shared instance of singleton bean 'conventionErrorViewResolver'
 DEBUG - Creating shared instance of singleton bean 'errorAttributes'
@@ -92,11 +92,11 @@ DEBUG - Autowiring by type from bean name 'basicErrorController' via factory met
 DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration'
 DEBUG - Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration' via constructor to bean named 'spring.mvc-org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties'
 DEBUG - Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration' via constructor to bean named 'spring.web-org.springframework.boot.autoconfigure.web.WebProperties'
-DEBUG - Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration' via constructor to bean named 'org.springframework.beans.factory.support.DefaultListableBeanFactory@319988b0'
+DEBUG - Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration' via constructor to bean named 'org.springframework.beans.factory.support.DefaultListableBeanFactory@592e843a'
 DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter'
 DEBUG - Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter' via constructor to bean named 'spring.web-org.springframework.boot.autoconfigure.web.WebProperties'
 DEBUG - Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter' via constructor to bean named 'spring.mvc-org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties'
-DEBUG - Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter' via constructor to bean named 'org.springframework.beans.factory.support.DefaultListableBeanFactory@319988b0'
+DEBUG - Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter' via constructor to bean named 'org.springframework.beans.factory.support.DefaultListableBeanFactory@592e843a'
 DEBUG - Creating shared instance of singleton bean 'resourceHandlerRegistrationCustomizer'
 DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$ResourceChainCustomizerConfiguration'
 DEBUG - Autowiring by type from bean name 'resourceHandlerRegistrationCustomizer' via factory method to bean named 'spring.web-org.springframework.boot.autoconfigure.web.WebProperties'
@@ -107,7 +107,7 @@ DEBUG - Creating shared instance of singleton bean 'openEntityManagerInViewInter
 WARN  - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 DEBUG - Autowiring by type from bean name 'openEntityManagerInViewInterceptorConfigurer' via factory method to bean named 'openEntityManagerInViewInterceptor'
 DEBUG - Creating shared instance of singleton bean 'org.springframework.data.web.config.SpringDataWebConfiguration'
-DEBUG - Autowiring by type from bean name 'org.springframework.data.web.config.SpringDataWebConfiguration' via constructor to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@35a9782c'
+DEBUG - Autowiring by type from bean name 'org.springframework.data.web.config.SpringDataWebConfiguration' via constructor to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@d3957fe'
 DEBUG - Creating shared instance of singleton bean 'requestMappingHandlerAdapter'
 DEBUG - Creating shared instance of singleton bean 'mvcContentNegotiationManager'
 DEBUG - Creating shared instance of singleton bean 'mvcConversionService'
@@ -172,15 +172,15 @@ DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.aut
 DEBUG - Creating shared instance of singleton bean 'jsonMixinModule'
 DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonMixinConfiguration'
 DEBUG - Creating shared instance of singleton bean 'jsonMixinModuleEntries'
-DEBUG - Autowiring by type from bean name 'jsonMixinModuleEntries' via factory method to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@35a9782c'
+DEBUG - Autowiring by type from bean name 'jsonMixinModuleEntries' via factory method to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@d3957fe'
 DEBUG - @EnableAutoConfiguration was declared on a class in the package 'com.example.topgamesdata,com.example.topgameswebapi'. Automatic @Repository and @Entity scanning is enabled.
-DEBUG - Autowiring by type from bean name 'jsonMixinModule' via factory method to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@35a9782c'
+DEBUG - Autowiring by type from bean name 'jsonMixinModule' via factory method to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@d3957fe'
 DEBUG - Autowiring by type from bean name 'jsonMixinModule' via factory method to bean named 'jsonMixinModuleEntries'
 DEBUG - Creating shared instance of singleton bean 'jsonComponentModule'
 DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration'
 DEBUG - Creating shared instance of singleton bean 'jacksonGeoModule'
 DEBUG - Creating shared instance of singleton bean 'org.springframework.data.web.config.SpringDataJacksonConfiguration'
-DEBUG - Autowiring by type from bean name 'jacksonObjectMapperBuilder' via factory method to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@35a9782c'
+DEBUG - Autowiring by type from bean name 'jacksonObjectMapperBuilder' via factory method to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@d3957fe'
 DEBUG - Autowiring by type from bean name 'jacksonObjectMapperBuilder' via factory method to bean named 'standardJacksonObjectMapperBuilderCustomizer'
 DEBUG - Autowiring by type from bean name 'jacksonObjectMapper' via factory method to bean named 'jacksonObjectMapperBuilder'
 DEBUG - Autowiring by type from bean name 'mappingJackson2HttpMessageConverter' via factory method to bean named 'jacksonObjectMapper'
@@ -197,7 +197,7 @@ DEBUG - Initializing ExecutorService 'applicationTaskExecutor'
 DEBUG - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
 DEBUG - Creating shared instance of singleton bean 'welcomePageHandlerMapping'
 DEBUG - Creating shared instance of singleton bean 'mvcResourceUrlProvider'
-DEBUG - Autowiring by type from bean name 'welcomePageHandlerMapping' via factory method to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@35a9782c'
+DEBUG - Autowiring by type from bean name 'welcomePageHandlerMapping' via factory method to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@d3957fe'
 DEBUG - Autowiring by type from bean name 'welcomePageHandlerMapping' via factory method to bean named 'mvcConversionService'
 DEBUG - Autowiring by type from bean name 'welcomePageHandlerMapping' via factory method to bean named 'mvcResourceUrlProvider'
 DEBUG - Creating shared instance of singleton bean 'localeResolver'
@@ -218,21 +218,25 @@ DEBUG -
 	{POST [/api/game/dev/addSamples]}: addSamples()
 DEBUG - 
 	c.e.t.c.LogController:
-	{GET [/api/logs]}: getLogs()
+	{GET [/logs/warning]}: getWarningLogs()
+	{GET [/logs/error]}: getErrorLogs()
+	{GET [/logs/debug]}: getDebugLogs()
+	{GET [/logs/info]}: getInfoLogs()
+	{GET [/logs/all]}: getLogs()
 DEBUG - 
 	c.e.t.c.UserController:
-	{GET [/api/user/getAll]}: getAllUsers()
-	{GET [/api/user/{id}]}: getUserById(Long)
-	{DELETE [/api/user/delete/{id}]}: deleteUserById(Long)
-	{PUT [/api/user/update/{id}]}: updateUserById(Long,User)
 	{POST [/api/user/dev/deleteAll]}: deleteAllUsers()
+	{GET [/api/user/{id}]}: getUserById(Long)
+	{PUT [/api/user/update/{id}]}: updateUserById(Long,User)
+	{GET [/api/user/getAll]}: getAllUsers()
+	{DELETE [/api/user/delete/{id}]}: deleteUserById(Long)
 	{POST [/api/user/dev/addSamples]}: addSamples()
 	{POST [/api/user/add]}: createUser(User)
 DEBUG - 
 	o.s.b.a.w.s.e.BasicErrorController:
 	{ [/error]}: error(HttpServletRequest)
 	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
-DEBUG - 17 mappings in 'requestMappingHandlerMapping'
+DEBUG - 21 mappings in 'requestMappingHandlerMapping'
 DEBUG - Creating shared instance of singleton bean 'mvcPatternParser'
 DEBUG - Creating shared instance of singleton bean 'mvcUrlPathHelper'
 DEBUG - Creating shared instance of singleton bean 'mvcPathMatcher'
@@ -266,7 +270,7 @@ DEBUG - Autowiring by type from bean name 'mvcViewResolver' via factory method t
 DEBUG - Creating shared instance of singleton bean 'viewNameTranslator'
 DEBUG - Creating shared instance of singleton bean 'defaultViewResolver'
 DEBUG - Creating shared instance of singleton bean 'viewResolver'
-DEBUG - Autowiring by type from bean name 'viewResolver' via factory method to bean named 'org.springframework.beans.factory.support.DefaultListableBeanFactory@319988b0'
+DEBUG - Autowiring by type from bean name 'viewResolver' via factory method to bean named 'org.springframework.beans.factory.support.DefaultListableBeanFactory@592e843a'
 DEBUG - Creating shared instance of singleton bean 'viewResolver'
 DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration'
 DEBUG - Creating shared instance of singleton bean 'spring.jmx-org.springframework.boot.autoconfigure.jmx.JmxProperties'
@@ -274,7 +278,7 @@ DEBUG - Autowiring by type from bean name 'org.springframework.boot.autoconfigur
 DEBUG - Creating shared instance of singleton bean 'mbeanExporter'
 DEBUG - Creating shared instance of singleton bean 'objectNamingStrategy'
 DEBUG - Autowiring by type from bean name 'mbeanExporter' via factory method to bean named 'objectNamingStrategy'
-DEBUG - Autowiring by type from bean name 'mbeanExporter' via factory method to bean named 'org.springframework.beans.factory.support.DefaultListableBeanFactory@319988b0'
+DEBUG - Autowiring by type from bean name 'mbeanExporter' via factory method to bean named 'org.springframework.beans.factory.support.DefaultListableBeanFactory@592e843a'
 DEBUG - Creating shared instance of singleton bean 'mbeanServer'
 DEBUG - Found MBeanServer: com.sun.jmx.mbeanserver.JmxMBeanServer@77468bd9
 DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.admin.SpringApplicationAdminJmxAutoConfiguration'
@@ -1011,7 +1015,7 @@ Negative matches:
 
    JpaRepositoriesAutoConfiguration:
       Did not match:
-         - @ConditionalOnMissingBean (types: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean,org.springframework.data.jpa.repository.config.JpaRepositoryConfigExtension; SearchStrategy: all) found beans of type 'org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean' &orderRepository, &userRepository, &gameRepository, &developerRepository, &adminsRepository and found beans of type 'org.springframework.data.jpa.repository.config.JpaRepositoryConfigExtension' org.springframework.data.jpa.repository.config.JpaRepositoryConfigExtension#0 (OnBeanCondition)
+         - @ConditionalOnMissingBean (types: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean,org.springframework.data.jpa.repository.config.JpaRepositoryConfigExtension; SearchStrategy: all) found beans of type 'org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean' &gameRepository, &adminsRepository, &developerRepository, &orderRepository, &userRepository and found beans of type 'org.springframework.data.jpa.repository.config.JpaRepositoryConfigExtension' org.springframework.data.jpa.repository.config.JpaRepositoryConfigExtension#0 (OnBeanCondition)
       Matched:
          - @ConditionalOnClass found required class 'org.springframework.data.jpa.repository.JpaRepository' (OnClassCondition)
          - @ConditionalOnProperty (spring.data.jpa.repositories.enabled=true) matched (OnPropertyCondition)
@@ -1362,7 +1366,7 @@ Unconditional classes:
 
 
 
-INFO  - Started TopgamesWebApiApplication in 7.917 seconds (process running for 9.458)
+INFO  - Started TopgamesWebApiApplication in 8.438 seconds (process running for 9.999)
 DEBUG - Application availability state LivenessState changed to CORRECT
 DEBUG - Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
 INFO  - Initializing Spring DispatcherServlet 'dispatcherServlet'
@@ -1370,17 +1374,154 @@ INFO  - Initializing Servlet 'dispatcherServlet'
 DEBUG - Detected StandardServletMultipartResolver
 DEBUG - Detected AcceptHeaderLocaleResolver
 DEBUG - Detected FixedThemeResolver
-DEBUG - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@5cff6d1d
+DEBUG - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@1f381eaf
 DEBUG - Detected org.springframework.web.servlet.support.SessionFlashMapManager@1d6014a7
 DEBUG - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-INFO  - Completed initialization in 2 ms
-DEBUG - GET "/api/logs", parameters={}
+INFO  - Completed initialization in 6 ms
+DEBUG - GET "/", parameters={}
+DEBUG - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+DEBUG - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+DEBUG - Resource not found
+DEBUG - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+DEBUG - Completed 404 NOT_FOUND
+DEBUG - "ERROR" dispatch for GET "/error", parameters={}
+DEBUG - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+DEBUG - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+DEBUG - Selected 'text/html' given [text/html, text/html;q=0.8]
+DEBUG - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+DEBUG - Exiting from "ERROR" dispatch, status 404
+DEBUG - GET "/logs", parameters={}
+DEBUG - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+DEBUG - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+DEBUG - Resource not found
+DEBUG - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+DEBUG - Completed 404 NOT_FOUND
+DEBUG - "ERROR" dispatch for GET "/error", parameters={}
+DEBUG - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+DEBUG - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+DEBUG - Selected 'text/html' given [text/html, text/html;q=0.8]
+DEBUG - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+DEBUG - Exiting from "ERROR" dispatch, status 404
+DEBUG - GET "/logs/all", parameters={}
 DEBUG - Mapped to com.example.topgameswebapi.controller.LogController#getLogs()
+DEBUG - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+DEBUG - Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, application/xml;q=0.9, */*;q=0.8] and supported [application/json, application/*+json]
+DEBUG - Writing [[DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.AutoConf (truncated)...]
+DEBUG - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+DEBUG - Completed 200 OK
+DEBUG - GET "/logs/all", parameters={}
+DEBUG - Mapped to com.example.topgameswebapi.controller.LogController#getLogs()
+DEBUG - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+DEBUG - Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, application/xml;q=0.9, */*;q=0.8] and supported [application/json, application/*+json]
+DEBUG - Writing [[DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.AutoConf (truncated)...]
+DEBUG - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+DEBUG - Completed 200 OK
+DEBUG - GET "/logs/warning", parameters={}
+DEBUG - Mapped to com.example.topgameswebapi.controller.LogController#getWarningLogs()
 DEBUG - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
 DEBUG - Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, application/xml;q=0.9, */*;q=0.8] and supported [application/json, application/*+json]
 DEBUG - Writing [[WARN  - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed (truncated)...]
 DEBUG - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
 DEBUG - Completed 200 OK
+DEBUG - GET "/logs/warning", parameters={}
+DEBUG - Mapped to com.example.topgameswebapi.controller.LogController#getWarningLogs()
+DEBUG - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+DEBUG - Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, application/xml;q=0.9, */*;q=0.8] and supported [application/json, application/*+json]
+DEBUG - Writing [[WARN  - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed (truncated)...]
+DEBUG - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+DEBUG - Completed 200 OK
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - GET "/logs/info", parameters={}
+DEBUG - Mapped to com.example.topgameswebapi.controller.LogController#getInfoLogs()
+DEBUG - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+DEBUG - Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, application/xml;q=0.9, */*;q=0.8] and supported [application/json, application/*+json]
+DEBUG - Writing [[INFO  - Starting ProtocolHandler ["http-nio-8081"], INFO  - Tomcat started on port(s): 8081 (http)  (truncated)...]
+DEBUG - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+DEBUG - Completed 200 OK
+DEBUG - GET "/logs/info", parameters={}
+DEBUG - Mapped to com.example.topgameswebapi.controller.LogController#getInfoLogs()
+DEBUG - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+DEBUG - Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, application/xml;q=0.9, */*;q=0.8] and supported [application/json, application/*+json]
+DEBUG - Writing [[INFO  - Starting ProtocolHandler ["http-nio-8081"], INFO  - Tomcat started on port(s): 8081 (http)  (truncated)...]
+DEBUG - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+DEBUG - Completed 200 OK
+DEBUG - GET "/logs/debug", parameters={}
+DEBUG - Mapped to com.example.topgameswebapi.controller.LogController#getDebugLogs()
+DEBUG - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+DEBUG - Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, application/xml;q=0.9, */*;q=0.8] and supported [application/json, application/*+json]
+DEBUG - Writing [[DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.AutoConf (truncated)...]
+DEBUG - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+DEBUG - Completed 200 OK
+DEBUG - GET "/logs/debug", parameters={}
+DEBUG - Mapped to com.example.topgameswebapi.controller.LogController#getDebugLogs()
+DEBUG - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+DEBUG - Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, application/xml;q=0.9, */*;q=0.8] and supported [application/json, application/*+json]
+DEBUG - Writing [[DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.AutoConf (truncated)...]
+DEBUG - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+DEBUG - Completed 200 OK
+DEBUG - GET "/logs/error", parameters={}
+DEBUG - Mapped to com.example.topgameswebapi.controller.LogController#getErrorLogs()
+DEBUG - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+DEBUG - Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, application/xml;q=0.9, */*;q=0.8] and supported [application/json, application/*+json]
+DEBUG - Writing [[]]
+DEBUG - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+DEBUG - Completed 200 OK
+DEBUG - GET "/logs/error", parameters={}
+DEBUG - Mapped to com.example.topgameswebapi.controller.LogController#getErrorLogs()
+DEBUG - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+DEBUG - Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, application/xml;q=0.9, */*;q=0.8] and supported [application/json, application/*+json]
+DEBUG - Writing [[]]
+DEBUG - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+DEBUG - Completed 200 OK
+DEBUG - GET "/logs", parameters={}
+DEBUG - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+DEBUG - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+DEBUG - Resource not found
+DEBUG - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+DEBUG - Completed 404 NOT_FOUND
+DEBUG - "ERROR" dispatch for GET "/error", parameters={}
+DEBUG - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+DEBUG - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+DEBUG - Selected 'text/html' given [text/html, text/html;q=0.8]
+DEBUG - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+DEBUG - Exiting from "ERROR" dispatch, status 404
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
 DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
@@ -1396,7 +1537,7 @@ DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently
 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
 DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
 DEBUG - Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
-DEBUG - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@35a9782c, started on Fri Jan 20 22:08:36 CET 2023
+DEBUG - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@d3957fe, started on Sat Jan 21 09:21:16 CET 2023
 DEBUG - Stopping beans in phase 2147482623
 DEBUG - Bean 'webServerGracefulShutdown' completed its stop procedure
 DEBUG - Stopping beans in phase 2147481599
@@ -1408,20 +1549,20 @@ DEBUG - Unregistering JMX-exposed beans
 DEBUG - Shutting down ExecutorService 'applicationTaskExecutor'
 INFO  - Closing JPA EntityManagerFactory for persistence unit 'default'
 DEBUG - HHH000031: Closing
-DEBUG - Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@3a408127] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@722b3ba2]
+DEBUG - Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@3e93b186] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@1d9ff1e2]
 DEBUG - Implicitly destroying ServiceRegistry on de-registration of all child ServiceRegistries
 DEBUG - Implicitly destroying Boot-strap registry on de-registration of all child ServiceRegistries
 INFO  - HikariPool-1 - Shutdown initiated...
 DEBUG - HikariPool-1 - Before shutdown stats (total=10, active=0, idle=10, waiting=0)
-DEBUG - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@5c8ab9de: (connection evicted)
-DEBUG - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@67efc99d: (connection evicted)
-DEBUG - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@26d2c3a6: (connection evicted)
-DEBUG - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@173ec0b2: (connection evicted)
-DEBUG - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@46fd3ce9: (connection evicted)
-DEBUG - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@42b306ad: (connection evicted)
-DEBUG - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@70eed17a: (connection evicted)
-DEBUG - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@7446fd02: (connection evicted)
-DEBUG - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@105023e: (connection evicted)
-DEBUG - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@3c8c448f: (connection evicted)
+DEBUG - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@2f1f9515: (connection evicted)
+DEBUG - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@43990649: (connection evicted)
+DEBUG - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@2a40c72: (connection evicted)
+DEBUG - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@33eccddb: (connection evicted)
+DEBUG - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@628bf33d: (connection evicted)
+DEBUG - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@66c56d1f: (connection evicted)
+DEBUG - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@ffeb80c: (connection evicted)
+DEBUG - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@4a06de0e: (connection evicted)
+DEBUG - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@2069f76a: (connection evicted)
+DEBUG - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@6c86da98: (connection evicted)
 DEBUG - HikariPool-1 - After shutdown stats (total=0, active=0, idle=0, waiting=0)
 INFO  - HikariPool-1 - Shutdown completed.
