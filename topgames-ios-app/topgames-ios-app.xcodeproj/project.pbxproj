@@ -1,0 +1,644 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		23A20EFD297D296D004E63C3 /* topgames_ios_appApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A20EFC297D296D004E63C3 /* topgames_ios_appApp.swift */; };
+		23A20EFF297D296D004E63C3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A20EFE297D296D004E63C3 /* ContentView.swift */; };
+		23A20F01297D2970004E63C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23A20F00297D2970004E63C3 /* Assets.xcassets */; };
+		23A20F04297D2970004E63C3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23A20F03297D2970004E63C3 /* Preview Assets.xcassets */; };
+		23A20F0E297D2970004E63C3 /* topgames_ios_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A20F0D297D2970004E63C3 /* topgames_ios_appTests.swift */; };
+		23A20F18297D2970004E63C3 /* topgames_ios_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A20F17297D2970004E63C3 /* topgames_ios_appUITests.swift */; };
+		23A20F1A297D2970004E63C3 /* topgames_ios_appUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A20F19297D2970004E63C3 /* topgames_ios_appUITestsLaunchTests.swift */; };
+		23A20F2A297D2D09004E63C3 /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = 23A20F29297D2D09004E63C3 /* Algorithms */; };
+		23A20F2C297D2DA1004E63C3 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A20F2B297D2DA1004E63C3 /* UserService.swift */; };
+		23A20F2F297D2F2D004E63C3 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 23A20F2E297D2F2D004E63C3 /* Alamofire */; };
+		23A20F31297D2F76004E63C3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A20F30297D2F76004E63C3 /* User.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		23A20F0A297D2970004E63C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 23A20EF1297D296D004E63C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 23A20EF8297D296D004E63C3;
+			remoteInfo = "topgames-ios-app";
+		};
+		23A20F14297D2970004E63C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 23A20EF1297D296D004E63C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 23A20EF8297D296D004E63C3;
+			remoteInfo = "topgames-ios-app";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		23A20EF9297D296D004E63C3 /* topgames-ios-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "topgames-ios-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		23A20EFC297D296D004E63C3 /* topgames_ios_appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = topgames_ios_appApp.swift; sourceTree = "<group>"; };
+		23A20EFE297D296D004E63C3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		23A20F00297D2970004E63C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		23A20F03297D2970004E63C3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		23A20F09297D2970004E63C3 /* topgames-ios-appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "topgames-ios-appTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		23A20F0D297D2970004E63C3 /* topgames_ios_appTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = topgames_ios_appTests.swift; sourceTree = "<group>"; };
+		23A20F13297D2970004E63C3 /* topgames-ios-appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "topgames-ios-appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		23A20F17297D2970004E63C3 /* topgames_ios_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = topgames_ios_appUITests.swift; sourceTree = "<group>"; };
+		23A20F19297D2970004E63C3 /* topgames_ios_appUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = topgames_ios_appUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		23A20F2B297D2DA1004E63C3 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		23A20F30297D2F76004E63C3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		23A20EF6297D296D004E63C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23A20F2A297D2D09004E63C3 /* Algorithms in Frameworks */,
+				23A20F2F297D2F2D004E63C3 /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23A20F06297D2970004E63C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23A20F10297D2970004E63C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		23A20EF0297D296D004E63C3 = {
+			isa = PBXGroup;
+			children = (
+				23A20EFB297D296D004E63C3 /* topgames-ios-app */,
+				23A20F0C297D2970004E63C3 /* topgames-ios-appTests */,
+				23A20F16297D2970004E63C3 /* topgames-ios-appUITests */,
+				23A20EFA297D296D004E63C3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		23A20EFA297D296D004E63C3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				23A20EF9297D296D004E63C3 /* topgames-ios-app.app */,
+				23A20F09297D2970004E63C3 /* topgames-ios-appTests.xctest */,
+				23A20F13297D2970004E63C3 /* topgames-ios-appUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		23A20EFB297D296D004E63C3 /* topgames-ios-app */ = {
+			isa = PBXGroup;
+			children = (
+				23A20EFC297D296D004E63C3 /* topgames_ios_appApp.swift */,
+				23A20EFE297D296D004E63C3 /* ContentView.swift */,
+				23A20F00297D2970004E63C3 /* Assets.xcassets */,
+				23A20F02297D2970004E63C3 /* Preview Content */,
+				23A20F2B297D2DA1004E63C3 /* UserService.swift */,
+				23A20F30297D2F76004E63C3 /* User.swift */,
+			);
+			path = "topgames-ios-app";
+			sourceTree = "<group>";
+		};
+		23A20F02297D2970004E63C3 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				23A20F03297D2970004E63C3 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		23A20F0C297D2970004E63C3 /* topgames-ios-appTests */ = {
+			isa = PBXGroup;
+			children = (
+				23A20F0D297D2970004E63C3 /* topgames_ios_appTests.swift */,
+			);
+			path = "topgames-ios-appTests";
+			sourceTree = "<group>";
+		};
+		23A20F16297D2970004E63C3 /* topgames-ios-appUITests */ = {
+			isa = PBXGroup;
+			children = (
+				23A20F17297D2970004E63C3 /* topgames_ios_appUITests.swift */,
+				23A20F19297D2970004E63C3 /* topgames_ios_appUITestsLaunchTests.swift */,
+			);
+			path = "topgames-ios-appUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		23A20EF8297D296D004E63C3 /* topgames-ios-app */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23A20F1D297D2970004E63C3 /* Build configuration list for PBXNativeTarget "topgames-ios-app" */;
+			buildPhases = (
+				23A20EF5297D296D004E63C3 /* Sources */,
+				23A20EF6297D296D004E63C3 /* Frameworks */,
+				23A20EF7297D296D004E63C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "topgames-ios-app";
+			packageProductDependencies = (
+				23A20F29297D2D09004E63C3 /* Algorithms */,
+				23A20F2E297D2F2D004E63C3 /* Alamofire */,
+			);
+			productName = "topgames-ios-app";
+			productReference = 23A20EF9297D296D004E63C3 /* topgames-ios-app.app */;
+			productType = "com.apple.product-type.application";
+		};
+		23A20F08297D2970004E63C3 /* topgames-ios-appTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23A20F20297D2970004E63C3 /* Build configuration list for PBXNativeTarget "topgames-ios-appTests" */;
+			buildPhases = (
+				23A20F05297D2970004E63C3 /* Sources */,
+				23A20F06297D2970004E63C3 /* Frameworks */,
+				23A20F07297D2970004E63C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				23A20F0B297D2970004E63C3 /* PBXTargetDependency */,
+			);
+			name = "topgames-ios-appTests";
+			productName = "topgames-ios-appTests";
+			productReference = 23A20F09297D2970004E63C3 /* topgames-ios-appTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		23A20F12297D2970004E63C3 /* topgames-ios-appUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23A20F23297D2970004E63C3 /* Build configuration list for PBXNativeTarget "topgames-ios-appUITests" */;
+			buildPhases = (
+				23A20F0F297D2970004E63C3 /* Sources */,
+				23A20F10297D2970004E63C3 /* Frameworks */,
+				23A20F11297D2970004E63C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				23A20F15297D2970004E63C3 /* PBXTargetDependency */,
+			);
+			name = "topgames-ios-appUITests";
+			productName = "topgames-ios-appUITests";
+			productReference = 23A20F13297D2970004E63C3 /* topgames-ios-appUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		23A20EF1297D296D004E63C3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					23A20EF8297D296D004E63C3 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					23A20F08297D2970004E63C3 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 23A20EF8297D296D004E63C3;
+					};
+					23A20F12297D2970004E63C3 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 23A20EF8297D296D004E63C3;
+					};
+				};
+			};
+			buildConfigurationList = 23A20EF4297D296D004E63C3 /* Build configuration list for PBXProject "topgames-ios-app" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 23A20EF0297D296D004E63C3;
+			packageReferences = (
+				23A20F28297D2D09004E63C3 /* XCRemoteSwiftPackageReference "swift-algorithms" */,
+				23A20F2D297D2F2D004E63C3 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			productRefGroup = 23A20EFA297D296D004E63C3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				23A20EF8297D296D004E63C3 /* topgames-ios-app */,
+				23A20F08297D2970004E63C3 /* topgames-ios-appTests */,
+				23A20F12297D2970004E63C3 /* topgames-ios-appUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		23A20EF7297D296D004E63C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23A20F04297D2970004E63C3 /* Preview Assets.xcassets in Resources */,
+				23A20F01297D2970004E63C3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23A20F07297D2970004E63C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23A20F11297D2970004E63C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		23A20EF5297D296D004E63C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23A20F31297D2F76004E63C3 /* User.swift in Sources */,
+				23A20EFF297D296D004E63C3 /* ContentView.swift in Sources */,
+				23A20EFD297D296D004E63C3 /* topgames_ios_appApp.swift in Sources */,
+				23A20F2C297D2DA1004E63C3 /* UserService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23A20F05297D2970004E63C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23A20F0E297D2970004E63C3 /* topgames_ios_appTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23A20F0F297D2970004E63C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23A20F1A297D2970004E63C3 /* topgames_ios_appUITestsLaunchTests.swift in Sources */,
+				23A20F18297D2970004E63C3 /* topgames_ios_appUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		23A20F0B297D2970004E63C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 23A20EF8297D296D004E63C3 /* topgames-ios-app */;
+			targetProxy = 23A20F0A297D2970004E63C3 /* PBXContainerItemProxy */;
+		};
+		23A20F15297D2970004E63C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 23A20EF8297D296D004E63C3 /* topgames-ios-app */;
+			targetProxy = 23A20F14297D2970004E63C3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		23A20F1B297D2970004E63C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		23A20F1C297D2970004E63C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		23A20F1E297D2970004E63C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"topgames-ios-app/Preview Content\"";
+				DEVELOPMENT_TEAM = 4KHMA7QTKA;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = TopGames;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "pl.jakubkonkol.topgames-ios-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		23A20F1F297D2970004E63C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"topgames-ios-app/Preview Content\"";
+				DEVELOPMENT_TEAM = 4KHMA7QTKA;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = TopGames;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "pl.jakubkonkol.topgames-ios-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		23A20F21297D2970004E63C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4KHMA7QTKA;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "pl.jakubkonkol.topgames-ios-appTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/topgames-ios-app.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/topgames-ios-app";
+			};
+			name = Debug;
+		};
+		23A20F22297D2970004E63C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4KHMA7QTKA;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "pl.jakubkonkol.topgames-ios-appTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/topgames-ios-app.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/topgames-ios-app";
+			};
+			name = Release;
+		};
+		23A20F24297D2970004E63C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4KHMA7QTKA;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "pl.jakubkonkol.topgames-ios-appUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "topgames-ios-app";
+			};
+			name = Debug;
+		};
+		23A20F25297D2970004E63C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4KHMA7QTKA;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "pl.jakubkonkol.topgames-ios-appUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "topgames-ios-app";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		23A20EF4297D296D004E63C3 /* Build configuration list for PBXProject "topgames-ios-app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23A20F1B297D2970004E63C3 /* Debug */,
+				23A20F1C297D2970004E63C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		23A20F1D297D2970004E63C3 /* Build configuration list for PBXNativeTarget "topgames-ios-app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23A20F1E297D2970004E63C3 /* Debug */,
+				23A20F1F297D2970004E63C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		23A20F20297D2970004E63C3 /* Build configuration list for PBXNativeTarget "topgames-ios-appTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23A20F21297D2970004E63C3 /* Debug */,
+				23A20F22297D2970004E63C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		23A20F23297D2970004E63C3 /* Build configuration list for PBXNativeTarget "topgames-ios-appUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23A20F24297D2970004E63C3 /* Debug */,
+				23A20F25297D2970004E63C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		23A20F28297D2D09004E63C3 /* XCRemoteSwiftPackageReference "swift-algorithms" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-algorithms.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		23A20F2D297D2F2D004E63C3 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		23A20F29297D2D09004E63C3 /* Algorithms */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 23A20F28297D2D09004E63C3 /* XCRemoteSwiftPackageReference "swift-algorithms" */;
+			productName = Algorithms;
+		};
+		23A20F2E297D2F2D004E63C3 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 23A20F2D297D2F2D004E63C3 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 23A20EF1297D296D004E63C3 /* Project object */;
+}
