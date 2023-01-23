@@ -2,7 +2,7 @@ package com.example.topgameswebapi.service;
 
 import com.example.topgamesdata.model.Game;
 import com.example.topgamesdata.repositories.GameRepository;
-import com.example.topgamestools.tools.SampleData;
+import com.example.topgamestools.sampleData.SampleData;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

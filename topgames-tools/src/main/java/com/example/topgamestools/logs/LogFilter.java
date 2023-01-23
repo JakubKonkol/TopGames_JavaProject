@@ -1,4 +1,4 @@
-package com.example.topgameswebapi.tools;
+package com.example.topgamestools.logs;
 
 import java.nio.file.Path;
 import java.nio.file.Paths;

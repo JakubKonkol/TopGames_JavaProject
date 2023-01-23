@@ -1,4 +1,4 @@
-package com.example.topgamestools.tools;
+package com.example.topgamestools.sampleData;
 
 
 import com.example.topgamesdata.model.Developer;

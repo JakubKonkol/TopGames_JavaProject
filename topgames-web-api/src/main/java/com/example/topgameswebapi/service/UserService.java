@@ -2,10 +2,9 @@ package com.example.topgameswebapi.service;
 
 import com.example.topgamesdata.model.User;
 import com.example.topgamesdata.repositories.UserRepository;
-import com.example.topgamestools.tools.SampleData;
+import com.example.topgamestools.sampleData.SampleData;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.yaml.snakeyaml.events.Event;
 
 import java.util.List;
 import java.util.Optional;

@@ -1,4 +1,4 @@
-package com.example.topgameswebapi.tools;
+package com.example.topgamestools.logs;
 
 import java.util.List;
 

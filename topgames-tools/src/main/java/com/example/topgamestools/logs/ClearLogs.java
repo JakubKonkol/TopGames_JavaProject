@@ -1,4 +1,4 @@
-package com.example.topgameswebapi.tools;
+package com.example.topgamestools.logs;
 
 import jakarta.annotation.PostConstruct;
 import org.springframework.stereotype.Component;
@@ -6,11 +6,7 @@ import org.springframework.stereotype.Component;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
-@Component
-
 public class ClearLogs {
-
-    @PostConstruct
     public void clearLogs() {
         System.out.println("Clearing logs");
         Path path = Paths.get("top-games-logs.log");
