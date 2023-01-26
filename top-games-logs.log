@@ -3302,3 +3302,455 @@ DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
 DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
 DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Closing connection org.mariadb.jdbc.Connection@33cff08c: (connection has passed maxLifetime)
+DEBUG - HikariPool-1 - Added connection org.mariadb.jdbc.Connection@12dfb2eb
+DEBUG - HikariPool-1 - Closing connection org.mariadb.jdbc.Connection@7379f047: (connection has passed maxLifetime)
+DEBUG - HikariPool-1 - Added connection org.mariadb.jdbc.Connection@47d71077
+DEBUG - HikariPool-1 - Closing connection org.mariadb.jdbc.Connection@28a8222b: (connection has passed maxLifetime)
+DEBUG - HikariPool-1 - Added connection org.mariadb.jdbc.Connection@91ce08b
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Closing connection org.mariadb.jdbc.Connection@7e020573: (connection has passed maxLifetime)
+DEBUG - HikariPool-1 - Added connection org.mariadb.jdbc.Connection@29dd5612
+DEBUG - HikariPool-1 - Closing connection org.mariadb.jdbc.Connection@766940f4: (connection has passed maxLifetime)
+DEBUG - HikariPool-1 - Added connection org.mariadb.jdbc.Connection@412d6ec4
+DEBUG - HikariPool-1 - Closing connection org.mariadb.jdbc.Connection@1d09485b: (connection has passed maxLifetime)
+DEBUG - HikariPool-1 - Added connection org.mariadb.jdbc.Connection@2d6b66c4
+DEBUG - HikariPool-1 - Closing connection org.mariadb.jdbc.Connection@485b34ce: (connection has passed maxLifetime)
+DEBUG - HikariPool-1 - Added connection org.mariadb.jdbc.Connection@5ff60c7a
+DEBUG - HikariPool-1 - Closing connection org.mariadb.jdbc.Connection@722fd25a: (connection has passed maxLifetime)
+DEBUG - HikariPool-1 - Added connection org.mariadb.jdbc.Connection@1547b732
+DEBUG - HikariPool-1 - Closing connection org.mariadb.jdbc.Connection@1ac0cdb0: (connection has passed maxLifetime)
+DEBUG - HikariPool-1 - Added connection org.mariadb.jdbc.Connection@40c8123b
+DEBUG - HikariPool-1 - Closing connection org.mariadb.jdbc.Connection@211a4276: (connection has passed maxLifetime)
+DEBUG - HikariPool-1 - Added connection org.mariadb.jdbc.Connection@dbed5aa
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - Mapped to com.example.topgameswebapi.controller.LogController#getLogs()
+DEBUG - Mapped to com.example.topgameswebapi.controller.LogController#getLogs()
+DEBUG - GET "/logs/all", parameters={}
+DEBUG - Mapped to com.example.topgameswebapi.controller.LogController#getLogs()
+DEBUG - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+DEBUG - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+DEBUG - Writing [[DEBUG - Creating shared instance of singleton bean 'securityConfiguration', DEBUG - Creating shared (truncated)...]
+DEBUG - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+DEBUG - Completed 200 OK
+DEBUG - Mapped to com.example.topgameswebapi.controller.LogController#getInfoLogs()
+DEBUG - Mapped to com.example.topgameswebapi.controller.LogController#getInfoLogs()
+DEBUG - GET "/logs/info", parameters={}
+DEBUG - Mapped to com.example.topgameswebapi.controller.LogController#getInfoLogs()
+DEBUG - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+DEBUG - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+DEBUG - Writing [[INFO  - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilt (truncated)...]
+DEBUG - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+DEBUG - Completed 200 OK
+DEBUG - Mapped to com.example.topgameswebapi.controller.LogController#getWarningLogs()
+DEBUG - Mapped to com.example.topgameswebapi.controller.LogController#getWarningLogs()
+DEBUG - GET "/logs/warning", parameters={}
+DEBUG - Mapped to com.example.topgameswebapi.controller.LogController#getWarningLogs()
+DEBUG - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+DEBUG - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+DEBUG - Writing [[WARN  - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed (truncated)...]
+DEBUG - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+DEBUG - Completed 200 OK
+DEBUG - Mapped to com.example.topgameswebapi.controller.LogController#getDebugLogs()
+DEBUG - Mapped to com.example.topgameswebapi.controller.LogController#getDebugLogs()
+DEBUG - GET "/logs/debug", parameters={}
+DEBUG - Mapped to com.example.topgameswebapi.controller.LogController#getDebugLogs()
+DEBUG - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+DEBUG - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+DEBUG - Writing [[DEBUG - Creating shared instance of singleton bean 'securityConfiguration', DEBUG - Creating shared (truncated)...]
+DEBUG - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+DEBUG - Completed 200 OK
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Closing connection org.mariadb.jdbc.Connection@91ce08b: (connection has passed maxLifetime)
+DEBUG - HikariPool-1 - Added connection org.mariadb.jdbc.Connection@180f463
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Closing connection org.mariadb.jdbc.Connection@2d6b66c4: (connection has passed maxLifetime)
+DEBUG - HikariPool-1 - Added connection org.mariadb.jdbc.Connection@2cf73f7d
+DEBUG - HikariPool-1 - Closing connection org.mariadb.jdbc.Connection@1547b732: (connection has passed maxLifetime)
+DEBUG - HikariPool-1 - Added connection org.mariadb.jdbc.Connection@7941035b
+DEBUG - HikariPool-1 - Closing connection org.mariadb.jdbc.Connection@47d71077: (connection has passed maxLifetime)
+DEBUG - HikariPool-1 - Added connection org.mariadb.jdbc.Connection@327bebc4
+DEBUG - HikariPool-1 - Closing connection org.mariadb.jdbc.Connection@12dfb2eb: (connection has passed maxLifetime)
+DEBUG - HikariPool-1 - Added connection org.mariadb.jdbc.Connection@3c0aea08
+DEBUG - HikariPool-1 - Added connection org.mariadb.jdbc.Connection@2a16b9f8
+DEBUG - HikariPool-1 - Closing connection org.mariadb.jdbc.Connection@dbed5aa: (connection has passed maxLifetime)
+DEBUG - HikariPool-1 - Closing connection org.mariadb.jdbc.Connection@29dd5612: (connection has passed maxLifetime)
+DEBUG - HikariPool-1 - Added connection org.mariadb.jdbc.Connection@7f26e2a9
+DEBUG - HikariPool-1 - Added connection org.mariadb.jdbc.Connection@f1157b3
+DEBUG - HikariPool-1 - Closing connection org.mariadb.jdbc.Connection@412d6ec4: (connection has passed maxLifetime)
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Closing connection org.mariadb.jdbc.Connection@5ff60c7a: (connection has passed maxLifetime)
+DEBUG - HikariPool-1 - Added connection org.mariadb.jdbc.Connection@42aa7523
+DEBUG - HikariPool-1 - Closing connection org.mariadb.jdbc.Connection@40c8123b: (connection has passed maxLifetime)
+DEBUG - HikariPool-1 - Added connection org.mariadb.jdbc.Connection@e1e2eb9
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Closing connection org.mariadb.jdbc.Connection@180f463: (connection has passed maxLifetime)
+DEBUG - HikariPool-1 - Added connection org.mariadb.jdbc.Connection@18d60674
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Closing connection org.mariadb.jdbc.Connection@2cf73f7d: (connection has passed maxLifetime)
+DEBUG - HikariPool-1 - Added connection org.mariadb.jdbc.Connection@2d1cf2c4
+DEBUG - HikariPool-1 - Closing connection org.mariadb.jdbc.Connection@f1157b3: (connection has passed maxLifetime)
+DEBUG - HikariPool-1 - Added connection org.mariadb.jdbc.Connection@58e84ddb
+DEBUG - HikariPool-1 - Closing connection org.mariadb.jdbc.Connection@327bebc4: (connection has passed maxLifetime)
+DEBUG - HikariPool-1 - Added connection org.mariadb.jdbc.Connection@daa8296
+DEBUG - HikariPool-1 - Closing connection org.mariadb.jdbc.Connection@42aa7523: (connection has passed maxLifetime)
+DEBUG - HikariPool-1 - Added connection org.mariadb.jdbc.Connection@b035577
+DEBUG - HikariPool-1 - Closing connection org.mariadb.jdbc.Connection@2a16b9f8: (connection has passed maxLifetime)
+DEBUG - HikariPool-1 - Added connection org.mariadb.jdbc.Connection@15776324
+DEBUG - HikariPool-1 - Closing connection org.mariadb.jdbc.Connection@7941035b: (connection has passed maxLifetime)
+DEBUG - HikariPool-1 - Added connection org.mariadb.jdbc.Connection@1d331478
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Closing connection org.mariadb.jdbc.Connection@3c0aea08: (connection has passed maxLifetime)
+DEBUG - HikariPool-1 - Added connection org.mariadb.jdbc.Connection@78d312f8
+DEBUG - HikariPool-1 - Closing connection org.mariadb.jdbc.Connection@e1e2eb9: (connection has passed maxLifetime)
+DEBUG - HikariPool-1 - Added connection org.mariadb.jdbc.Connection@2db1decd
+DEBUG - HikariPool-1 - Closing connection org.mariadb.jdbc.Connection@7f26e2a9: (connection has passed maxLifetime)
+DEBUG - HikariPool-1 - Added connection org.mariadb.jdbc.Connection@70d7f463
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+DEBUG - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@66b7550d, started on Thu Jan 26 20:15:01 CET 2023
+DEBUG - Stopping beans in phase 2147482623
+DEBUG - Bean 'webServerGracefulShutdown' completed its stop procedure
+DEBUG - Stopping beans in phase 2147481599
+DEBUG - Bean 'webServerStartStop' completed its stop procedure
+DEBUG - Stopping beans in phase -2147483647
+DEBUG - Bean 'springBootLoggingLifecycle' completed its stop procedure
+DEBUG - Unregistering JMX-exposed beans on shutdown
+DEBUG - Unregistering JMX-exposed beans
+DEBUG - Shutting down ExecutorService 'applicationTaskExecutor'
+INFO  - Closing JPA EntityManagerFactory for persistence unit 'default'
+DEBUG - HHH000031: Closing
+DEBUG - Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@749491bb] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@f793f15]
+DEBUG - Implicitly destroying ServiceRegistry on de-registration of all child ServiceRegistries
+DEBUG - Implicitly destroying Boot-strap registry on de-registration of all child ServiceRegistries
+INFO  - HikariPool-1 - Shutdown initiated...
+DEBUG - HikariPool-1 - Before shutdown stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Closing connection org.mariadb.jdbc.Connection@18d60674: (connection evicted)
+DEBUG - HikariPool-1 - Closing connection org.mariadb.jdbc.Connection@2d1cf2c4: (connection evicted)
+DEBUG - HikariPool-1 - Closing connection org.mariadb.jdbc.Connection@58e84ddb: (connection evicted)
+DEBUG - HikariPool-1 - Closing connection org.mariadb.jdbc.Connection@daa8296: (connection evicted)
+DEBUG - HikariPool-1 - Closing connection org.mariadb.jdbc.Connection@b035577: (connection evicted)
+DEBUG - HikariPool-1 - Closing connection org.mariadb.jdbc.Connection@15776324: (connection evicted)
+DEBUG - HikariPool-1 - Closing connection org.mariadb.jdbc.Connection@1d331478: (connection evicted)
+DEBUG - HikariPool-1 - Closing connection org.mariadb.jdbc.Connection@78d312f8: (connection evicted)
+DEBUG - HikariPool-1 - Closing connection org.mariadb.jdbc.Connection@2db1decd: (connection evicted)
+DEBUG - HikariPool-1 - Closing connection org.mariadb.jdbc.Connection@70d7f463: (connection evicted)
+DEBUG - HikariPool-1 - After shutdown stats (total=0, active=0, idle=0, waiting=0)
+INFO  - HikariPool-1 - Shutdown completed.
