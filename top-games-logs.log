@@ -1,7 +1,8 @@
+DEBUG - Creating shared instance of singleton bean 'securityConfiguration'
 DEBUG - Creating shared instance of singleton bean 'gameController'
 DEBUG - Creating shared instance of singleton bean 'gameService'
 DEBUG - Creating shared instance of singleton bean 'gameRepository'
-DEBUG - Creating shared instance of singleton bean 'jpa.named-queries#4'
+DEBUG - Creating shared instance of singleton bean 'jpa.named-queries#1'
 DEBUG - Creating shared instance of singleton bean 'jpa.GameRepository.fragments#0'
 DEBUG - Creating shared instance of singleton bean 'jpaSharedEM_entityManagerFactory'
 DEBUG - Creating shared instance of singleton bean 'jpaMappingContext'
@@ -16,10 +17,11 @@ DEBUG - Finished creation of repository instance for com.example.topgamesdata.re
 DEBUG - Autowiring by type from bean name 'gameService' via constructor to bean named 'gameRepository'
 DEBUG - Autowiring by type from bean name 'gameController' via constructor to bean named 'gameService'
 DEBUG - Creating shared instance of singleton bean 'logController'
+DEBUG - Creating shared instance of singleton bean 'secretController'
 DEBUG - Creating shared instance of singleton bean 'userController'
 DEBUG - Creating shared instance of singleton bean 'userService'
 DEBUG - Creating shared instance of singleton bean 'userRepository'
-DEBUG - Creating shared instance of singleton bean 'jpa.named-queries#2'
+DEBUG - Creating shared instance of singleton bean 'jpa.named-queries#4'
 DEBUG - Creating shared instance of singleton bean 'jpa.UserRepository.fragments#0'
 DEBUG - Creating new EntityManager for shared EntityManager invocation
 DEBUG - Initializing repository instance for com.example.topgamesdata.repositories.UserRepository…
@@ -34,7 +36,7 @@ java.lang.Exception: exception just for purpose of providing stack trace
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:360)
-	at jdk.proxy2/jdk.proxy2.$Proxy108.createNamedQuery(Unknown Source)
+	at jdk.proxy2/jdk.proxy2.$Proxy112.createNamedQuery(Unknown Source)
 	at org.springframework.data.jpa.repository.query.NamedQuery.hasNamedQuery(NamedQuery.java:115)
 	at org.springframework.data.jpa.repository.query.NamedQuery.lookupFrom(NamedQuery.java:144)
 	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$DeclaredQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:180)
@@ -103,9 +105,24 @@ DEBUG - Finished creation of repository instance for com.example.topgamesdata.re
 DEBUG - Autowiring by type from bean name 'userService' via constructor to bean named 'userRepository'
 DEBUG - Autowiring by type from bean name 'userController' via constructor to bean named 'userService'
 DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.AutoConfigurationPackages'
+DEBUG - Creating shared instance of singleton bean 'webSecurityCustomizer'
 DEBUG - Creating shared instance of singleton bean 'org.springframework.data.jpa.util.JpaMetamodelCacheCleanup'
 DEBUG - Creating shared instance of singleton bean 'org.springframework.data.jpa.repository.support.JpaEvaluationContextExtension'
 DEBUG - Creating shared instance of singleton bean 'jpa.named-queries#0'
+DEBUG - Creating shared instance of singleton bean 'jpa.DeveloperRepository.fragments#0'
+DEBUG - Creating shared instance of singleton bean 'developerRepository'
+DEBUG - Creating new EntityManager for shared EntityManager invocation
+DEBUG - Initializing repository instance for com.example.topgamesdata.repositories.DeveloperRepository…
+DEBUG - Creating new EntityManager for shared EntityManager invocation
+DEBUG - Finished creation of repository instance for com.example.topgamesdata.repositories.DeveloperRepository.
+DEBUG - Creating shared instance of singleton bean 'jpa.named-queries#2'
+DEBUG - Creating shared instance of singleton bean 'jpa.OrderRepository.fragments#0'
+DEBUG - Creating shared instance of singleton bean 'orderRepository'
+DEBUG - Creating new EntityManager for shared EntityManager invocation
+DEBUG - Initializing repository instance for com.example.topgamesdata.repositories.OrderRepository…
+DEBUG - Creating new EntityManager for shared EntityManager invocation
+DEBUG - Finished creation of repository instance for com.example.topgamesdata.repositories.OrderRepository.
+DEBUG - Creating shared instance of singleton bean 'jpa.named-queries#3'
 DEBUG - Creating shared instance of singleton bean 'jpa.AdminsRepository.fragments#0'
 DEBUG - Creating shared instance of singleton bean 'adminsRepository'
 DEBUG - Creating new EntityManager for shared EntityManager invocation
@@ -121,7 +138,7 @@ java.lang.Exception: exception just for purpose of providing stack trace
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:360)
-	at jdk.proxy2/jdk.proxy2.$Proxy108.createNamedQuery(Unknown Source)
+	at jdk.proxy2/jdk.proxy2.$Proxy112.createNamedQuery(Unknown Source)
 	at org.springframework.data.jpa.repository.query.NamedQuery.hasNamedQuery(NamedQuery.java:115)
 	at org.springframework.data.jpa.repository.query.NamedQuery.lookupFrom(NamedQuery.java:144)
 	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$DeclaredQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:180)
@@ -159,20 +176,6 @@ java.lang.Exception: exception just for purpose of providing stack trace
 DEBUG - Did not find named query Admins.findByUsername
 DEBUG - Creating new EntityManager for shared EntityManager invocation
 DEBUG - Finished creation of repository instance for com.example.topgamesdata.repositories.AdminsRepository.
-DEBUG - Creating shared instance of singleton bean 'jpa.named-queries#1'
-DEBUG - Creating shared instance of singleton bean 'jpa.OrderRepository.fragments#0'
-DEBUG - Creating shared instance of singleton bean 'orderRepository'
-DEBUG - Creating new EntityManager for shared EntityManager invocation
-DEBUG - Initializing repository instance for com.example.topgamesdata.repositories.OrderRepository…
-DEBUG - Creating new EntityManager for shared EntityManager invocation
-DEBUG - Finished creation of repository instance for com.example.topgamesdata.repositories.OrderRepository.
-DEBUG - Creating shared instance of singleton bean 'jpa.named-queries#3'
-DEBUG - Creating shared instance of singleton bean 'jpa.DeveloperRepository.fragments#0'
-DEBUG - Creating shared instance of singleton bean 'developerRepository'
-DEBUG - Creating new EntityManager for shared EntityManager invocation
-DEBUG - Initializing repository instance for com.example.topgamesdata.repositories.DeveloperRepository…
-DEBUG - Creating new EntityManager for shared EntityManager invocation
-DEBUG - Finished creation of repository instance for com.example.topgamesdata.repositories.DeveloperRepository.
 DEBUG - Creating shared instance of singleton bean 'data-jpa.repository-aot-processor'
 DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration'
 DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.websocket.servlet.WebSocketServletAutoConfiguration'
@@ -187,7 +190,7 @@ DEBUG - Creating shared instance of singleton bean 'error'
 DEBUG - Creating shared instance of singleton bean 'beanNameViewResolver'
 DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration$DefaultErrorViewResolverConfiguration'
 DEBUG - Creating shared instance of singleton bean 'spring.web-org.springframework.boot.autoconfigure.web.WebProperties'
-DEBUG - Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration$DefaultErrorViewResolverConfiguration' via constructor to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2b0f373b'
+DEBUG - Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration$DefaultErrorViewResolverConfiguration' via constructor to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@66b7550d'
 DEBUG - Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration$DefaultErrorViewResolverConfiguration' via constructor to bean named 'spring.web-org.springframework.boot.autoconfigure.web.WebProperties'
 DEBUG - Creating shared instance of singleton bean 'conventionErrorViewResolver'
 DEBUG - Creating shared instance of singleton bean 'errorAttributes'
@@ -196,11 +199,11 @@ DEBUG - Autowiring by type from bean name 'basicErrorController' via factory met
 DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration'
 DEBUG - Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration' via constructor to bean named 'spring.mvc-org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties'
 DEBUG - Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration' via constructor to bean named 'spring.web-org.springframework.boot.autoconfigure.web.WebProperties'
-DEBUG - Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration' via constructor to bean named 'org.springframework.beans.factory.support.DefaultListableBeanFactory@180e6ac4'
+DEBUG - Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration' via constructor to bean named 'org.springframework.beans.factory.support.DefaultListableBeanFactory@50687efb'
 DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter'
 DEBUG - Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter' via constructor to bean named 'spring.web-org.springframework.boot.autoconfigure.web.WebProperties'
 DEBUG - Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter' via constructor to bean named 'spring.mvc-org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties'
-DEBUG - Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter' via constructor to bean named 'org.springframework.beans.factory.support.DefaultListableBeanFactory@180e6ac4'
+DEBUG - Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter' via constructor to bean named 'org.springframework.beans.factory.support.DefaultListableBeanFactory@50687efb'
 DEBUG - Creating shared instance of singleton bean 'resourceHandlerRegistrationCustomizer'
 DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$ResourceChainCustomizerConfiguration'
 DEBUG - Autowiring by type from bean name 'resourceHandlerRegistrationCustomizer' via factory method to bean named 'spring.web-org.springframework.boot.autoconfigure.web.WebProperties'
@@ -211,11 +214,23 @@ DEBUG - Creating shared instance of singleton bean 'openEntityManagerInViewInter
 WARN  - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 DEBUG - Autowiring by type from bean name 'openEntityManagerInViewInterceptorConfigurer' via factory method to bean named 'openEntityManagerInViewInterceptor'
 DEBUG - Creating shared instance of singleton bean 'org.springframework.data.web.config.SpringDataWebConfiguration'
-DEBUG - Autowiring by type from bean name 'org.springframework.data.web.config.SpringDataWebConfiguration' via constructor to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2b0f373b'
+DEBUG - Autowiring by type from bean name 'org.springframework.data.web.config.SpringDataWebConfiguration' via constructor to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@66b7550d'
+DEBUG - Creating shared instance of singleton bean 'org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration'
+DEBUG - Creating shared instance of singleton bean 'org.springframework.security.config.annotation.web.configuration.OAuth2ClientConfiguration$OAuth2ClientWebMvcSecurityConfiguration'
+DEBUG - Creating shared instance of singleton bean 'clientRegistrationRepository'
+DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.security.oauth2.client.servlet.OAuth2ClientRegistrationRepositoryConfiguration'
+DEBUG - Creating shared instance of singleton bean 'spring.security.oauth2.client-org.springframework.boot.autoconfigure.security.oauth2.client.OAuth2ClientProperties'
+DEBUG - Autowiring by type from bean name 'clientRegistrationRepository' via factory method to bean named 'spring.security.oauth2.client-org.springframework.boot.autoconfigure.security.oauth2.client.OAuth2ClientProperties'
+DEBUG - Creating shared instance of singleton bean 'authorizedClientRepository'
+DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.security.oauth2.client.servlet.OAuth2WebSecurityConfiguration'
+DEBUG - Creating shared instance of singleton bean 'authorizedClientService'
+DEBUG - Autowiring by type from bean name 'authorizedClientService' via factory method to bean named 'clientRegistrationRepository'
+DEBUG - Autowiring by type from bean name 'authorizedClientRepository' via factory method to bean named 'authorizedClientService'
 DEBUG - Creating shared instance of singleton bean 'requestMappingHandlerAdapter'
 DEBUG - Creating shared instance of singleton bean 'mvcContentNegotiationManager'
 DEBUG - Creating shared instance of singleton bean 'mvcConversionService'
 DEBUG - Creating shared instance of singleton bean 'mvcValidator'
+WARN  - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
 DEBUG - Failed to set up a Bean Validation provider
 jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
 	at jakarta.validation.Validation$GenericBootstrapImpl.configure(Validation.java:291)
@@ -276,15 +291,15 @@ DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.aut
 DEBUG - Creating shared instance of singleton bean 'jsonMixinModule'
 DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonMixinConfiguration'
 DEBUG - Creating shared instance of singleton bean 'jsonMixinModuleEntries'
-DEBUG - Autowiring by type from bean name 'jsonMixinModuleEntries' via factory method to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2b0f373b'
+DEBUG - Autowiring by type from bean name 'jsonMixinModuleEntries' via factory method to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@66b7550d'
 DEBUG - @EnableAutoConfiguration was declared on a class in the package 'com.example.topgamesdata,com.example.topgameswebapi'. Automatic @Repository and @Entity scanning is enabled.
-DEBUG - Autowiring by type from bean name 'jsonMixinModule' via factory method to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2b0f373b'
+DEBUG - Autowiring by type from bean name 'jsonMixinModule' via factory method to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@66b7550d'
 DEBUG - Autowiring by type from bean name 'jsonMixinModule' via factory method to bean named 'jsonMixinModuleEntries'
 DEBUG - Creating shared instance of singleton bean 'jsonComponentModule'
 DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration'
 DEBUG - Creating shared instance of singleton bean 'jacksonGeoModule'
 DEBUG - Creating shared instance of singleton bean 'org.springframework.data.web.config.SpringDataJacksonConfiguration'
-DEBUG - Autowiring by type from bean name 'jacksonObjectMapperBuilder' via factory method to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2b0f373b'
+DEBUG - Autowiring by type from bean name 'jacksonObjectMapperBuilder' via factory method to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@66b7550d'
 DEBUG - Autowiring by type from bean name 'jacksonObjectMapperBuilder' via factory method to bean named 'standardJacksonObjectMapperBuilderCustomizer'
 DEBUG - Autowiring by type from bean name 'jacksonObjectMapper' via factory method to bean named 'jacksonObjectMapperBuilder'
 DEBUG - Autowiring by type from bean name 'mappingJackson2HttpMessageConverter' via factory method to bean named 'jacksonObjectMapper'
@@ -301,7 +316,7 @@ DEBUG - Initializing ExecutorService 'applicationTaskExecutor'
 DEBUG - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
 DEBUG - Creating shared instance of singleton bean 'welcomePageHandlerMapping'
 DEBUG - Creating shared instance of singleton bean 'mvcResourceUrlProvider'
-DEBUG - Autowiring by type from bean name 'welcomePageHandlerMapping' via factory method to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2b0f373b'
+DEBUG - Autowiring by type from bean name 'welcomePageHandlerMapping' via factory method to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@66b7550d'
 DEBUG - Autowiring by type from bean name 'welcomePageHandlerMapping' via factory method to bean named 'mvcConversionService'
 DEBUG - Autowiring by type from bean name 'welcomePageHandlerMapping' via factory method to bean named 'mvcResourceUrlProvider'
 DEBUG - Creating shared instance of singleton bean 'localeResolver'
@@ -315,32 +330,35 @@ DEBUG -
 	c.e.t.c.GameController:
 	{GET [/api/game/getAll]}: getAllGames()
 	{GET [/api/game/{id}]}: getGameById(Long)
-	{POST [/api/game/dev/deleteAll]}: deleteAllGames()
-	{DELETE [/api/game/delete/{id}]}: deleteGame(Long)
+	{POST [/api/game/dev/addSamples]}: addSamples()
 	{PUT [/api/game/update/{id}]}: updateGame(Game,Long)
 	{POST [/api/game/add]}: createGame(Game)
-	{POST [/api/game/dev/addSamples]}: addSamples()
+	{POST [/api/game/dev/deleteAll]}: deleteAllGames()
+	{DELETE [/api/game/delete/{id}]}: deleteGame(Long)
 DEBUG - 
 	c.e.t.c.LogController:
-	{GET [/logs/debug]}: getDebugLogs()
-	{GET [/logs/error]}: getErrorLogs()
 	{GET [/logs/warning]}: getWarningLogs()
-	{GET [/logs/info]}: getInfoLogs()
 	{GET [/logs/all]}: getLogs()
+	{GET [/logs/error]}: getErrorLogs()
+	{GET [/logs/debug]}: getDebugLogs()
+	{GET [/logs/info]}: getInfoLogs()
+DEBUG - 
+	c.e.t.c.SecretController:
+	{GET [/secret]}: wowYouAreLoggedInSoCool()
 DEBUG - 
 	c.e.t.c.UserController:
-	{PUT [/api/user/update/{id}]}: updateUserById(Long,User)
-	{GET [/api/user/{id}]}: getUserById(Long)
-	{DELETE [/api/user/delete/{id}]}: deleteUserById(Long)
-	{POST [/api/user/dev/deleteAll]}: deleteAllUsers()
-	{GET [/api/user/getAll]}: getAllUsers()
 	{POST [/api/user/dev/addSamples]}: addSamples()
+	{DELETE [/api/user/delete/{id}]}: deleteUserById(Long)
+	{GET [/api/user/getAll]}: getAllUsers()
 	{POST [/api/user/add]}: createUser(User)
+	{GET [/api/user/{id}]}: getUserById(Long)
+	{POST [/api/user/dev/deleteAll]}: deleteAllUsers()
+	{PUT [/api/user/update/{id}]}: updateUserById(Long,User)
 DEBUG - 
 	o.s.b.a.w.s.e.BasicErrorController:
 	{ [/error]}: error(HttpServletRequest)
 	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
-DEBUG - 21 mappings in 'requestMappingHandlerMapping'
+DEBUG - 22 mappings in 'requestMappingHandlerMapping'
 DEBUG - Creating shared instance of singleton bean 'mvcPatternParser'
 DEBUG - Creating shared instance of singleton bean 'mvcUrlPathHelper'
 DEBUG - Creating shared instance of singleton bean 'mvcPathMatcher'
@@ -374,7 +392,7 @@ DEBUG - Autowiring by type from bean name 'mvcViewResolver' via factory method t
 DEBUG - Creating shared instance of singleton bean 'viewNameTranslator'
 DEBUG - Creating shared instance of singleton bean 'defaultViewResolver'
 DEBUG - Creating shared instance of singleton bean 'viewResolver'
-DEBUG - Autowiring by type from bean name 'viewResolver' via factory method to bean named 'org.springframework.beans.factory.support.DefaultListableBeanFactory@180e6ac4'
+DEBUG - Autowiring by type from bean name 'viewResolver' via factory method to bean named 'org.springframework.beans.factory.support.DefaultListableBeanFactory@50687efb'
 DEBUG - Creating shared instance of singleton bean 'viewResolver'
 DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration'
 DEBUG - Creating shared instance of singleton bean 'spring.jmx-org.springframework.boot.autoconfigure.jmx.JmxProperties'
@@ -382,9 +400,9 @@ DEBUG - Autowiring by type from bean name 'org.springframework.boot.autoconfigur
 DEBUG - Creating shared instance of singleton bean 'mbeanExporter'
 DEBUG - Creating shared instance of singleton bean 'objectNamingStrategy'
 DEBUG - Autowiring by type from bean name 'mbeanExporter' via factory method to bean named 'objectNamingStrategy'
-DEBUG - Autowiring by type from bean name 'mbeanExporter' via factory method to bean named 'org.springframework.beans.factory.support.DefaultListableBeanFactory@180e6ac4'
+DEBUG - Autowiring by type from bean name 'mbeanExporter' via factory method to bean named 'org.springframework.beans.factory.support.DefaultListableBeanFactory@50687efb'
 DEBUG - Creating shared instance of singleton bean 'mbeanServer'
-DEBUG - Found MBeanServer: com.sun.jmx.mbeanserver.JmxMBeanServer@77468bd9
+DEBUG - Found MBeanServer: com.sun.jmx.mbeanserver.JmxMBeanServer@7006c658
 DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.admin.SpringApplicationAdminJmxAutoConfiguration'
 DEBUG - Creating shared instance of singleton bean 'springApplicationAdminRegistrar'
 DEBUG - Autowiring by type from bean name 'springApplicationAdminRegistrar' via factory method to bean named 'environment'
@@ -427,6 +445,43 @@ DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.aut
 DEBUG - Creating shared instance of singleton bean 'namedParameterJdbcTemplate'
 DEBUG - Autowiring by type from bean name 'namedParameterJdbcTemplate' via factory method to bean named 'jdbcTemplate'
 DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration'
+DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.security.oauth2.client.servlet.OAuth2WebSecurityConfiguration$OAuth2SecurityFilterChainConfiguration'
+DEBUG - Creating shared instance of singleton bean 'oauth2SecurityFilterChain'
+DEBUG - Creating shared instance of singleton bean 'org.springframework.security.config.annotation.web.configuration.HttpSecurityConfiguration'
+DEBUG - Creating shared instance of singleton bean 'org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration'
+DEBUG - Creating shared instance of singleton bean 'enableGlobalAuthenticationAutowiredConfigurer'
+DEBUG - Autowiring by type from bean name 'enableGlobalAuthenticationAutowiredConfigurer' via factory method to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@66b7550d'
+DEBUG - Creating shared instance of singleton bean 'initializeUserDetailsBeanManagerConfigurer'
+DEBUG - Autowiring by type from bean name 'initializeUserDetailsBeanManagerConfigurer' via factory method to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@66b7550d'
+DEBUG - Creating shared instance of singleton bean 'initializeAuthenticationProviderBeanManagerConfigurer'
+DEBUG - Autowiring by type from bean name 'initializeAuthenticationProviderBeanManagerConfigurer' via factory method to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@66b7550d'
+DEBUG - Creating shared instance of singleton bean 'objectPostProcessor'
+DEBUG - Creating shared instance of singleton bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration'
+DEBUG - Autowiring by type from bean name 'objectPostProcessor' via factory method to bean named 'org.springframework.beans.factory.support.DefaultListableBeanFactory@50687efb'
+DEBUG - Creating shared instance of singleton bean 'authenticationManagerBuilder'
+DEBUG - Autowiring by type from bean name 'authenticationManagerBuilder' via factory method to bean named 'objectPostProcessor'
+DEBUG - Autowiring by type from bean name 'authenticationManagerBuilder' via factory method to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@66b7550d'
+DEBUG - Creating shared instance of singleton bean 'authenticationEventPublisher'
+DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration'
+DEBUG - Autowiring by type from bean name 'authenticationEventPublisher' via factory method to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@66b7550d'
+DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.security.servlet.SpringBootWebSecurityConfiguration$WebSecurityEnablerConfiguration'
+DEBUG - No authenticationProviders and no parentAuthenticationManager defined. Returning null.
+DEBUG - Autowiring by type from bean name 'oauth2SecurityFilterChain' via factory method to bean named 'org.springframework.security.config.annotation.web.configuration.HttpSecurityConfiguration.httpSecurity'
+INFO  - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@13b5598b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@141c66db, org.springframework.security.web.context.SecurityContextHolderFilter@3fe21d0e, org.springframework.security.web.header.HeaderWriterFilter@47800bd7, org.springframework.security.web.csrf.CsrfFilter@14af57c3, org.springframework.security.web.authentication.logout.LogoutFilter@2be208db, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@4552e288, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@5c648e38, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@1a67bde5, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@df34b01, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@18f794e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@a0e35c3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6ae5e1cf, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@389a9ff6, org.springframework.security.oauth2.client.web.OAuth2AuthorizationCodeGrantFilter@669e730d, org.springframework.security.web.access.ExceptionTranslationFilter@2dbc66f0, org.springframework.security.web.access.intercept.AuthorizationFilter@5f8a29ca]
+DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.security.oauth2.client.servlet.OAuth2ClientAutoConfiguration'
+DEBUG - Creating shared instance of singleton bean 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration'
+DEBUG - Creating shared instance of singleton bean 'delegatingApplicationListener'
+DEBUG - Creating shared instance of singleton bean 'springSecurityFilterChain'
+DEBUG - Creating shared instance of singleton bean 'mvcHandlerMappingIntrospector'
+WARN  - You are asking Spring Security to ignore Mvc [pattern='/api/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+INFO  - Will not secure Mvc [pattern='/api/**']
+WARN  - You are asking Spring Security to ignore Mvc [pattern='/logs/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+INFO  - Will not secure Mvc [pattern='/logs/**']
+DEBUG - Creating shared instance of singleton bean 'webSecurityExpressionHandler'
+DEBUG - Creating shared instance of singleton bean 'privilegeEvaluator'
+DEBUG - Creating shared instance of singleton bean 'requestDataValueProcessor'
+DEBUG - Creating shared instance of singleton bean 'org.springframework.security.config.annotation.web.configuration.OAuth2ClientConfiguration'
+DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.security.servlet.SpringBootWebSecurityConfiguration'
 DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.sql.init.SqlInitializationAutoConfiguration'
 DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.task.TaskSchedulingAutoConfiguration'
 DEBUG - Creating shared instance of singleton bean 'taskSchedulerBuilder'
@@ -450,33 +505,10 @@ DEBUG - Starting beans in phase -2147483647
 DEBUG - Successfully started bean 'springBootLoggingLifecycle'
 DEBUG - Starting beans in phase 2147481599
 INFO  - Starting ProtocolHandler ["http-nio-8081"]
-WARN  - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
-DEBUG - Unregistering JMX-exposed beans on shutdown
-DEBUG - Unregistering JMX-exposed beans
-DEBUG - Shutting down ExecutorService 'applicationTaskExecutor'
-INFO  - Closing JPA EntityManagerFactory for persistence unit 'default'
-DEBUG - HHH000031: Closing
-DEBUG - Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@610d0067] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@181098bf]
-DEBUG - Implicitly destroying ServiceRegistry on de-registration of all child ServiceRegistries
-DEBUG - Implicitly destroying Boot-strap registry on de-registration of all child ServiceRegistries
-INFO  - HikariPool-1 - Shutdown initiated...
-DEBUG - HikariPool-1 - Before shutdown stats (total=10, active=0, idle=10, waiting=0)
-DEBUG - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@266da047: (connection evicted)
-DEBUG - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@7b0d70da: (connection evicted)
-DEBUG - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@3a307ae1: (connection evicted)
-DEBUG - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@b4007bd: (connection evicted)
-DEBUG - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@5a1f85ae: (connection evicted)
-DEBUG - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@5e513b10: (connection evicted)
-DEBUG - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@6192a644: (connection evicted)
-DEBUG - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@6144aab6: (connection evicted)
-DEBUG - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@23f1b593: (connection evicted)
-DEBUG - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@52a20ce: (connection evicted)
-DEBUG - HikariPool-1 - After shutdown stats (total=0, active=0, idle=0, waiting=0)
-INFO  - HikariPool-1 - Shutdown completed.
-INFO  - Pausing ProtocolHandler ["http-nio-8081"]
-INFO  - Stopping service [Tomcat]
-INFO  - Stopping ProtocolHandler ["http-nio-8081"]
-INFO  - Destroying ProtocolHandler ["http-nio-8081"]
+INFO  - Tomcat started on port(s): 8081 (http) with context path ''
+DEBUG - Successfully started bean 'webServerStartStop'
+DEBUG - Starting beans in phase 2147482623
+DEBUG - Successfully started bean 'webServerGracefulShutdown'
 DEBUG - 
 
 
@@ -704,6 +736,28 @@ Positive matches:
    NoOpCacheConfiguration matched:
       - Cache org.springframework.boot.autoconfigure.cache.NoOpCacheConfiguration automatic cache type (CacheCondition)
 
+   OAuth2ClientAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'org.springframework.security.config.annotation.web.configuration.EnableWebSecurity', 'org.springframework.security.oauth2.client.registration.ClientRegistration' (OnClassCondition)
+      - found 'session' scope (OnWebApplicationCondition)
+
+   OAuth2ClientRegistrationRepositoryConfiguration matched:
+      - OAuth2 Clients Configured Condition found registered clients 806856711257-r1i8bpofb8o2f0hhe3hoetef318k6vf1.apps.googleusercontent.com (ClientsConfiguredCondition)
+
+   OAuth2ClientRegistrationRepositoryConfiguration#clientRegistrationRepository matched:
+      - @ConditionalOnMissingBean (types: org.springframework.security.oauth2.client.registration.ClientRegistrationRepository; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   OAuth2WebSecurityConfiguration matched:
+      - @ConditionalOnBean (types: org.springframework.security.oauth2.client.registration.ClientRegistrationRepository; SearchStrategy: all) found bean 'clientRegistrationRepository' (OnBeanCondition)
+
+   OAuth2WebSecurityConfiguration#authorizedClientRepository matched:
+      - @ConditionalOnMissingBean (types: org.springframework.security.oauth2.client.web.OAuth2AuthorizedClientRepository; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   OAuth2WebSecurityConfiguration#authorizedClientService matched:
+      - @ConditionalOnMissingBean (types: org.springframework.security.oauth2.client.OAuth2AuthorizedClientService; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   OAuth2WebSecurityConfiguration.OAuth2SecurityFilterChainConfiguration matched:
+      - AllNestedConditions 2 matched 0 did not; NestedCondition on DefaultWebSecurityCondition.Beans @ConditionalOnMissingBean (types: org.springframework.security.web.SecurityFilterChain; SearchStrategy: all) did not find any beans; NestedCondition on DefaultWebSecurityCondition.Classes @ConditionalOnClass found required classes 'org.springframework.security.web.SecurityFilterChain', 'org.springframework.security.config.annotation.web.builders.HttpSecurity' (DefaultWebSecurityCondition)
+
    PersistenceExceptionTranslationAutoConfiguration matched:
       - @ConditionalOnClass found required class 'org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor' (OnClassCondition)
 
@@ -724,6 +778,19 @@ Positive matches:
    RestTemplateAutoConfiguration#restTemplateBuilderConfigurer matched:
       - @ConditionalOnMissingBean (types: org.springframework.boot.autoconfigure.web.client.RestTemplateBuilderConfigurer; SearchStrategy: all) did not find any beans (OnBeanCondition)
 
+   SecurityAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.security.authentication.DefaultAuthenticationEventPublisher' (OnClassCondition)
+
+   SecurityAutoConfiguration#authenticationEventPublisher matched:
+      - @ConditionalOnMissingBean (types: org.springframework.security.authentication.AuthenticationEventPublisher; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SecurityFilterAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'org.springframework.security.web.context.AbstractSecurityWebApplicationInitializer', 'org.springframework.security.config.http.SessionCreationPolicy' (OnClassCondition)
+      - found 'session' scope (OnWebApplicationCondition)
+
+   SecurityFilterAutoConfiguration#securityFilterChainRegistration matched:
+      - @ConditionalOnBean (names: springSecurityFilterChain; SearchStrategy: all) found bean 'springSecurityFilterChain' (OnBeanCondition)
+
    ServletWebServerFactoryAutoConfiguration matched:
       - @ConditionalOnClass found required class 'jakarta.servlet.ServletRequest' (OnClassCondition)
       - found 'session' scope (OnWebApplicationCondition)
@@ -743,6 +810,13 @@ Positive matches:
 
    SpringApplicationAdminJmxAutoConfiguration#springApplicationAdminRegistrar matched:
       - @ConditionalOnMissingBean (types: org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SpringBootWebSecurityConfiguration matched:
+      - found 'session' scope (OnWebApplicationCondition)
+
+   SpringBootWebSecurityConfiguration.WebSecurityEnablerConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.security.config.annotation.web.configuration.EnableWebSecurity' (OnClassCondition)
+      - @ConditionalOnMissingBean (names: springSecurityFilterChain; SearchStrategy: all) did not find any beans (OnBeanCondition)
 
    SpringDataWebAutoConfiguration matched:
       - @ConditionalOnClass found required classes 'org.springframework.data.web.PageableHandlerMethodArgumentResolver', 'org.springframework.web.servlet.config.annotation.WebMvcConfigurer' (OnClassCondition)
@@ -1142,7 +1216,7 @@ Negative matches:
 
    JpaRepositoriesAutoConfiguration:
       Did not match:
-         - @ConditionalOnMissingBean (types: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean,org.springframework.data.jpa.repository.config.JpaRepositoryConfigExtension; SearchStrategy: all) found beans of type 'org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean' &adminsRepository, &orderRepository, &userRepository, &developerRepository, &gameRepository and found beans of type 'org.springframework.data.jpa.repository.config.JpaRepositoryConfigExtension' org.springframework.data.jpa.repository.config.JpaRepositoryConfigExtension#0 (OnBeanCondition)
+         - @ConditionalOnMissingBean (types: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean,org.springframework.data.jpa.repository.config.JpaRepositoryConfigExtension; SearchStrategy: all) found beans of type 'org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean' &developerRepository, &gameRepository, &orderRepository, &adminsRepository, &userRepository and found beans of type 'org.springframework.data.jpa.repository.config.JpaRepositoryConfigExtension' org.springframework.data.jpa.repository.config.JpaRepositoryConfigExtension#0 (OnBeanCondition)
       Matched:
          - @ConditionalOnClass found required class 'org.springframework.data.jpa.repository.JpaRepository' (OnClassCondition)
          - @ConditionalOnProperty (spring.data.jpa.repositories.enabled=true) matched (OnPropertyCondition)
@@ -1235,10 +1309,6 @@ Negative matches:
       Did not match:
          - @ConditionalOnClass did not find required class 'io.netty.util.NettyRuntime' (OnClassCondition)
 
-   OAuth2ClientAutoConfiguration:
-      Did not match:
-         - @ConditionalOnClass did not find required class 'org.springframework.security.config.annotation.web.configuration.EnableWebSecurity' (OnClassCondition)
-
    OAuth2ResourceServerAutoConfiguration:
       Did not match:
          - @ConditionalOnClass did not find required class 'org.springframework.security.oauth2.server.resource.authentication.BearerTokenAuthenticationToken' (OnClassCondition)
@@ -1321,7 +1391,7 @@ Negative matches:
 
    ReactiveOAuth2ResourceServerAutoConfiguration:
       Did not match:
-         - @ConditionalOnClass did not find required class 'org.springframework.security.config.annotation.web.reactive.EnableWebFluxSecurity' (OnClassCondition)
+         - @ConditionalOnWebApplication did not find reactive web application classes (OnWebApplicationCondition)
 
    ReactiveSecurityAutoConfiguration:
       Did not match:
@@ -1329,7 +1399,9 @@ Negative matches:
 
    ReactiveUserDetailsServiceAutoConfiguration:
       Did not match:
-         - @ConditionalOnClass did not find required class 'org.springframework.security.authentication.ReactiveAuthenticationManager' (OnClassCondition)
+         - AnyNestedCondition 0 matched 2 did not; NestedCondition on ReactiveUserDetailsServiceAutoConfiguration.ReactiveUserDetailsServiceCondition.ReactiveWebApplicationCondition did not find reactive web application classes; NestedCondition on ReactiveUserDetailsServiceAutoConfiguration.ReactiveUserDetailsServiceCondition.RSocketSecurityEnabledCondition @ConditionalOnBean (types: org.springframework.messaging.rsocket.annotation.support.RSocketMessageHandler; SearchStrategy: all) did not find any beans of type org.springframework.messaging.rsocket.annotation.support.RSocketMessageHandler (ReactiveUserDetailsServiceAutoConfiguration.ReactiveUserDetailsServiceCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.security.authentication.ReactiveAuthenticationManager' (OnClassCondition)
 
    ReactiveWebServerFactoryAutoConfiguration:
       Did not match:
@@ -1359,13 +1431,9 @@ Negative matches:
       Did not match:
          - @ConditionalOnClass did not find required class 'org.springframework.security.saml2.provider.service.registration.RelyingPartyRegistrationRepository' (OnClassCondition)
 
-   SecurityAutoConfiguration:
+   SecurityDataConfiguration:
       Did not match:
-         - @ConditionalOnClass did not find required class 'org.springframework.security.authentication.DefaultAuthenticationEventPublisher' (OnClassCondition)
-
-   SecurityFilterAutoConfiguration:
-      Did not match:
-         - @ConditionalOnClass did not find required class 'org.springframework.security.config.http.SessionCreationPolicy' (OnClassCondition)
+         - @ConditionalOnClass did not find required class 'org.springframework.security.data.repository.query.SecurityEvaluationContextExtension' (OnClassCondition)
 
    SendGridAutoConfiguration:
       Did not match:
@@ -1386,6 +1454,10 @@ Negative matches:
    SessionAutoConfiguration:
       Did not match:
          - @ConditionalOnClass did not find required class 'org.springframework.session.Session' (OnClassCondition)
+
+   SpringBootWebSecurityConfiguration.SecurityFilterChainConfiguration:
+      Did not match:
+         - AllNestedConditions 1 matched 1 did not; NestedCondition on DefaultWebSecurityCondition.Beans @ConditionalOnMissingBean (types: org.springframework.security.web.SecurityFilterChain; SearchStrategy: all) found beans of type 'org.springframework.security.web.SecurityFilterChain' oauth2SecurityFilterChain; NestedCondition on DefaultWebSecurityCondition.Classes @ConditionalOnClass found required classes 'org.springframework.security.web.SecurityFilterChain', 'org.springframework.security.config.annotation.web.builders.HttpSecurity' (DefaultWebSecurityCondition)
 
    TaskSchedulingAutoConfiguration#scheduledBeanLazyInitializationExcludeFilter:
       Did not match:
@@ -1409,7 +1481,9 @@ Negative matches:
 
    UserDetailsServiceAutoConfiguration:
       Did not match:
-         - @ConditionalOnClass did not find required class 'org.springframework.security.authentication.AuthenticationManager' (OnClassCondition)
+         - @ConditionalOnMissingBean (types: org.springframework.security.authentication.AuthenticationManager,org.springframework.security.authentication.AuthenticationProvider,org.springframework.security.core.userdetails.UserDetailsService,org.springframework.security.authentication.AuthenticationManagerResolver,org.springframework.security.oauth2.jwt.JwtDecoder,org.springframework.security.oauth2.server.resource.introspection.OpaqueTokenIntrospector,org.springframework.security.oauth2.client.registration.ClientRegistrationRepository,org.springframework.security.saml2.provider.service.registration.RelyingPartyRegistrationRepository; SearchStrategy: all) found beans of type 'org.springframework.security.oauth2.client.registration.ClientRegistrationRepository' clientRegistrationRepository (OnBeanCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.security.authentication.AuthenticationManager' (OnClassCondition)
 
    ValidationAutoConfiguration:
       Did not match:
@@ -1493,62 +1567,1738 @@ Unconditional classes:
 
 
 
-DEBUG - Application failed to start due to an exception
-org.springframework.boot.web.server.PortInUseException: Port 8081 is already in use
-	at org.springframework.boot.web.server.PortInUseException.lambda$throwIfPortBindingException$0(PortInUseException.java:70)
-	at org.springframework.boot.web.server.PortInUseException.lambda$ifPortBindingException$1(PortInUseException.java:85)
-	at org.springframework.boot.web.server.PortInUseException.ifCausedBy(PortInUseException.java:103)
-	at org.springframework.boot.web.server.PortInUseException.ifPortBindingException(PortInUseException.java:82)
-	at org.springframework.boot.web.server.PortInUseException.throwIfPortBindingException(PortInUseException.java:69)
-	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:228)
-	at org.springframework.boot.web.servlet.context.WebServerStartStopLifecycle.start(WebServerStartStopLifecycle.java:44)
-	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178)
-	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356)
-	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
-	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155)
-	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123)
-	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:932)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:587)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:432)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1291)
-	at com.example.topgameswebapi.TopgamesWebApiApplication.main(TopgamesWebApiApplication.java:28)
-Caused by: java.lang.IllegalArgumentException: standardService.connector.startFailed
-	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:238)
-	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:282)
-	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:213)
-	... 15 common frames omitted
-Caused by: org.apache.catalina.LifecycleException: Protocol handler start failed
-	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1084)
-	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
-	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:234)
-	... 17 common frames omitted
-Caused by: java.net.BindException: Address already in use
-	at java.base/sun.nio.ch.Net.bind0(Native Method)
-	at java.base/sun.nio.ch.Net.bind(Net.java:555)
-	at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:337)
-	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:294)
-	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:246)
-	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:201)
-	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1172)
-	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1258)
-	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:586)
-	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1081)
-	... 19 common frames omitted
-ERROR - 
+INFO  - Started TopgamesWebApiApplication in 4.259 seconds (process running for 5.093)
+DEBUG - Application availability state LivenessState changed to CORRECT
+DEBUG - Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+INFO  - Initializing Spring DispatcherServlet 'dispatcherServlet'
+INFO  - Initializing Servlet 'dispatcherServlet'
+DEBUG - Detected StandardServletMultipartResolver
+DEBUG - Detected AcceptHeaderLocaleResolver
+DEBUG - Detected FixedThemeResolver
+DEBUG - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@760d6350
+DEBUG - Detected org.springframework.web.servlet.support.SessionFlashMapManager@1248f83
+DEBUG - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+INFO  - Completed initialization in 1 ms
+DEBUG - Mapped to com.example.topgameswebapi.controller.LogController#getLogs()
+DEBUG - Mapped to com.example.topgameswebapi.controller.LogController#getLogs()
+DEBUG - GET "/logs/all", parameters={}
+DEBUG - Mapped to com.example.topgameswebapi.controller.LogController#getLogs()
+DEBUG - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+DEBUG - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+DEBUG - Writing [[DEBUG - Creating shared instance of singleton bean 'securityConfiguration', DEBUG - Creating shared (truncated)...]
+DEBUG - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+DEBUG - Completed 200 OK
+DEBUG - Mapped to com.example.topgameswebapi.controller.LogController#getInfoLogs()
+DEBUG - Mapped to com.example.topgameswebapi.controller.LogController#getInfoLogs()
+DEBUG - GET "/logs/info", parameters={}
+DEBUG - Mapped to com.example.topgameswebapi.controller.LogController#getInfoLogs()
+DEBUG - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+DEBUG - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+DEBUG - Writing [[INFO  - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilt (truncated)...]
+DEBUG - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+DEBUG - Completed 200 OK
+DEBUG - Mapped to com.example.topgameswebapi.controller.LogController#getWarningLogs()
+DEBUG - Mapped to com.example.topgameswebapi.controller.LogController#getWarningLogs()
+DEBUG - GET "/logs/warning", parameters={}
+DEBUG - Mapped to com.example.topgameswebapi.controller.LogController#getWarningLogs()
+DEBUG - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+DEBUG - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+DEBUG - Writing [[WARN  - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed (truncated)...]
+DEBUG - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+DEBUG - Completed 200 OK
+DEBUG - Mapped to com.example.topgameswebapi.controller.LogController#getErrorLogs()
+DEBUG - Mapped to com.example.topgameswebapi.controller.LogController#getErrorLogs()
+DEBUG - GET "/logs/error", parameters={}
+DEBUG - Mapped to com.example.topgameswebapi.controller.LogController#getErrorLogs()
+DEBUG - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+DEBUG - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+DEBUG - Writing [[]]
+DEBUG - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+DEBUG - Completed 200 OK
+DEBUG - Mapped to com.example.topgameswebapi.controller.LogController#getDebugLogs()
+DEBUG - Mapped to com.example.topgameswebapi.controller.LogController#getDebugLogs()
+DEBUG - GET "/logs/debug", parameters={}
+DEBUG - Mapped to com.example.topgameswebapi.controller.LogController#getDebugLogs()
+DEBUG - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+DEBUG - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+DEBUG - Writing [[DEBUG - Creating shared instance of singleton bean 'securityConfiguration', DEBUG - Creating shared (truncated)...]
+DEBUG - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+DEBUG - Completed 200 OK
+DEBUG - Mapped to com.example.topgameswebapi.controller.GameController#addSamples()
+DEBUG - POST "/api/game/dev/addSamples", parameters={}
+DEBUG - Mapped to com.example.topgameswebapi.controller.GameController#addSamples()
+DEBUG - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+INFO  - Adding sample games
+DEBUG - Found thread-bound EntityManager [SessionImpl(703579937<open>)] for JPA transaction
+DEBUG - Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.saveAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+DEBUG - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+DEBUG - begin
+DEBUG - execute query: set autocommit=0
+DEBUG - System variable change:  autocommit = OFF
+DEBUG - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@7d87da28]
+DEBUG - jakarta.persistence.PersistenceUnitUtil.getIdentifier is only intended to work with enhanced entities (although Hibernate also adapts this support to its proxies); however the passed entity was not enhanced (nor a proxy).. may not be able to read identifier
+DEBUG - Executing identity-insert immediately
+DEBUG - insert into developer (country, name) values (?, ?)
+DEBUG - execute query: insert into developer (country, name) values (?, ?)
+DEBUG - Natively generated identity: 1
+DEBUG - Executing identity-insert immediately
+DEBUG - insert into game (description, developer_id, name, release_date) values (?, ?, ?, ?)
+DEBUG - execute query: insert into game (description, developer_id, name, release_date) values (?, ?, ?, ?)
+DEBUG - Natively generated identity: 1
+DEBUG - jakarta.persistence.PersistenceUnitUtil.getIdentifier is only intended to work with enhanced entities (although Hibernate also adapts this support to its proxies); however the passed entity was not enhanced (nor a proxy).. may not be able to read identifier
+DEBUG - Executing identity-insert immediately
+DEBUG - insert into developer (country, name) values (?, ?)
+DEBUG - execute query: insert into developer (country, name) values (?, ?)
+DEBUG - Natively generated identity: 2
+DEBUG - Executing identity-insert immediately
+DEBUG - insert into game (description, developer_id, name, release_date) values (?, ?, ?, ?)
+DEBUG - execute query: insert into game (description, developer_id, name, release_date) values (?, ?, ?, ?)
+DEBUG - Natively generated identity: 2
+DEBUG - jakarta.persistence.PersistenceUnitUtil.getIdentifier is only intended to work with enhanced entities (although Hibernate also adapts this support to its proxies); however the passed entity was not enhanced (nor a proxy).. may not be able to read identifier
+DEBUG - Executing identity-insert immediately
+DEBUG - insert into developer (country, name) values (?, ?)
+DEBUG - execute query: insert into developer (country, name) values (?, ?)
+DEBUG - Natively generated identity: 3
+DEBUG - Executing identity-insert immediately
+DEBUG - insert into game (description, developer_id, name, release_date) values (?, ?, ?, ?)
+DEBUG - execute query: insert into game (description, developer_id, name, release_date) values (?, ?, ?, ?)
+DEBUG - Natively generated identity: 3
+DEBUG - jakarta.persistence.PersistenceUnitUtil.getIdentifier is only intended to work with enhanced entities (although Hibernate also adapts this support to its proxies); however the passed entity was not enhanced (nor a proxy).. may not be able to read identifier
+DEBUG - Executing identity-insert immediately
+DEBUG - insert into developer (country, name) values (?, ?)
+DEBUG - execute query: insert into developer (country, name) values (?, ?)
+DEBUG - Natively generated identity: 4
+DEBUG - Executing identity-insert immediately
+DEBUG - insert into game (description, developer_id, name, release_date) values (?, ?, ?, ?)
+DEBUG - execute query: insert into game (description, developer_id, name, release_date) values (?, ?, ?, ?)
+DEBUG - Natively generated identity: 4
+DEBUG - jakarta.persistence.PersistenceUnitUtil.getIdentifier is only intended to work with enhanced entities (although Hibernate also adapts this support to its proxies); however the passed entity was not enhanced (nor a proxy).. may not be able to read identifier
+DEBUG - Executing identity-insert immediately
+DEBUG - insert into developer (country, name) values (?, ?)
+DEBUG - execute query: insert into developer (country, name) values (?, ?)
+DEBUG - Natively generated identity: 5
+DEBUG - Executing identity-insert immediately
+DEBUG - insert into game (description, developer_id, name, release_date) values (?, ?, ?, ?)
+DEBUG - execute query: insert into game (description, developer_id, name, release_date) values (?, ?, ?, ?)
+DEBUG - Natively generated identity: 5
+DEBUG - jakarta.persistence.PersistenceUnitUtil.getIdentifier is only intended to work with enhanced entities (although Hibernate also adapts this support to its proxies); however the passed entity was not enhanced (nor a proxy).. may not be able to read identifier
+DEBUG - Executing identity-insert immediately
+DEBUG - insert into developer (country, name) values (?, ?)
+DEBUG - execute query: insert into developer (country, name) values (?, ?)
+DEBUG - Natively generated identity: 6
+DEBUG - Executing identity-insert immediately
+DEBUG - insert into game (description, developer_id, name, release_date) values (?, ?, ?, ?)
+DEBUG - execute query: insert into game (description, developer_id, name, release_date) values (?, ?, ?, ?)
+DEBUG - Natively generated identity: 6
+DEBUG - Initiating transaction commit
+DEBUG - Committing JPA transaction on EntityManager [SessionImpl(703579937<open>)]
+DEBUG - committing
+DEBUG - Processing flush-time cascades
+DEBUG - Dirty checking collections
+DEBUG - Collection found: [com.example.topgamesdata.model.Game.genre#1], was: [<unreferenced>] (initialized)
+DEBUG - Collection found: [com.example.topgamesdata.model.Game.platform#1], was: [<unreferenced>] (initialized)
+DEBUG - Collection found: [com.example.topgamesdata.model.Game.genre#2], was: [<unreferenced>] (initialized)
+DEBUG - Collection found: [com.example.topgamesdata.model.Game.platform#2], was: [<unreferenced>] (initialized)
+DEBUG - Collection found: [com.example.topgamesdata.model.Game.genre#3], was: [<unreferenced>] (initialized)
+DEBUG - Collection found: [com.example.topgamesdata.model.Game.platform#3], was: [<unreferenced>] (initialized)
+DEBUG - Collection found: [com.example.topgamesdata.model.Game.genre#4], was: [<unreferenced>] (initialized)
+DEBUG - Collection found: [com.example.topgamesdata.model.Game.platform#4], was: [<unreferenced>] (initialized)
+DEBUG - Collection found: [com.example.topgamesdata.model.Game.genre#5], was: [<unreferenced>] (initialized)
+DEBUG - Collection found: [com.example.topgamesdata.model.Game.platform#5], was: [<unreferenced>] (initialized)
+DEBUG - Collection found: [com.example.topgamesdata.model.Game.genre#6], was: [<unreferenced>] (initialized)
+DEBUG - Collection found: [com.example.topgamesdata.model.Game.platform#6], was: [<unreferenced>] (initialized)
+DEBUG - Flushed: 0 insertions, 0 updates, 0 deletions to 12 objects
+DEBUG - Flushed: 12 (re)creations, 0 updates, 0 removals to 12 collections
+DEBUG - Listing entities:
+DEBUG - com.example.topgamesdata.model.Developer{country=Japan, name=FromSoftware, id=6}
+DEBUG - com.example.topgamesdata.model.Developer{country=Canada, name=Ubisoft Montreal, id=5}
+DEBUG - com.example.topgamesdata.model.Developer{country=America, name=Naughty Dog, id=2}
+DEBUG - com.example.topgamesdata.model.Developer{country=America, name=Santa Monica Studio, id=1}
+DEBUG - com.example.topgamesdata.model.Developer{country=Poland, name=CD Projekt Red, id=4}
+DEBUG - com.example.topgamesdata.model.Developer{country=America, name=Rockstar Games, id=3}
+DEBUG - com.example.topgamesdata.model.Game{releaseDate=2011-09-22T00:00, genre=[ACTION, ADVENTURE], name=Dark Souls, description=Cool game, developer=com.example.topgamesdata.model.Developer#6, id=6, platform=[PLAYSTATION]}
+DEBUG - com.example.topgamesdata.model.Game{releaseDate=2020-11-10T00:00, genre=[ACTION, ADVENTURE], name=Assassin's Creed Valhalla, description=A game about a viking, developer=com.example.topgamesdata.model.Developer#5, id=5, platform=[PLAYSTATION]}
+DEBUG - com.example.topgamesdata.model.Game{releaseDate=2013-06-14T00:00, genre=[ACTION, ADVENTURE], name=The Last of Us, description=Cool game, developer=com.example.topgamesdata.model.Developer#2, id=2, platform=[PLAYSTATION]}
+DEBUG - com.example.topgamesdata.model.Game{releaseDate=2018-04-20T00:00, genre=[ACTION, ADVENTURE], name=God of War, description=Cool game, developer=com.example.topgamesdata.model.Developer#1, id=1, platform=[PLAYSTATION]}
+DEBUG - com.example.topgamesdata.model.Game{releaseDate=2015-05-18T00:00, genre=[ACTION, ADVENTURE, RPG, OPEN_WORLD], name=The Witcher 3: Wild Hunt, description=A game about a witcher, developer=com.example.topgamesdata.model.Developer#4, id=4, platform=[PLAYSTATION]}
+DEBUG - com.example.topgamesdata.model.Game{releaseDate=2018-10-26T00:00, genre=[ACTION, ADVENTURE], name=Red Dead Redemption 2, description=A game about a cowboy, developer=com.example.topgamesdata.model.Developer#3, id=3, platform=[PLAYSTATION]}
+DEBUG - Inserting collection: [com.example.topgamesdata.model.Game.genre#1]
+DEBUG - insert into game_genre (game_id, genre) values (?, ?)
+DEBUG - execute query: insert into game_genre (game_id, genre) values (?, ?)
+DEBUG - insert into game_genre (game_id, genre) values (?, ?)
+DEBUG - execute query: insert into game_genre (game_id, genre) values (?, ?)
+DEBUG - Done inserting collection: 2 rows inserted
+DEBUG - Inserting collection: [com.example.topgamesdata.model.Game.platform#1]
+DEBUG - insert into game_platform (game_id, platform) values (?, ?)
+DEBUG - execute query: insert into game_platform (game_id, platform) values (?, ?)
+DEBUG - Done inserting collection: 1 rows inserted
+DEBUG - Inserting collection: [com.example.topgamesdata.model.Game.genre#2]
+DEBUG - insert into game_genre (game_id, genre) values (?, ?)
+DEBUG - execute query: insert into game_genre (game_id, genre) values (?, ?)
+DEBUG - insert into game_genre (game_id, genre) values (?, ?)
+DEBUG - execute query: insert into game_genre (game_id, genre) values (?, ?)
+DEBUG - Done inserting collection: 2 rows inserted
+DEBUG - Inserting collection: [com.example.topgamesdata.model.Game.platform#2]
+DEBUG - insert into game_platform (game_id, platform) values (?, ?)
+DEBUG - execute query: insert into game_platform (game_id, platform) values (?, ?)
+DEBUG - Done inserting collection: 1 rows inserted
+DEBUG - Inserting collection: [com.example.topgamesdata.model.Game.genre#3]
+DEBUG - insert into game_genre (game_id, genre) values (?, ?)
+DEBUG - execute query: insert into game_genre (game_id, genre) values (?, ?)
+DEBUG - insert into game_genre (game_id, genre) values (?, ?)
+DEBUG - execute query: insert into game_genre (game_id, genre) values (?, ?)
+DEBUG - Done inserting collection: 2 rows inserted
+DEBUG - Inserting collection: [com.example.topgamesdata.model.Game.platform#3]
+DEBUG - insert into game_platform (game_id, platform) values (?, ?)
+DEBUG - execute query: insert into game_platform (game_id, platform) values (?, ?)
+DEBUG - Done inserting collection: 1 rows inserted
+DEBUG - Inserting collection: [com.example.topgamesdata.model.Game.genre#4]
+DEBUG - insert into game_genre (game_id, genre) values (?, ?)
+DEBUG - execute query: insert into game_genre (game_id, genre) values (?, ?)
+DEBUG - insert into game_genre (game_id, genre) values (?, ?)
+DEBUG - execute query: insert into game_genre (game_id, genre) values (?, ?)
+DEBUG - insert into game_genre (game_id, genre) values (?, ?)
+DEBUG - execute query: insert into game_genre (game_id, genre) values (?, ?)
+DEBUG - insert into game_genre (game_id, genre) values (?, ?)
+DEBUG - execute query: insert into game_genre (game_id, genre) values (?, ?)
+DEBUG - Done inserting collection: 4 rows inserted
+DEBUG - Inserting collection: [com.example.topgamesdata.model.Game.platform#4]
+DEBUG - insert into game_platform (game_id, platform) values (?, ?)
+DEBUG - execute query: insert into game_platform (game_id, platform) values (?, ?)
+DEBUG - Done inserting collection: 1 rows inserted
+DEBUG - Inserting collection: [com.example.topgamesdata.model.Game.genre#5]
+DEBUG - insert into game_genre (game_id, genre) values (?, ?)
+DEBUG - execute query: insert into game_genre (game_id, genre) values (?, ?)
+DEBUG - insert into game_genre (game_id, genre) values (?, ?)
+DEBUG - execute query: insert into game_genre (game_id, genre) values (?, ?)
+DEBUG - Done inserting collection: 2 rows inserted
+DEBUG - Inserting collection: [com.example.topgamesdata.model.Game.platform#5]
+DEBUG - insert into game_platform (game_id, platform) values (?, ?)
+DEBUG - execute query: insert into game_platform (game_id, platform) values (?, ?)
+DEBUG - Done inserting collection: 1 rows inserted
+DEBUG - Inserting collection: [com.example.topgamesdata.model.Game.genre#6]
+DEBUG - insert into game_genre (game_id, genre) values (?, ?)
+DEBUG - execute query: insert into game_genre (game_id, genre) values (?, ?)
+DEBUG - insert into game_genre (game_id, genre) values (?, ?)
+DEBUG - execute query: insert into game_genre (game_id, genre) values (?, ?)
+DEBUG - Done inserting collection: 2 rows inserted
+DEBUG - Inserting collection: [com.example.topgamesdata.model.Game.platform#6]
+DEBUG - insert into game_platform (game_id, platform) values (?, ?)
+DEBUG - execute query: insert into game_platform (game_id, platform) values (?, ?)
+DEBUG - Done inserting collection: 1 rows inserted
+DEBUG - execute query: COMMIT
+DEBUG - execute query: set autocommit=1
+DEBUG - System variable change:  autocommit = ON
+DEBUG - Not closing pre-bound JPA EntityManager after transaction
+DEBUG - Using 'application/json', given [application/json, text/plain, */*] and supported [text/plain, */*, application/json, application/*+json]
+DEBUG - Writing ["ok"]
+DEBUG - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+DEBUG - HHH000420: Closing un-released batch
+DEBUG - Completed 200 OK
+DEBUG - Mapped to com.example.topgameswebapi.controller.GameController#getAllGames()
+DEBUG - Mapped to com.example.topgameswebapi.controller.UserController#getAllUsers()
+DEBUG - GET "/api/game/getAll", parameters={}
+DEBUG - Mapped to com.example.topgameswebapi.controller.GameController#getAllGames()
+DEBUG - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+DEBUG - GET "/api/user/getAll", parameters={}
+INFO  - Got all games
+DEBUG - Mapped to com.example.topgameswebapi.controller.UserController#getAllUsers()
+DEBUG - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+INFO  - Got all users
+DEBUG - Found thread-bound EntityManager [SessionImpl(1492708503<open>)] for JPA transaction
+DEBUG - Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+DEBUG - Found thread-bound EntityManager [SessionImpl(212327999<open>)] for JPA transaction
+DEBUG - Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+DEBUG - Setting JDBC Connection [HikariProxyConnection@1882645842 wrapping org.mariadb.jdbc.Connection@1ac0cdb0] read-only
+DEBUG - Setting JDBC Connection [HikariProxyConnection@39858651 wrapping org.mariadb.jdbc.Connection@485b34ce] read-only
+DEBUG - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+DEBUG - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+DEBUG - begin
+DEBUG - begin
+DEBUG - execute query: set autocommit=0
+DEBUG - execute query: set autocommit=0
+DEBUG - System variable change:  autocommit = OFF
+DEBUG - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@5a1961ad]
+DEBUG - System variable change:  autocommit = OFF
+DEBUG - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@3390f0aa]
+DEBUG - Mapped to com.example.topgameswebapi.controller.LogController#getLogs()
+DEBUG - Mapped to com.example.topgameswebapi.controller.LogController#getLogs()
+DEBUG - GET "/logs/all", parameters={}
+DEBUG - Mapped to com.example.topgameswebapi.controller.LogController#getLogs()
+DEBUG - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+DEBUG - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+DEBUG - Writing [[DEBUG - Creating shared instance of singleton bean 'securityConfiguration', DEBUG - Creating shared (truncated)...]
+DEBUG - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+DEBUG - Completed 200 OK
+DEBUG - Created new SQL alias : u1_0
+DEBUG - Created new SQL alias : g1_0
+DEBUG - Registration of TableGroup [StandardTableGroup(com.example.topgamesdata.model.User(178447137830800))] with identifierForTableGroup [com.example.topgamesdata.model.User] for NavigablePath [com.example.topgamesdata.model.User] 
+DEBUG - Registration of TableGroup [StandardTableGroup(com.example.topgamesdata.model.Game(178447139198200))] with identifierForTableGroup [com.example.topgamesdata.model.Game] for NavigablePath [com.example.topgamesdata.model.Game] 
+DEBUG - DomainResult Graph:
+ \-EntityResultImpl [com.example.topgamesdata.model.Game(178447139198200)]
+ |  +-BasicFetch [com.example.topgamesdata.model.Game(178447139198200).description]
+ |  +-EntityFetchSelectImpl [com.example.topgamesdata.model.Game(178447139198200).developer]
+ |  +-DelayedCollectionFetch [com.example.topgamesdata.model.Game(178447139198200).genre]
+ |  +-BasicFetch [com.example.topgamesdata.model.Game(178447139198200).name]
+ |  +-DelayedCollectionFetch [com.example.topgamesdata.model.Game(178447139198200).platform]
+ |  \-BasicFetch [com.example.topgamesdata.model.Game(178447139198200).releaseDate]
 
-***************************
-APPLICATION FAILED TO START
-***************************
+DEBUG - SQL AST Tree:
+    SelectStatement {
+      FromClause {
+        StandardTableGroup (g1 : com.example.topgamesdata.model.Game(178447139198200)) {
+          primaryTableReference : game as g1_0
+        }
+      }
+    }
 
-Description:
+DEBUG - DomainResult Graph:
+ \-EntityResultImpl [com.example.topgamesdata.model.User(178447137830800)]
+ |  +-BasicFetch [com.example.topgamesdata.model.User(178447137830800).email]
+ |  +-BasicFetch [com.example.topgamesdata.model.User(178447137830800).firstName]
+ |  +-BasicFetch [com.example.topgamesdata.model.User(178447137830800).lastName]
+ |  +-BasicFetch [com.example.topgamesdata.model.User(178447137830800).password]
+ |  \-BasicFetch [com.example.topgamesdata.model.User(178447137830800).username]
 
-Web server failed to start. Port 8081 was already in use.
+DEBUG - SQL AST Tree:
+    SelectStatement {
+      FromClause {
+        StandardTableGroup (u1 : com.example.topgamesdata.model.User(178447137830800)) {
+          primaryTableReference : user as u1_0
+        }
+      }
+    }
 
-Action:
+DEBUG - Skipping reading Query result cache data: cache-enabled = false, cache-mode = NORMAL
+DEBUG - Skipping reading Query result cache data: cache-enabled = false, cache-mode = NORMAL
+DEBUG - Initializer list
+DEBUG -     com.example.topgamesdata.model.User(178447137830800) -> EntityResultInitializer(com.example.topgamesdata.model.User(178447137830800))@960410115 (SingleTableEntityPersister(com.example.topgamesdata.model.User))
+DEBUG - select u1_0.id,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.username from user u1_0
+DEBUG - Initializer list
+DEBUG - execute query: select u1_0.id,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.username from user u1_0
+DEBUG -     com.example.topgamesdata.model.Game(178447139198200).developer -> EntitySelectFetchInitializer(com.example.topgamesdata.model.Game(178447139198200).developer)@2145687155 (ToOneAttributeMapping(NavigableRole[com.example.topgamesdata.model.Game.developer])@1798491855)
+DEBUG -     com.example.topgamesdata.model.Game(178447139198200).genre -> DelayedCollectionInitializer(com.example.topgamesdata.model.Game(178447139198200).genre)@100546273 (PluralAttribute(com.example.topgamesdata.model.Game.genre))
+DEBUG -     com.example.topgamesdata.model.Game(178447139198200).platform -> DelayedCollectionInitializer(com.example.topgamesdata.model.Game(178447139198200).platform)@225521217 (PluralAttribute(com.example.topgamesdata.model.Game.platform))
+DEBUG -     com.example.topgamesdata.model.Game(178447139198200) -> EntityResultInitializer(com.example.topgamesdata.model.Game(178447139198200))@1225176419 (SingleTableEntityPersister(com.example.topgamesdata.model.Game))
+DEBUG - select g1_0.id,g1_0.description,g1_0.developer_id,g1_0.name,g1_0.release_date from game g1_0
+DEBUG - execute query: select g1_0.id,g1_0.description,g1_0.developer_id,g1_0.name,g1_0.release_date from game g1_0
+DEBUG - Initiating transaction commit
+DEBUG - Committing JPA transaction on EntityManager [SessionImpl(212327999<open>)]
+DEBUG - committing
+DEBUG - execute query: COMMIT
+DEBUG - Extracted JDBC value [0] - [1]
+DEBUG - (EntityResultInitializer) Hydrated EntityKey (com.example.topgamesdata.model.Game(178447139198200)): 1
+DEBUG - Extracted JDBC value [0] - [1]
+DEBUG - (DelayedCollectionInitializer) Current row collection key : com.example.topgamesdata.model.Game(178447139198200).genre#1
+DEBUG - Extracted JDBC value [0] - [1]
+DEBUG - (DelayedCollectionInitializer) Current row collection key : com.example.topgamesdata.model.Game(178447139198200).platform#1
+DEBUG - execute query: set autocommit=1
+DEBUG - System variable change:  autocommit = ON
+DEBUG - Resetting read-only flag of JDBC Connection [HikariProxyConnection@39858651 wrapping org.mariadb.jdbc.Connection@485b34ce]
+DEBUG - Not closing pre-bound JPA EntityManager after transaction
+DEBUG - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+DEBUG - Writing [[]]
+DEBUG - (EntityResultInitializer) Created new entity instance [com.example.topgamesdata.model.Game(178447139198200)#1] : com.example.topgamesdata.model.Game@446b1b81
+DEBUG - Extracted JDBC value [2] - [1]
+DEBUG - (EntitySelectFetchInitializer) Invoking session#internalLoad for entity (com.example.topgamesdata.model.Game(178447139198200).developer#1) : 1
+DEBUG - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+DEBUG - Completed 200 OK
+DEBUG - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+DEBUG - Initializer list
+DEBUG -     com.example.topgamesdata.model.Developer -> EntityResultInitializer(com.example.topgamesdata.model.Developer)@633369250 (SingleTableEntityPersister(com.example.topgamesdata.model.Developer))
+DEBUG - select d1_0.id,d1_0.country,d1_0.name from developer d1_0 where d1_0.id=?
+DEBUG - execute query: select d1_0.id,d1_0.country,d1_0.name from developer d1_0 where d1_0.id=?
+DEBUG - (EntityResultInitializer) Hydrated EntityKey (com.example.topgamesdata.model.Developer): 1
+DEBUG - (EntityResultInitializer) Created new entity instance [com.example.topgamesdata.model.Developer#1] : com.example.topgamesdata.model.Developer@69fa3941
+DEBUG - Extracted JDBC value [1] - [America]
+DEBUG - Extracted JDBC value [2] - [Santa Monica Studio]
+DEBUG - (EntityResultInitializer) Done materializing entityInstance : com.example.topgamesdata.model.Developer#1
+DEBUG - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@2e6db646
+DEBUG - (EntityResultInitializer) Found existing loading entry [com.example.topgamesdata.model.Developer#1] - using loading instance
+DEBUG - (EntitySelectFetchInitializer) Entity [com.example.topgamesdata.model.Game(178447139198200).developer#1] : 1 has being loaded by session.internalLoad.
+DEBUG - Extracted JDBC value [1] - [Cool game]
+DEBUG - Extracted JDBC value [3] - [God of War]
+DEBUG - Extracted JDBC value [4] - [2018-04-20T00:00]
+DEBUG - (EntityResultInitializer) Done materializing entityInstance : com.example.topgamesdata.model.Game(178447139198200)#1
+DEBUG - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@4dfc9800
+DEBUG - (EntityResultInitializer) Found existing loading entry [com.example.topgamesdata.model.Game(178447139198200)#1] - using loading instance
+DEBUG - Extracted JDBC value [0] - [2]
+DEBUG - (EntityResultInitializer) Hydrated EntityKey (com.example.topgamesdata.model.Game(178447139198200)): 2
+DEBUG - Extracted JDBC value [0] - [2]
+DEBUG - (DelayedCollectionInitializer) Current row collection key : com.example.topgamesdata.model.Game(178447139198200).genre#2
+DEBUG - Extracted JDBC value [0] - [2]
+DEBUG - (DelayedCollectionInitializer) Current row collection key : com.example.topgamesdata.model.Game(178447139198200).platform#2
+DEBUG - (EntityResultInitializer) Created new entity instance [com.example.topgamesdata.model.Game(178447139198200)#2] : com.example.topgamesdata.model.Game@232ceaf3
+DEBUG - Extracted JDBC value [2] - [2]
+DEBUG - (EntitySelectFetchInitializer) Invoking session#internalLoad for entity (com.example.topgamesdata.model.Game(178447139198200).developer#2) : 2
+DEBUG - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+DEBUG - Initializer list
+DEBUG -     com.example.topgamesdata.model.Developer -> EntityResultInitializer(com.example.topgamesdata.model.Developer)@171526670 (SingleTableEntityPersister(com.example.topgamesdata.model.Developer))
+DEBUG - select d1_0.id,d1_0.country,d1_0.name from developer d1_0 where d1_0.id=?
+DEBUG - execute query: select d1_0.id,d1_0.country,d1_0.name from developer d1_0 where d1_0.id=?
+DEBUG - (EntityResultInitializer) Hydrated EntityKey (com.example.topgamesdata.model.Developer): 2
+DEBUG - (EntityResultInitializer) Created new entity instance [com.example.topgamesdata.model.Developer#2] : com.example.topgamesdata.model.Developer@161c12ed
+DEBUG - Extracted JDBC value [1] - [America]
+DEBUG - Extracted JDBC value [2] - [Naughty Dog]
+DEBUG - (EntityResultInitializer) Done materializing entityInstance : com.example.topgamesdata.model.Developer#2
+DEBUG - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@56b5431a
+DEBUG - (EntityResultInitializer) Found existing loading entry [com.example.topgamesdata.model.Developer#2] - using loading instance
+DEBUG - (EntitySelectFetchInitializer) Entity [com.example.topgamesdata.model.Game(178447139198200).developer#2] : 2 has being loaded by session.internalLoad.
+DEBUG - Extracted JDBC value [1] - [Cool game]
+DEBUG - Extracted JDBC value [3] - [The Last of Us]
+DEBUG - Extracted JDBC value [4] - [2013-06-14T00:00]
+DEBUG - (EntityResultInitializer) Done materializing entityInstance : com.example.topgamesdata.model.Game(178447139198200)#2
+DEBUG - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@4dfc9800
+DEBUG - (EntityResultInitializer) Found existing loading entry [com.example.topgamesdata.model.Game(178447139198200)#2] - using loading instance
+DEBUG - Extracted JDBC value [0] - [3]
+DEBUG - (EntityResultInitializer) Hydrated EntityKey (com.example.topgamesdata.model.Game(178447139198200)): 3
+DEBUG - Extracted JDBC value [0] - [3]
+DEBUG - (DelayedCollectionInitializer) Current row collection key : com.example.topgamesdata.model.Game(178447139198200).genre#3
+DEBUG - Extracted JDBC value [0] - [3]
+DEBUG - (DelayedCollectionInitializer) Current row collection key : com.example.topgamesdata.model.Game(178447139198200).platform#3
+DEBUG - (EntityResultInitializer) Created new entity instance [com.example.topgamesdata.model.Game(178447139198200)#3] : com.example.topgamesdata.model.Game@46d1e79c
+DEBUG - Extracted JDBC value [2] - [3]
+DEBUG - (EntitySelectFetchInitializer) Invoking session#internalLoad for entity (com.example.topgamesdata.model.Game(178447139198200).developer#3) : 3
+DEBUG - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+DEBUG - Initializer list
+DEBUG -     com.example.topgamesdata.model.Developer -> EntityResultInitializer(com.example.topgamesdata.model.Developer)@973128143 (SingleTableEntityPersister(com.example.topgamesdata.model.Developer))
+DEBUG - select d1_0.id,d1_0.country,d1_0.name from developer d1_0 where d1_0.id=?
+DEBUG - execute query: select d1_0.id,d1_0.country,d1_0.name from developer d1_0 where d1_0.id=?
+DEBUG - (EntityResultInitializer) Hydrated EntityKey (com.example.topgamesdata.model.Developer): 3
+DEBUG - (EntityResultInitializer) Created new entity instance [com.example.topgamesdata.model.Developer#3] : com.example.topgamesdata.model.Developer@3ea8035f
+DEBUG - Extracted JDBC value [1] - [America]
+DEBUG - Extracted JDBC value [2] - [Rockstar Games]
+DEBUG - (EntityResultInitializer) Done materializing entityInstance : com.example.topgamesdata.model.Developer#3
+DEBUG - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@21aa3fc
+DEBUG - (EntityResultInitializer) Found existing loading entry [com.example.topgamesdata.model.Developer#3] - using loading instance
+DEBUG - (EntitySelectFetchInitializer) Entity [com.example.topgamesdata.model.Game(178447139198200).developer#3] : 3 has being loaded by session.internalLoad.
+DEBUG - Extracted JDBC value [1] - [A game about a cowboy]
+DEBUG - Extracted JDBC value [3] - [Red Dead Redemption 2]
+DEBUG - Extracted JDBC value [4] - [2018-10-26T00:00]
+DEBUG - (EntityResultInitializer) Done materializing entityInstance : com.example.topgamesdata.model.Game(178447139198200)#3
+DEBUG - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@4dfc9800
+DEBUG - (EntityResultInitializer) Found existing loading entry [com.example.topgamesdata.model.Game(178447139198200)#3] - using loading instance
+DEBUG - Extracted JDBC value [0] - [4]
+DEBUG - (EntityResultInitializer) Hydrated EntityKey (com.example.topgamesdata.model.Game(178447139198200)): 4
+DEBUG - Extracted JDBC value [0] - [4]
+DEBUG - (DelayedCollectionInitializer) Current row collection key : com.example.topgamesdata.model.Game(178447139198200).genre#4
+DEBUG - Extracted JDBC value [0] - [4]
+DEBUG - (DelayedCollectionInitializer) Current row collection key : com.example.topgamesdata.model.Game(178447139198200).platform#4
+DEBUG - (EntityResultInitializer) Created new entity instance [com.example.topgamesdata.model.Game(178447139198200)#4] : com.example.topgamesdata.model.Game@4a5c1c57
+DEBUG - Extracted JDBC value [2] - [4]
+DEBUG - (EntitySelectFetchInitializer) Invoking session#internalLoad for entity (com.example.topgamesdata.model.Game(178447139198200).developer#4) : 4
+DEBUG - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+DEBUG - Initializer list
+DEBUG -     com.example.topgamesdata.model.Developer -> EntityResultInitializer(com.example.topgamesdata.model.Developer)@495866787 (SingleTableEntityPersister(com.example.topgamesdata.model.Developer))
+DEBUG - select d1_0.id,d1_0.country,d1_0.name from developer d1_0 where d1_0.id=?
+DEBUG - execute query: select d1_0.id,d1_0.country,d1_0.name from developer d1_0 where d1_0.id=?
+DEBUG - (EntityResultInitializer) Hydrated EntityKey (com.example.topgamesdata.model.Developer): 4
+DEBUG - (EntityResultInitializer) Created new entity instance [com.example.topgamesdata.model.Developer#4] : com.example.topgamesdata.model.Developer@c7784d4
+DEBUG - Extracted JDBC value [1] - [Poland]
+DEBUG - Extracted JDBC value [2] - [CD Projekt Red]
+DEBUG - (EntityResultInitializer) Done materializing entityInstance : com.example.topgamesdata.model.Developer#4
+DEBUG - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@638bcdb2
+DEBUG - (EntityResultInitializer) Found existing loading entry [com.example.topgamesdata.model.Developer#4] - using loading instance
+DEBUG - (EntitySelectFetchInitializer) Entity [com.example.topgamesdata.model.Game(178447139198200).developer#4] : 4 has being loaded by session.internalLoad.
+DEBUG - Extracted JDBC value [1] - [A game about a witcher]
+DEBUG - Extracted JDBC value [3] - [The Witcher 3: Wild Hunt]
+DEBUG - Extracted JDBC value [4] - [2015-05-18T00:00]
+DEBUG - (EntityResultInitializer) Done materializing entityInstance : com.example.topgamesdata.model.Game(178447139198200)#4
+DEBUG - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@4dfc9800
+DEBUG - (EntityResultInitializer) Found existing loading entry [com.example.topgamesdata.model.Game(178447139198200)#4] - using loading instance
+DEBUG - Extracted JDBC value [0] - [5]
+DEBUG - (EntityResultInitializer) Hydrated EntityKey (com.example.topgamesdata.model.Game(178447139198200)): 5
+DEBUG - Extracted JDBC value [0] - [5]
+DEBUG - (DelayedCollectionInitializer) Current row collection key : com.example.topgamesdata.model.Game(178447139198200).genre#5
+DEBUG - Extracted JDBC value [0] - [5]
+DEBUG - (DelayedCollectionInitializer) Current row collection key : com.example.topgamesdata.model.Game(178447139198200).platform#5
+DEBUG - (EntityResultInitializer) Created new entity instance [com.example.topgamesdata.model.Game(178447139198200)#5] : com.example.topgamesdata.model.Game@b1ad199
+DEBUG - Extracted JDBC value [2] - [5]
+DEBUG - (EntitySelectFetchInitializer) Invoking session#internalLoad for entity (com.example.topgamesdata.model.Game(178447139198200).developer#5) : 5
+DEBUG - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+DEBUG - Initializer list
+DEBUG -     com.example.topgamesdata.model.Developer -> EntityResultInitializer(com.example.topgamesdata.model.Developer)@918649621 (SingleTableEntityPersister(com.example.topgamesdata.model.Developer))
+DEBUG - select d1_0.id,d1_0.country,d1_0.name from developer d1_0 where d1_0.id=?
+DEBUG - execute query: select d1_0.id,d1_0.country,d1_0.name from developer d1_0 where d1_0.id=?
+DEBUG - (EntityResultInitializer) Hydrated EntityKey (com.example.topgamesdata.model.Developer): 5
+DEBUG - (EntityResultInitializer) Created new entity instance [com.example.topgamesdata.model.Developer#5] : com.example.topgamesdata.model.Developer@22fd8e54
+DEBUG - Extracted JDBC value [1] - [Canada]
+DEBUG - Extracted JDBC value [2] - [Ubisoft Montreal]
+DEBUG - (EntityResultInitializer) Done materializing entityInstance : com.example.topgamesdata.model.Developer#5
+DEBUG - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@1f5950cd
+DEBUG - (EntityResultInitializer) Found existing loading entry [com.example.topgamesdata.model.Developer#5] - using loading instance
+DEBUG - (EntitySelectFetchInitializer) Entity [com.example.topgamesdata.model.Game(178447139198200).developer#5] : 5 has being loaded by session.internalLoad.
+DEBUG - Extracted JDBC value [1] - [A game about a viking]
+DEBUG - Extracted JDBC value [3] - [Assassin's Creed Valhalla]
+DEBUG - Extracted JDBC value [4] - [2020-11-10T00:00]
+DEBUG - (EntityResultInitializer) Done materializing entityInstance : com.example.topgamesdata.model.Game(178447139198200)#5
+DEBUG - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@4dfc9800
+DEBUG - (EntityResultInitializer) Found existing loading entry [com.example.topgamesdata.model.Game(178447139198200)#5] - using loading instance
+DEBUG - Extracted JDBC value [0] - [6]
+DEBUG - (EntityResultInitializer) Hydrated EntityKey (com.example.topgamesdata.model.Game(178447139198200)): 6
+DEBUG - Extracted JDBC value [0] - [6]
+DEBUG - (DelayedCollectionInitializer) Current row collection key : com.example.topgamesdata.model.Game(178447139198200).genre#6
+DEBUG - Extracted JDBC value [0] - [6]
+DEBUG - (DelayedCollectionInitializer) Current row collection key : com.example.topgamesdata.model.Game(178447139198200).platform#6
+DEBUG - (EntityResultInitializer) Created new entity instance [com.example.topgamesdata.model.Game(178447139198200)#6] : com.example.topgamesdata.model.Game@1ccd08f5
+DEBUG - Extracted JDBC value [2] - [6]
+DEBUG - (EntitySelectFetchInitializer) Invoking session#internalLoad for entity (com.example.topgamesdata.model.Game(178447139198200).developer#6) : 6
+DEBUG - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+DEBUG - Initializer list
+DEBUG -     com.example.topgamesdata.model.Developer -> EntityResultInitializer(com.example.topgamesdata.model.Developer)@1237839001 (SingleTableEntityPersister(com.example.topgamesdata.model.Developer))
+DEBUG - select d1_0.id,d1_0.country,d1_0.name from developer d1_0 where d1_0.id=?
+DEBUG - execute query: select d1_0.id,d1_0.country,d1_0.name from developer d1_0 where d1_0.id=?
+DEBUG - (EntityResultInitializer) Hydrated EntityKey (com.example.topgamesdata.model.Developer): 6
+DEBUG - (EntityResultInitializer) Created new entity instance [com.example.topgamesdata.model.Developer#6] : com.example.topgamesdata.model.Developer@30ec2b36
+DEBUG - Extracted JDBC value [1] - [Japan]
+DEBUG - Extracted JDBC value [2] - [FromSoftware]
+DEBUG - (EntityResultInitializer) Done materializing entityInstance : com.example.topgamesdata.model.Developer#6
+DEBUG - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@46b9ba96
+DEBUG - (EntityResultInitializer) Found existing loading entry [com.example.topgamesdata.model.Developer#6] - using loading instance
+DEBUG - (EntitySelectFetchInitializer) Entity [com.example.topgamesdata.model.Game(178447139198200).developer#6] : 6 has being loaded by session.internalLoad.
+DEBUG - Extracted JDBC value [1] - [Cool game]
+DEBUG - Extracted JDBC value [3] - [Dark Souls]
+DEBUG - Extracted JDBC value [4] - [2011-09-22T00:00]
+DEBUG - (EntityResultInitializer) Done materializing entityInstance : com.example.topgamesdata.model.Game(178447139198200)#6
+DEBUG - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@4dfc9800
+DEBUG - (EntityResultInitializer) Found existing loading entry [com.example.topgamesdata.model.Game(178447139198200)#6] - using loading instance
+DEBUG - Initiating transaction commit
+DEBUG - Committing JPA transaction on EntityManager [SessionImpl(1492708503<open>)]
+DEBUG - committing
+DEBUG - execute query: COMMIT
+DEBUG - execute query: set autocommit=1
+DEBUG - System variable change:  autocommit = ON
+DEBUG - Resetting read-only flag of JDBC Connection [HikariProxyConnection@1882645842 wrapping org.mariadb.jdbc.Connection@1ac0cdb0]
+DEBUG - Not closing pre-bound JPA EntityManager after transaction
+DEBUG - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+DEBUG - Writing [[com.example.topgamesdata.model.Game@446b1b81, com.example.topgamesdata.model.Game@232ceaf3, com.exa (truncated)...]
+DEBUG - Created new SQL alias : g1_0
+DEBUG - Registration of TableGroup [CollectionTableGroup(com.example.topgamesdata.model.Game.genre)] with identifierForTableGroup [com.example.topgamesdata.model.Game.genre] for NavigablePath [com.example.topgamesdata.model.Game.genre] 
+DEBUG - Generating Fetch for collection-part : `com.example.topgamesdata.model.Game.genre` -> `{element}`
+DEBUG - DomainResult Graph:
+ \-CollectionDomainResult [com.example.topgamesdata.model.Game.genre]
 
-Identify and stop the process that's listening on port 8081 or configure this application to listen on another port.
+DEBUG - SQL AST Tree:
+    SelectStatement {
+      FromClause {
+        CollectionTableGroup (g1 : com.example.topgamesdata.model.Game.genre) {
+          primaryTableReference : game_genre as g1_0
+        }
+      }
+    }
 
+DEBUG - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+DEBUG - Initializer list
+DEBUG -     com.example.topgamesdata.model.Game.genre -> BagInitializer(com.example.topgamesdata.model.Game.genre)@1187951655 (PluralAttribute(com.example.topgamesdata.model.Game.genre))
+DEBUG - select g1_0.game_id,g1_0.genre from game_genre g1_0 where g1_0.game_id=?
+DEBUG - execute query: select g1_0.game_id,g1_0.genre from game_genre g1_0 where g1_0.game_id=?
+DEBUG - Extracted JDBC value [0] - [1]
+DEBUG - (DelayedCollectionInitializer) Current row collection key : com.example.topgamesdata.model.Game.genre#1
+DEBUG - Extracted JDBC value [0] - [1]
+DEBUG - (BagInitializer) Responsible for loading collection [com.example.topgamesdata.model.Game.genre#1] : org.hibernate.collection.spi.PersistentBag@1188681583
+DEBUG - (BagInitializer) Reading element from row for collection [com.example.topgamesdata.model.Game.genre#1] -> org.hibernate.collection.spi.PersistentBag@1188681583
+DEBUG - Extracted JDBC value [1] - [0]
+DEBUG - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.collection.internal.EagerCollectionAssembler@55687013
+DEBUG - Extracted JDBC value [0] - [1]
+DEBUG - (DelayedCollectionInitializer) Current row collection key : com.example.topgamesdata.model.Game.genre#1
+DEBUG - Extracted JDBC value [0] - [1]
+DEBUG - (BagInitializer) Found existing loading collection entry [com.example.topgamesdata.model.Game.genre#1]; using loading collection instance - org.hibernate.collection.spi.PersistentBag@1188681583
+DEBUG - (BagInitializer) Responsible for loading collection [com.example.topgamesdata.model.Game.genre#1] : org.hibernate.collection.spi.PersistentBag@1188681583
+DEBUG - (BagInitializer) Reading element from row for collection [com.example.topgamesdata.model.Game.genre#1] -> org.hibernate.collection.spi.PersistentBag@1188681583
+DEBUG - Extracted JDBC value [1] - [1]
+DEBUG - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.collection.internal.EagerCollectionAssembler@55687013
+DEBUG - Collection fully initialized: [com.example.topgamesdata.model.Game.genre#1]
+DEBUG - Created new SQL alias : p1_0
+DEBUG - Registration of TableGroup [CollectionTableGroup(com.example.topgamesdata.model.Game.platform)] with identifierForTableGroup [com.example.topgamesdata.model.Game.platform] for NavigablePath [com.example.topgamesdata.model.Game.platform] 
+DEBUG - Generating Fetch for collection-part : `com.example.topgamesdata.model.Game.platform` -> `{element}`
+DEBUG - DomainResult Graph:
+ \-CollectionDomainResult [com.example.topgamesdata.model.Game.platform]
+
+DEBUG - SQL AST Tree:
+    SelectStatement {
+      FromClause {
+        CollectionTableGroup (p1 : com.example.topgamesdata.model.Game.platform) {
+          primaryTableReference : game_platform as p1_0
+        }
+      }
+    }
+
+DEBUG - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+DEBUG - Initializer list
+DEBUG -     com.example.topgamesdata.model.Game.platform -> BagInitializer(com.example.topgamesdata.model.Game.platform)@657657609 (PluralAttribute(com.example.topgamesdata.model.Game.platform))
+DEBUG - select p1_0.game_id,p1_0.platform from game_platform p1_0 where p1_0.game_id=?
+DEBUG - execute query: select p1_0.game_id,p1_0.platform from game_platform p1_0 where p1_0.game_id=?
+DEBUG - Extracted JDBC value [0] - [1]
+DEBUG - (DelayedCollectionInitializer) Current row collection key : com.example.topgamesdata.model.Game.platform#1
+DEBUG - Extracted JDBC value [0] - [1]
+DEBUG - (BagInitializer) Responsible for loading collection [com.example.topgamesdata.model.Game.platform#1] : org.hibernate.collection.spi.PersistentBag@1335369698
+DEBUG - (BagInitializer) Reading element from row for collection [com.example.topgamesdata.model.Game.platform#1] -> org.hibernate.collection.spi.PersistentBag@1335369698
+DEBUG - Extracted JDBC value [1] - [2]
+DEBUG - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.collection.internal.EagerCollectionAssembler@61267469
+DEBUG - Collection fully initialized: [com.example.topgamesdata.model.Game.platform#1]
+DEBUG - DomainResult Graph:
+ \-CollectionDomainResult [com.example.topgamesdata.model.Game.genre]
+
+DEBUG - SQL AST Tree:
+    SelectStatement {
+      FromClause {
+        CollectionTableGroup (g1 : com.example.topgamesdata.model.Game.genre) {
+          primaryTableReference : game_genre as g1_0
+        }
+      }
+    }
+
+DEBUG - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+DEBUG - Initializer list
+DEBUG -     com.example.topgamesdata.model.Game.genre -> BagInitializer(com.example.topgamesdata.model.Game.genre)@1748794624 (PluralAttribute(com.example.topgamesdata.model.Game.genre))
+DEBUG - select g1_0.game_id,g1_0.genre from game_genre g1_0 where g1_0.game_id=?
+DEBUG - execute query: select g1_0.game_id,g1_0.genre from game_genre g1_0 where g1_0.game_id=?
+DEBUG - Extracted JDBC value [0] - [2]
+DEBUG - (DelayedCollectionInitializer) Current row collection key : com.example.topgamesdata.model.Game.genre#2
+DEBUG - Extracted JDBC value [0] - [2]
+DEBUG - (BagInitializer) Responsible for loading collection [com.example.topgamesdata.model.Game.genre#2] : org.hibernate.collection.spi.PersistentBag@885517335
+DEBUG - (BagInitializer) Reading element from row for collection [com.example.topgamesdata.model.Game.genre#2] -> org.hibernate.collection.spi.PersistentBag@885517335
+DEBUG - Extracted JDBC value [1] - [0]
+DEBUG - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.collection.internal.EagerCollectionAssembler@333acf3c
+DEBUG - Extracted JDBC value [0] - [2]
+DEBUG - (DelayedCollectionInitializer) Current row collection key : com.example.topgamesdata.model.Game.genre#2
+DEBUG - Extracted JDBC value [0] - [2]
+DEBUG - (BagInitializer) Found existing loading collection entry [com.example.topgamesdata.model.Game.genre#2]; using loading collection instance - org.hibernate.collection.spi.PersistentBag@885517335
+DEBUG - (BagInitializer) Responsible for loading collection [com.example.topgamesdata.model.Game.genre#2] : org.hibernate.collection.spi.PersistentBag@885517335
+DEBUG - (BagInitializer) Reading element from row for collection [com.example.topgamesdata.model.Game.genre#2] -> org.hibernate.collection.spi.PersistentBag@885517335
+DEBUG - Extracted JDBC value [1] - [1]
+DEBUG - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.collection.internal.EagerCollectionAssembler@333acf3c
+DEBUG - Collection fully initialized: [com.example.topgamesdata.model.Game.genre#2]
+DEBUG - DomainResult Graph:
+ \-CollectionDomainResult [com.example.topgamesdata.model.Game.platform]
+
+DEBUG - SQL AST Tree:
+    SelectStatement {
+      FromClause {
+        CollectionTableGroup (p1 : com.example.topgamesdata.model.Game.platform) {
+          primaryTableReference : game_platform as p1_0
+        }
+      }
+    }
+
+DEBUG - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+DEBUG - Initializer list
+DEBUG -     com.example.topgamesdata.model.Game.platform -> BagInitializer(com.example.topgamesdata.model.Game.platform)@946171942 (PluralAttribute(com.example.topgamesdata.model.Game.platform))
+DEBUG - select p1_0.game_id,p1_0.platform from game_platform p1_0 where p1_0.game_id=?
+DEBUG - execute query: select p1_0.game_id,p1_0.platform from game_platform p1_0 where p1_0.game_id=?
+DEBUG - Extracted JDBC value [0] - [2]
+DEBUG - (DelayedCollectionInitializer) Current row collection key : com.example.topgamesdata.model.Game.platform#2
+DEBUG - Extracted JDBC value [0] - [2]
+DEBUG - (BagInitializer) Responsible for loading collection [com.example.topgamesdata.model.Game.platform#2] : org.hibernate.collection.spi.PersistentBag@1854385244
+DEBUG - (BagInitializer) Reading element from row for collection [com.example.topgamesdata.model.Game.platform#2] -> org.hibernate.collection.spi.PersistentBag@1854385244
+DEBUG - Extracted JDBC value [1] - [2]
+DEBUG - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.collection.internal.EagerCollectionAssembler@384140f9
+DEBUG - Collection fully initialized: [com.example.topgamesdata.model.Game.platform#2]
+DEBUG - DomainResult Graph:
+ \-CollectionDomainResult [com.example.topgamesdata.model.Game.genre]
+
+DEBUG - SQL AST Tree:
+    SelectStatement {
+      FromClause {
+        CollectionTableGroup (g1 : com.example.topgamesdata.model.Game.genre) {
+          primaryTableReference : game_genre as g1_0
+        }
+      }
+    }
+
+DEBUG - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+DEBUG - Initializer list
+DEBUG -     com.example.topgamesdata.model.Game.genre -> BagInitializer(com.example.topgamesdata.model.Game.genre)@733410199 (PluralAttribute(com.example.topgamesdata.model.Game.genre))
+DEBUG - select g1_0.game_id,g1_0.genre from game_genre g1_0 where g1_0.game_id=?
+DEBUG - execute query: select g1_0.game_id,g1_0.genre from game_genre g1_0 where g1_0.game_id=?
+DEBUG - Extracted JDBC value [0] - [3]
+DEBUG - (DelayedCollectionInitializer) Current row collection key : com.example.topgamesdata.model.Game.genre#3
+DEBUG - Extracted JDBC value [0] - [3]
+DEBUG - (BagInitializer) Responsible for loading collection [com.example.topgamesdata.model.Game.genre#3] : org.hibernate.collection.spi.PersistentBag@2051859502
+DEBUG - (BagInitializer) Reading element from row for collection [com.example.topgamesdata.model.Game.genre#3] -> org.hibernate.collection.spi.PersistentBag@2051859502
+DEBUG - Extracted JDBC value [1] - [0]
+DEBUG - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.collection.internal.EagerCollectionAssembler@103221eb
+DEBUG - Extracted JDBC value [0] - [3]
+DEBUG - (DelayedCollectionInitializer) Current row collection key : com.example.topgamesdata.model.Game.genre#3
+DEBUG - Extracted JDBC value [0] - [3]
+DEBUG - (BagInitializer) Found existing loading collection entry [com.example.topgamesdata.model.Game.genre#3]; using loading collection instance - org.hibernate.collection.spi.PersistentBag@2051859502
+DEBUG - (BagInitializer) Responsible for loading collection [com.example.topgamesdata.model.Game.genre#3] : org.hibernate.collection.spi.PersistentBag@2051859502
+DEBUG - (BagInitializer) Reading element from row for collection [com.example.topgamesdata.model.Game.genre#3] -> org.hibernate.collection.spi.PersistentBag@2051859502
+DEBUG - Extracted JDBC value [1] - [1]
+DEBUG - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.collection.internal.EagerCollectionAssembler@103221eb
+DEBUG - Collection fully initialized: [com.example.topgamesdata.model.Game.genre#3]
+DEBUG - DomainResult Graph:
+ \-CollectionDomainResult [com.example.topgamesdata.model.Game.platform]
+
+DEBUG - SQL AST Tree:
+    SelectStatement {
+      FromClause {
+        CollectionTableGroup (p1 : com.example.topgamesdata.model.Game.platform) {
+          primaryTableReference : game_platform as p1_0
+        }
+      }
+    }
+
+DEBUG - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+DEBUG - Initializer list
+DEBUG -     com.example.topgamesdata.model.Game.platform -> BagInitializer(com.example.topgamesdata.model.Game.platform)@201609777 (PluralAttribute(com.example.topgamesdata.model.Game.platform))
+DEBUG - select p1_0.game_id,p1_0.platform from game_platform p1_0 where p1_0.game_id=?
+DEBUG - execute query: select p1_0.game_id,p1_0.platform from game_platform p1_0 where p1_0.game_id=?
+DEBUG - Extracted JDBC value [0] - [3]
+DEBUG - (DelayedCollectionInitializer) Current row collection key : com.example.topgamesdata.model.Game.platform#3
+DEBUG - Extracted JDBC value [0] - [3]
+DEBUG - (BagInitializer) Responsible for loading collection [com.example.topgamesdata.model.Game.platform#3] : org.hibernate.collection.spi.PersistentBag@816582686
+DEBUG - (BagInitializer) Reading element from row for collection [com.example.topgamesdata.model.Game.platform#3] -> org.hibernate.collection.spi.PersistentBag@816582686
+DEBUG - Extracted JDBC value [1] - [2]
+DEBUG - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.collection.internal.EagerCollectionAssembler@273f1a3e
+DEBUG - Collection fully initialized: [com.example.topgamesdata.model.Game.platform#3]
+DEBUG - DomainResult Graph:
+ \-CollectionDomainResult [com.example.topgamesdata.model.Game.genre]
+
+DEBUG - SQL AST Tree:
+    SelectStatement {
+      FromClause {
+        CollectionTableGroup (g1 : com.example.topgamesdata.model.Game.genre) {
+          primaryTableReference : game_genre as g1_0
+        }
+      }
+    }
+
+DEBUG - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+DEBUG - Initializer list
+DEBUG -     com.example.topgamesdata.model.Game.genre -> BagInitializer(com.example.topgamesdata.model.Game.genre)@151273778 (PluralAttribute(com.example.topgamesdata.model.Game.genre))
+DEBUG - select g1_0.game_id,g1_0.genre from game_genre g1_0 where g1_0.game_id=?
+DEBUG - execute query: select g1_0.game_id,g1_0.genre from game_genre g1_0 where g1_0.game_id=?
+DEBUG - Extracted JDBC value [0] - [4]
+DEBUG - (DelayedCollectionInitializer) Current row collection key : com.example.topgamesdata.model.Game.genre#4
+DEBUG - Extracted JDBC value [0] - [4]
+DEBUG - (BagInitializer) Responsible for loading collection [com.example.topgamesdata.model.Game.genre#4] : org.hibernate.collection.spi.PersistentBag@607464717
+DEBUG - (BagInitializer) Reading element from row for collection [com.example.topgamesdata.model.Game.genre#4] -> org.hibernate.collection.spi.PersistentBag@607464717
+DEBUG - Extracted JDBC value [1] - [0]
+DEBUG - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.collection.internal.EagerCollectionAssembler@28ec4126
+DEBUG - Extracted JDBC value [0] - [4]
+DEBUG - (DelayedCollectionInitializer) Current row collection key : com.example.topgamesdata.model.Game.genre#4
+DEBUG - Extracted JDBC value [0] - [4]
+DEBUG - (BagInitializer) Found existing loading collection entry [com.example.topgamesdata.model.Game.genre#4]; using loading collection instance - org.hibernate.collection.spi.PersistentBag@607464717
+DEBUG - (BagInitializer) Responsible for loading collection [com.example.topgamesdata.model.Game.genre#4] : org.hibernate.collection.spi.PersistentBag@607464717
+DEBUG - (BagInitializer) Reading element from row for collection [com.example.topgamesdata.model.Game.genre#4] -> org.hibernate.collection.spi.PersistentBag@607464717
+DEBUG - Extracted JDBC value [1] - [1]
+DEBUG - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.collection.internal.EagerCollectionAssembler@28ec4126
+DEBUG - Extracted JDBC value [0] - [4]
+DEBUG - (DelayedCollectionInitializer) Current row collection key : com.example.topgamesdata.model.Game.genre#4
+DEBUG - Extracted JDBC value [0] - [4]
+DEBUG - (BagInitializer) Found existing loading collection entry [com.example.topgamesdata.model.Game.genre#4]; using loading collection instance - org.hibernate.collection.spi.PersistentBag@607464717
+DEBUG - (BagInitializer) Responsible for loading collection [com.example.topgamesdata.model.Game.genre#4] : org.hibernate.collection.spi.PersistentBag@607464717
+DEBUG - (BagInitializer) Reading element from row for collection [com.example.topgamesdata.model.Game.genre#4] -> org.hibernate.collection.spi.PersistentBag@607464717
+DEBUG - Extracted JDBC value [1] - [6]
+DEBUG - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.collection.internal.EagerCollectionAssembler@28ec4126
+DEBUG - Extracted JDBC value [0] - [4]
+DEBUG - (DelayedCollectionInitializer) Current row collection key : com.example.topgamesdata.model.Game.genre#4
+DEBUG - Extracted JDBC value [0] - [4]
+DEBUG - (BagInitializer) Found existing loading collection entry [com.example.topgamesdata.model.Game.genre#4]; using loading collection instance - org.hibernate.collection.spi.PersistentBag@607464717
+DEBUG - (BagInitializer) Responsible for loading collection [com.example.topgamesdata.model.Game.genre#4] : org.hibernate.collection.spi.PersistentBag@607464717
+DEBUG - (BagInitializer) Reading element from row for collection [com.example.topgamesdata.model.Game.genre#4] -> org.hibernate.collection.spi.PersistentBag@607464717
+DEBUG - Extracted JDBC value [1] - [11]
+DEBUG - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.collection.internal.EagerCollectionAssembler@28ec4126
+DEBUG - Collection fully initialized: [com.example.topgamesdata.model.Game.genre#4]
+DEBUG - DomainResult Graph:
+ \-CollectionDomainResult [com.example.topgamesdata.model.Game.platform]
+
+DEBUG - SQL AST Tree:
+    SelectStatement {
+      FromClause {
+        CollectionTableGroup (p1 : com.example.topgamesdata.model.Game.platform) {
+          primaryTableReference : game_platform as p1_0
+        }
+      }
+    }
+
+DEBUG - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+DEBUG - Initializer list
+DEBUG -     com.example.topgamesdata.model.Game.platform -> BagInitializer(com.example.topgamesdata.model.Game.platform)@63609048 (PluralAttribute(com.example.topgamesdata.model.Game.platform))
+DEBUG - select p1_0.game_id,p1_0.platform from game_platform p1_0 where p1_0.game_id=?
+DEBUG - execute query: select p1_0.game_id,p1_0.platform from game_platform p1_0 where p1_0.game_id=?
+DEBUG - Extracted JDBC value [0] - [4]
+DEBUG - (DelayedCollectionInitializer) Current row collection key : com.example.topgamesdata.model.Game.platform#4
+DEBUG - Extracted JDBC value [0] - [4]
+DEBUG - (BagInitializer) Responsible for loading collection [com.example.topgamesdata.model.Game.platform#4] : org.hibernate.collection.spi.PersistentBag@873481073
+DEBUG - (BagInitializer) Reading element from row for collection [com.example.topgamesdata.model.Game.platform#4] -> org.hibernate.collection.spi.PersistentBag@873481073
+DEBUG - Extracted JDBC value [1] - [2]
+DEBUG - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.collection.internal.EagerCollectionAssembler@164f0996
+DEBUG - Collection fully initialized: [com.example.topgamesdata.model.Game.platform#4]
+DEBUG - DomainResult Graph:
+ \-CollectionDomainResult [com.example.topgamesdata.model.Game.genre]
+
+DEBUG - SQL AST Tree:
+    SelectStatement {
+      FromClause {
+        CollectionTableGroup (g1 : com.example.topgamesdata.model.Game.genre) {
+          primaryTableReference : game_genre as g1_0
+        }
+      }
+    }
+
+DEBUG - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+DEBUG - Initializer list
+DEBUG -     com.example.topgamesdata.model.Game.genre -> BagInitializer(com.example.topgamesdata.model.Game.genre)@1091850207 (PluralAttribute(com.example.topgamesdata.model.Game.genre))
+DEBUG - select g1_0.game_id,g1_0.genre from game_genre g1_0 where g1_0.game_id=?
+DEBUG - execute query: select g1_0.game_id,g1_0.genre from game_genre g1_0 where g1_0.game_id=?
+DEBUG - Extracted JDBC value [0] - [5]
+DEBUG - (DelayedCollectionInitializer) Current row collection key : com.example.topgamesdata.model.Game.genre#5
+DEBUG - Extracted JDBC value [0] - [5]
+DEBUG - (BagInitializer) Responsible for loading collection [com.example.topgamesdata.model.Game.genre#5] : org.hibernate.collection.spi.PersistentBag@32888081
+DEBUG - (BagInitializer) Reading element from row for collection [com.example.topgamesdata.model.Game.genre#5] -> org.hibernate.collection.spi.PersistentBag@32888081
+DEBUG - Extracted JDBC value [1] - [0]
+DEBUG - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.collection.internal.EagerCollectionAssembler@764d3d40
+DEBUG - Extracted JDBC value [0] - [5]
+DEBUG - (DelayedCollectionInitializer) Current row collection key : com.example.topgamesdata.model.Game.genre#5
+DEBUG - Extracted JDBC value [0] - [5]
+DEBUG - (BagInitializer) Found existing loading collection entry [com.example.topgamesdata.model.Game.genre#5]; using loading collection instance - org.hibernate.collection.spi.PersistentBag@32888081
+DEBUG - (BagInitializer) Responsible for loading collection [com.example.topgamesdata.model.Game.genre#5] : org.hibernate.collection.spi.PersistentBag@32888081
+DEBUG - (BagInitializer) Reading element from row for collection [com.example.topgamesdata.model.Game.genre#5] -> org.hibernate.collection.spi.PersistentBag@32888081
+DEBUG - Extracted JDBC value [1] - [1]
+DEBUG - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.collection.internal.EagerCollectionAssembler@764d3d40
+DEBUG - Collection fully initialized: [com.example.topgamesdata.model.Game.genre#5]
+DEBUG - DomainResult Graph:
+ \-CollectionDomainResult [com.example.topgamesdata.model.Game.platform]
+
+DEBUG - SQL AST Tree:
+    SelectStatement {
+      FromClause {
+        CollectionTableGroup (p1 : com.example.topgamesdata.model.Game.platform) {
+          primaryTableReference : game_platform as p1_0
+        }
+      }
+    }
+
+DEBUG - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+DEBUG - Initializer list
+DEBUG -     com.example.topgamesdata.model.Game.platform -> BagInitializer(com.example.topgamesdata.model.Game.platform)@356839137 (PluralAttribute(com.example.topgamesdata.model.Game.platform))
+DEBUG - select p1_0.game_id,p1_0.platform from game_platform p1_0 where p1_0.game_id=?
+DEBUG - execute query: select p1_0.game_id,p1_0.platform from game_platform p1_0 where p1_0.game_id=?
+DEBUG - Extracted JDBC value [0] - [5]
+DEBUG - (DelayedCollectionInitializer) Current row collection key : com.example.topgamesdata.model.Game.platform#5
+DEBUG - Extracted JDBC value [0] - [5]
+DEBUG - (BagInitializer) Responsible for loading collection [com.example.topgamesdata.model.Game.platform#5] : org.hibernate.collection.spi.PersistentBag@997962502
+DEBUG - (BagInitializer) Reading element from row for collection [com.example.topgamesdata.model.Game.platform#5] -> org.hibernate.collection.spi.PersistentBag@997962502
+DEBUG - Extracted JDBC value [1] - [2]
+DEBUG - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.collection.internal.EagerCollectionAssembler@7da4a05
+DEBUG - Collection fully initialized: [com.example.topgamesdata.model.Game.platform#5]
+DEBUG - DomainResult Graph:
+ \-CollectionDomainResult [com.example.topgamesdata.model.Game.genre]
+
+DEBUG - SQL AST Tree:
+    SelectStatement {
+      FromClause {
+        CollectionTableGroup (g1 : com.example.topgamesdata.model.Game.genre) {
+          primaryTableReference : game_genre as g1_0
+        }
+      }
+    }
+
+DEBUG - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+DEBUG - Initializer list
+DEBUG -     com.example.topgamesdata.model.Game.genre -> BagInitializer(com.example.topgamesdata.model.Game.genre)@903581689 (PluralAttribute(com.example.topgamesdata.model.Game.genre))
+DEBUG - select g1_0.game_id,g1_0.genre from game_genre g1_0 where g1_0.game_id=?
+DEBUG - execute query: select g1_0.game_id,g1_0.genre from game_genre g1_0 where g1_0.game_id=?
+DEBUG - Extracted JDBC value [0] - [6]
+DEBUG - (DelayedCollectionInitializer) Current row collection key : com.example.topgamesdata.model.Game.genre#6
+DEBUG - Extracted JDBC value [0] - [6]
+DEBUG - (BagInitializer) Responsible for loading collection [com.example.topgamesdata.model.Game.genre#6] : org.hibernate.collection.spi.PersistentBag@495249858
+DEBUG - (BagInitializer) Reading element from row for collection [com.example.topgamesdata.model.Game.genre#6] -> org.hibernate.collection.spi.PersistentBag@495249858
+DEBUG - Extracted JDBC value [1] - [0]
+DEBUG - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.collection.internal.EagerCollectionAssembler@6808d5c
+DEBUG - Extracted JDBC value [0] - [6]
+DEBUG - (DelayedCollectionInitializer) Current row collection key : com.example.topgamesdata.model.Game.genre#6
+DEBUG - Extracted JDBC value [0] - [6]
+DEBUG - (BagInitializer) Found existing loading collection entry [com.example.topgamesdata.model.Game.genre#6]; using loading collection instance - org.hibernate.collection.spi.PersistentBag@495249858
+DEBUG - (BagInitializer) Responsible for loading collection [com.example.topgamesdata.model.Game.genre#6] : org.hibernate.collection.spi.PersistentBag@495249858
+DEBUG - (BagInitializer) Reading element from row for collection [com.example.topgamesdata.model.Game.genre#6] -> org.hibernate.collection.spi.PersistentBag@495249858
+DEBUG - Extracted JDBC value [1] - [1]
+DEBUG - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.collection.internal.EagerCollectionAssembler@6808d5c
+DEBUG - Collection fully initialized: [com.example.topgamesdata.model.Game.genre#6]
+DEBUG - DomainResult Graph:
+ \-CollectionDomainResult [com.example.topgamesdata.model.Game.platform]
+
+DEBUG - SQL AST Tree:
+    SelectStatement {
+      FromClause {
+        CollectionTableGroup (p1 : com.example.topgamesdata.model.Game.platform) {
+          primaryTableReference : game_platform as p1_0
+        }
+      }
+    }
+
+DEBUG - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+DEBUG - Initializer list
+DEBUG -     com.example.topgamesdata.model.Game.platform -> BagInitializer(com.example.topgamesdata.model.Game.platform)@1867349554 (PluralAttribute(com.example.topgamesdata.model.Game.platform))
+DEBUG - select p1_0.game_id,p1_0.platform from game_platform p1_0 where p1_0.game_id=?
+DEBUG - execute query: select p1_0.game_id,p1_0.platform from game_platform p1_0 where p1_0.game_id=?
+DEBUG - Extracted JDBC value [0] - [6]
+DEBUG - (DelayedCollectionInitializer) Current row collection key : com.example.topgamesdata.model.Game.platform#6
+DEBUG - Extracted JDBC value [0] - [6]
+DEBUG - (BagInitializer) Responsible for loading collection [com.example.topgamesdata.model.Game.platform#6] : org.hibernate.collection.spi.PersistentBag@1376560078
+DEBUG - (BagInitializer) Reading element from row for collection [com.example.topgamesdata.model.Game.platform#6] -> org.hibernate.collection.spi.PersistentBag@1376560078
+DEBUG - Extracted JDBC value [1] - [2]
+DEBUG - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.collection.internal.EagerCollectionAssembler@5b699a58
+DEBUG - Collection fully initialized: [com.example.topgamesdata.model.Game.platform#6]
+DEBUG - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+DEBUG - Completed 200 OK
+DEBUG - Mapped to com.example.topgameswebapi.controller.LogController#getInfoLogs()
+DEBUG - Mapped to com.example.topgameswebapi.controller.LogController#getInfoLogs()
+DEBUG - GET "/logs/info", parameters={}
+DEBUG - Mapped to com.example.topgameswebapi.controller.LogController#getInfoLogs()
+DEBUG - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+DEBUG - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+DEBUG - Writing [[INFO  - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilt (truncated)...]
+DEBUG - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+DEBUG - Completed 200 OK
+DEBUG - Mapped to com.example.topgameswebapi.controller.LogController#getWarningLogs()
+DEBUG - Mapped to com.example.topgameswebapi.controller.LogController#getWarningLogs()
+DEBUG - GET "/logs/warning", parameters={}
+DEBUG - Mapped to com.example.topgameswebapi.controller.LogController#getWarningLogs()
+DEBUG - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+DEBUG - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+DEBUG - Writing [[WARN  - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed (truncated)...]
+DEBUG - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+DEBUG - Completed 200 OK
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - Mapped to com.example.topgameswebapi.controller.LogController#getErrorLogs()
+DEBUG - Mapped to com.example.topgameswebapi.controller.LogController#getErrorLogs()
+DEBUG - GET "/logs/error", parameters={}
+DEBUG - Mapped to com.example.topgameswebapi.controller.LogController#getErrorLogs()
+DEBUG - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+DEBUG - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+DEBUG - Writing [[]]
+DEBUG - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+DEBUG - Completed 200 OK
+DEBUG - Mapped to com.example.topgameswebapi.controller.LogController#getDebugLogs()
+DEBUG - Mapped to com.example.topgameswebapi.controller.LogController#getDebugLogs()
+DEBUG - GET "/logs/debug", parameters={}
+DEBUG - Mapped to com.example.topgameswebapi.controller.LogController#getDebugLogs()
+DEBUG - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+DEBUG - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+DEBUG - Writing [[DEBUG - Creating shared instance of singleton bean 'securityConfiguration', DEBUG - Creating shared (truncated)...]
+DEBUG - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+DEBUG - Completed 200 OK
+DEBUG - Mapped to com.example.topgameswebapi.controller.UserController#addSamples()
+DEBUG - POST "/api/user/dev/addSamples", parameters={}
+DEBUG - Mapped to com.example.topgameswebapi.controller.UserController#addSamples()
+DEBUG - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+INFO  - Adding samplee users
+DEBUG - Found thread-bound EntityManager [SessionImpl(737464985<open>)] for JPA transaction
+DEBUG - Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.saveAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+DEBUG - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+DEBUG - begin
+DEBUG - execute query: set autocommit=0
+DEBUG - System variable change:  autocommit = OFF
+DEBUG - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@2fcb533f]
+DEBUG - jakarta.persistence.PersistenceUnitUtil.getIdentifier is only intended to work with enhanced entities (although Hibernate also adapts this support to its proxies); however the passed entity was not enhanced (nor a proxy).. may not be able to read identifier
+DEBUG - select next value for user_seq
+DEBUG - execute query: select next value for user_seq
+DEBUG - Sequence value obtained: 1
+DEBUG - Generated identifier: 1, using strategy: org.hibernate.id.enhanced.SequenceStyleGenerator
+DEBUG - jakarta.persistence.PersistenceUnitUtil.getIdentifier is only intended to work with enhanced entities (although Hibernate also adapts this support to its proxies); however the passed entity was not enhanced (nor a proxy).. may not be able to read identifier
+DEBUG - select next value for user_seq
+DEBUG - execute query: select next value for user_seq
+DEBUG - Sequence value obtained: 51
+DEBUG - Generated identifier: 2, using strategy: org.hibernate.id.enhanced.SequenceStyleGenerator
+DEBUG - jakarta.persistence.PersistenceUnitUtil.getIdentifier is only intended to work with enhanced entities (although Hibernate also adapts this support to its proxies); however the passed entity was not enhanced (nor a proxy).. may not be able to read identifier
+DEBUG - Generated identifier: 3, using strategy: org.hibernate.id.enhanced.SequenceStyleGenerator
+DEBUG - jakarta.persistence.PersistenceUnitUtil.getIdentifier is only intended to work with enhanced entities (although Hibernate also adapts this support to its proxies); however the passed entity was not enhanced (nor a proxy).. may not be able to read identifier
+DEBUG - Generated identifier: 4, using strategy: org.hibernate.id.enhanced.SequenceStyleGenerator
+DEBUG - Initiating transaction commit
+DEBUG - Committing JPA transaction on EntityManager [SessionImpl(737464985<open>)]
+DEBUG - committing
+DEBUG - Processing flush-time cascades
+DEBUG - Dirty checking collections
+DEBUG - Flushed: 4 insertions, 0 updates, 0 deletions to 4 objects
+DEBUG - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+DEBUG - Listing entities:
+DEBUG - com.example.topgamesdata.model.User{firstName=Kamil, lastName=Kamilowicz, password=haslo, id=4, email=essawessie@wp.pl, username=Strongman1337}
+DEBUG - com.example.topgamesdata.model.User{firstName=Piot, lastName=Piotrowicz, password=haslo, id=3, email=javaenjoyer@google.com, username=JavaEnjoyer}
+DEBUG - com.example.topgamesdata.model.User{firstName=Szymon, lastName=Ziutkowski, password=haslo, id=2, email=bigboy@wp.pl, username=BigBoy11}
+DEBUG - com.example.topgamesdata.model.User{firstName=Stefan, lastName=Stefanowicz, password=haslo, id=1, email=plshelpme@java.com, username=StefanKox2137}
+DEBUG - insert into user (email, first_name, last_name, password, username, id) values (?, ?, ?, ?, ?, ?)
+DEBUG - execute query: insert into user (email, first_name, last_name, password, username, id) values (?, ?, ?, ?, ?, ?)
+DEBUG - insert into user (email, first_name, last_name, password, username, id) values (?, ?, ?, ?, ?, ?)
+DEBUG - execute query: insert into user (email, first_name, last_name, password, username, id) values (?, ?, ?, ?, ?, ?)
+DEBUG - insert into user (email, first_name, last_name, password, username, id) values (?, ?, ?, ?, ?, ?)
+DEBUG - execute query: insert into user (email, first_name, last_name, password, username, id) values (?, ?, ?, ?, ?, ?)
+DEBUG - insert into user (email, first_name, last_name, password, username, id) values (?, ?, ?, ?, ?, ?)
+DEBUG - execute query: insert into user (email, first_name, last_name, password, username, id) values (?, ?, ?, ?, ?, ?)
+DEBUG - execute query: COMMIT
+DEBUG - execute query: set autocommit=1
+DEBUG - System variable change:  autocommit = ON
+DEBUG - Not closing pre-bound JPA EntityManager after transaction
+DEBUG - Using 'application/json', given [application/json, text/plain, */*] and supported [text/plain, */*, application/json, application/*+json]
+DEBUG - Writing ["Samples added"]
+DEBUG - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+DEBUG - Completed 200 OK
+DEBUG - Mapped to com.example.topgameswebapi.controller.GameController#getAllGames()
+DEBUG - Mapped to com.example.topgameswebapi.controller.UserController#getAllUsers()
+DEBUG - GET "/api/game/getAll", parameters={}
+DEBUG - Mapped to com.example.topgameswebapi.controller.GameController#getAllGames()
+DEBUG - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+DEBUG - GET "/api/user/getAll", parameters={}
+INFO  - Got all games
+DEBUG - Mapped to com.example.topgameswebapi.controller.UserController#getAllUsers()
+DEBUG - Found thread-bound EntityManager [SessionImpl(1889509276<open>)] for JPA transaction
+DEBUG - Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+DEBUG - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+INFO  - Got all users
+DEBUG - Found thread-bound EntityManager [SessionImpl(1443810691<open>)] for JPA transaction
+DEBUG - Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+DEBUG - Setting JDBC Connection [HikariProxyConnection@1956648279 wrapping org.mariadb.jdbc.Connection@1ac0cdb0] read-only
+DEBUG - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+DEBUG - begin
+DEBUG - Setting JDBC Connection [HikariProxyConnection@1549224180 wrapping org.mariadb.jdbc.Connection@485b34ce] read-only
+DEBUG - execute query: set autocommit=0
+DEBUG - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+DEBUG - begin
+DEBUG - execute query: set autocommit=0
+DEBUG - System variable change:  autocommit = OFF
+DEBUG - System variable change:  autocommit = OFF
+DEBUG - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@31a295a7]
+DEBUG - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@7db5182c]
+DEBUG - Created new SQL alias : g1_0
+DEBUG - Created new SQL alias : u1_0
+DEBUG - Registration of TableGroup [StandardTableGroup(com.example.topgamesdata.model.Game(178482819421600))] with identifierForTableGroup [com.example.topgamesdata.model.Game] for NavigablePath [com.example.topgamesdata.model.Game] 
+DEBUG - Registration of TableGroup [StandardTableGroup(com.example.topgamesdata.model.User(178482819421500))] with identifierForTableGroup [com.example.topgamesdata.model.User] for NavigablePath [com.example.topgamesdata.model.User] 
+DEBUG - DomainResult Graph:
+ \-EntityResultImpl [com.example.topgamesdata.model.User(178482819421500)]
+ |  +-BasicFetch [com.example.topgamesdata.model.User(178482819421500).email]
+ |  +-BasicFetch [com.example.topgamesdata.model.User(178482819421500).firstName]
+ |  +-BasicFetch [com.example.topgamesdata.model.User(178482819421500).lastName]
+ |  +-BasicFetch [com.example.topgamesdata.model.User(178482819421500).password]
+ |  \-BasicFetch [com.example.topgamesdata.model.User(178482819421500).username]
+
+DEBUG - SQL AST Tree:
+    SelectStatement {
+      FromClause {
+        StandardTableGroup (u1 : com.example.topgamesdata.model.User(178482819421500)) {
+          primaryTableReference : user as u1_0
+        }
+      }
+    }
+
+DEBUG - DomainResult Graph:
+ \-EntityResultImpl [com.example.topgamesdata.model.Game(178482819421600)]
+ |  +-BasicFetch [com.example.topgamesdata.model.Game(178482819421600).description]
+ |  +-EntityFetchSelectImpl [com.example.topgamesdata.model.Game(178482819421600).developer]
+ |  +-DelayedCollectionFetch [com.example.topgamesdata.model.Game(178482819421600).genre]
+ |  +-BasicFetch [com.example.topgamesdata.model.Game(178482819421600).name]
+ |  +-DelayedCollectionFetch [com.example.topgamesdata.model.Game(178482819421600).platform]
+ |  \-BasicFetch [com.example.topgamesdata.model.Game(178482819421600).releaseDate]
+
+DEBUG - SQL AST Tree:
+    SelectStatement {
+      FromClause {
+        StandardTableGroup (g1 : com.example.topgamesdata.model.Game(178482819421600)) {
+          primaryTableReference : game as g1_0
+        }
+      }
+    }
+
+DEBUG - Skipping reading Query result cache data: cache-enabled = false, cache-mode = NORMAL
+DEBUG - Skipping reading Query result cache data: cache-enabled = false, cache-mode = NORMAL
+DEBUG - Initializer list
+DEBUG -     com.example.topgamesdata.model.User(178482819421500) -> EntityResultInitializer(com.example.topgamesdata.model.User(178482819421500))@1287806566 (SingleTableEntityPersister(com.example.topgamesdata.model.User))
+DEBUG - Initializer list
+DEBUG - select u1_0.id,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.username from user u1_0
+DEBUG -     com.example.topgamesdata.model.Game(178482819421600).developer -> EntitySelectFetchInitializer(com.example.topgamesdata.model.Game(178482819421600).developer)@1860390343 (ToOneAttributeMapping(NavigableRole[com.example.topgamesdata.model.Game.developer])@1798491855)
+DEBUG -     com.example.topgamesdata.model.Game(178482819421600).genre -> DelayedCollectionInitializer(com.example.topgamesdata.model.Game(178482819421600).genre)@628968533 (PluralAttribute(com.example.topgamesdata.model.Game.genre))
+DEBUG -     com.example.topgamesdata.model.Game(178482819421600).platform -> DelayedCollectionInitializer(com.example.topgamesdata.model.Game(178482819421600).platform)@1872968426 (PluralAttribute(com.example.topgamesdata.model.Game.platform))
+DEBUG - execute query: select u1_0.id,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.username from user u1_0
+DEBUG -     com.example.topgamesdata.model.Game(178482819421600) -> EntityResultInitializer(com.example.topgamesdata.model.Game(178482819421600))@1438898140 (SingleTableEntityPersister(com.example.topgamesdata.model.Game))
+DEBUG - select g1_0.id,g1_0.description,g1_0.developer_id,g1_0.name,g1_0.release_date from game g1_0
+DEBUG - execute query: select g1_0.id,g1_0.description,g1_0.developer_id,g1_0.name,g1_0.release_date from game g1_0
+DEBUG - Extracted JDBC value [0] - [1]
+DEBUG - (EntityResultInitializer) Hydrated EntityKey (com.example.topgamesdata.model.User(178482819421500)): 1
+DEBUG - Extracted JDBC value [0] - [1]
+DEBUG - (EntityResultInitializer) Hydrated EntityKey (com.example.topgamesdata.model.Game(178482819421600)): 1
+DEBUG - (EntityResultInitializer) Created new entity instance [com.example.topgamesdata.model.User(178482819421500)#1] : com.example.topgamesdata.model.User@13cb5c1a
+DEBUG - Extracted JDBC value [0] - [1]
+DEBUG - (DelayedCollectionInitializer) Current row collection key : com.example.topgamesdata.model.Game(178482819421600).genre#1
+DEBUG - Extracted JDBC value [1] - [plshelpme@java.com]
+DEBUG - Extracted JDBC value [0] - [1]
+DEBUG - Extracted JDBC value [2] - [Stefan]
+DEBUG - (DelayedCollectionInitializer) Current row collection key : com.example.topgamesdata.model.Game(178482819421600).platform#1
+DEBUG - Extracted JDBC value [3] - [Stefanowicz]
+DEBUG - Extracted JDBC value [4] - [haslo]
+DEBUG - Extracted JDBC value [5] - [StefanKox2137]
+DEBUG - (EntityResultInitializer) Created new entity instance [com.example.topgamesdata.model.Game(178482819421600)#1] : com.example.topgamesdata.model.Game@23ba1bd3
+DEBUG - (EntityResultInitializer) Done materializing entityInstance : com.example.topgamesdata.model.User(178482819421500)#1
+DEBUG - Extracted JDBC value [2] - [1]
+DEBUG - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@4da4016b
+DEBUG - (EntitySelectFetchInitializer) Invoking session#internalLoad for entity (com.example.topgamesdata.model.Game(178482819421600).developer#1) : 1
+DEBUG - (EntityResultInitializer) Found existing loading entry [com.example.topgamesdata.model.User(178482819421500)#1] - using loading instance
+DEBUG - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+DEBUG - Initializer list
+DEBUG - Extracted JDBC value [0] - [2]
+DEBUG - (EntityResultInitializer) Hydrated EntityKey (com.example.topgamesdata.model.User(178482819421500)): 2
+DEBUG -     com.example.topgamesdata.model.Developer -> EntityResultInitializer(com.example.topgamesdata.model.Developer)@456846654 (SingleTableEntityPersister(com.example.topgamesdata.model.Developer))
+DEBUG - (EntityResultInitializer) Created new entity instance [com.example.topgamesdata.model.User(178482819421500)#2] : com.example.topgamesdata.model.User@589b4807
+DEBUG - select d1_0.id,d1_0.country,d1_0.name from developer d1_0 where d1_0.id=?
+DEBUG - Extracted JDBC value [1] - [bigboy@wp.pl]
+DEBUG - Extracted JDBC value [2] - [Szymon]
+DEBUG - execute query: select d1_0.id,d1_0.country,d1_0.name from developer d1_0 where d1_0.id=?
+DEBUG - Extracted JDBC value [3] - [Ziutkowski]
+DEBUG - Extracted JDBC value [4] - [haslo]
+DEBUG - Extracted JDBC value [5] - [BigBoy11]
+DEBUG - (EntityResultInitializer) Done materializing entityInstance : com.example.topgamesdata.model.User(178482819421500)#2
+DEBUG - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@4da4016b
+DEBUG - (EntityResultInitializer) Found existing loading entry [com.example.topgamesdata.model.User(178482819421500)#2] - using loading instance
+DEBUG - Extracted JDBC value [0] - [3]
+DEBUG - (EntityResultInitializer) Hydrated EntityKey (com.example.topgamesdata.model.User(178482819421500)): 3
+DEBUG - (EntityResultInitializer) Created new entity instance [com.example.topgamesdata.model.User(178482819421500)#3] : com.example.topgamesdata.model.User@28cbe220
+DEBUG - (EntityResultInitializer) Hydrated EntityKey (com.example.topgamesdata.model.Developer): 1
+DEBUG - Extracted JDBC value [1] - [javaenjoyer@google.com]
+DEBUG - (EntityResultInitializer) Created new entity instance [com.example.topgamesdata.model.Developer#1] : com.example.topgamesdata.model.Developer@11ad1d79
+DEBUG - Extracted JDBC value [2] - [Piot]
+DEBUG - Extracted JDBC value [3] - [Piotrowicz]
+DEBUG - Extracted JDBC value [1] - [America]
+DEBUG - Extracted JDBC value [4] - [haslo]
+DEBUG - Extracted JDBC value [5] - [JavaEnjoyer]
+DEBUG - Extracted JDBC value [2] - [Santa Monica Studio]
+DEBUG - (EntityResultInitializer) Done materializing entityInstance : com.example.topgamesdata.model.Developer#1
+DEBUG - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@5d32416f
+DEBUG - (EntityResultInitializer) Found existing loading entry [com.example.topgamesdata.model.Developer#1] - using loading instance
+DEBUG - (EntityResultInitializer) Done materializing entityInstance : com.example.topgamesdata.model.User(178482819421500)#3
+DEBUG - (EntitySelectFetchInitializer) Entity [com.example.topgamesdata.model.Game(178482819421600).developer#1] : 1 has being loaded by session.internalLoad.
+DEBUG - Extracted JDBC value [1] - [Cool game]
+DEBUG - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@4da4016b
+DEBUG - Extracted JDBC value [3] - [God of War]
+DEBUG - (EntityResultInitializer) Found existing loading entry [com.example.topgamesdata.model.User(178482819421500)#3] - using loading instance
+DEBUG - Extracted JDBC value [4] - [2018-04-20T00:00]
+DEBUG - Extracted JDBC value [0] - [4]
+DEBUG - (EntityResultInitializer) Done materializing entityInstance : com.example.topgamesdata.model.Game(178482819421600)#1
+DEBUG - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@3b6ba26b
+DEBUG - (EntityResultInitializer) Found existing loading entry [com.example.topgamesdata.model.Game(178482819421600)#1] - using loading instance
+DEBUG - (EntityResultInitializer) Hydrated EntityKey (com.example.topgamesdata.model.User(178482819421500)): 4
+DEBUG - (EntityResultInitializer) Created new entity instance [com.example.topgamesdata.model.User(178482819421500)#4] : com.example.topgamesdata.model.User@61a950af
+DEBUG - Extracted JDBC value [1] - [essawessie@wp.pl]
+DEBUG - Extracted JDBC value [2] - [Kamil]
+DEBUG - Extracted JDBC value [0] - [2]
+DEBUG - Extracted JDBC value [3] - [Kamilowicz]
+DEBUG - (EntityResultInitializer) Hydrated EntityKey (com.example.topgamesdata.model.Game(178482819421600)): 2
+DEBUG - Extracted JDBC value [4] - [haslo]
+DEBUG - Extracted JDBC value [0] - [2]
+DEBUG - Extracted JDBC value [5] - [Strongman1337]
+DEBUG - (DelayedCollectionInitializer) Current row collection key : com.example.topgamesdata.model.Game(178482819421600).genre#2
+DEBUG - Extracted JDBC value [0] - [2]
+DEBUG - (EntityResultInitializer) Done materializing entityInstance : com.example.topgamesdata.model.User(178482819421500)#4
+DEBUG - (DelayedCollectionInitializer) Current row collection key : com.example.topgamesdata.model.Game(178482819421600).platform#2
+DEBUG - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@4da4016b
+DEBUG - (EntityResultInitializer) Found existing loading entry [com.example.topgamesdata.model.User(178482819421500)#4] - using loading instance
+DEBUG - (EntityResultInitializer) Created new entity instance [com.example.topgamesdata.model.Game(178482819421600)#2] : com.example.topgamesdata.model.Game@389eb6a3
+DEBUG - Extracted JDBC value [2] - [2]
+DEBUG - (EntitySelectFetchInitializer) Invoking session#internalLoad for entity (com.example.topgamesdata.model.Game(178482819421600).developer#2) : 2
+DEBUG - Initiating transaction commit
+DEBUG - Committing JPA transaction on EntityManager [SessionImpl(1443810691<open>)]
+DEBUG - committing
+DEBUG - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+DEBUG - execute query: COMMIT
+DEBUG - Initializer list
+DEBUG -     com.example.topgamesdata.model.Developer -> EntityResultInitializer(com.example.topgamesdata.model.Developer)@1585460001 (SingleTableEntityPersister(com.example.topgamesdata.model.Developer))
+DEBUG - select d1_0.id,d1_0.country,d1_0.name from developer d1_0 where d1_0.id=?
+DEBUG - execute query: select d1_0.id,d1_0.country,d1_0.name from developer d1_0 where d1_0.id=?
+DEBUG - execute query: set autocommit=1
+DEBUG - System variable change:  autocommit = ON
+DEBUG - Resetting read-only flag of JDBC Connection [HikariProxyConnection@1549224180 wrapping org.mariadb.jdbc.Connection@485b34ce]
+DEBUG - Not closing pre-bound JPA EntityManager after transaction
+DEBUG - (EntityResultInitializer) Hydrated EntityKey (com.example.topgamesdata.model.Developer): 2
+DEBUG - (EntityResultInitializer) Created new entity instance [com.example.topgamesdata.model.Developer#2] : com.example.topgamesdata.model.Developer@164fa5fb
+DEBUG - Extracted JDBC value [1] - [America]
+DEBUG - Extracted JDBC value [2] - [Naughty Dog]
+DEBUG - (EntityResultInitializer) Done materializing entityInstance : com.example.topgamesdata.model.Developer#2
+DEBUG - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+DEBUG - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@49099528
+DEBUG - (EntityResultInitializer) Found existing loading entry [com.example.topgamesdata.model.Developer#2] - using loading instance
+DEBUG - Writing [[com.example.topgamesdata.model.User@13cb5c1a, com.example.topgamesdata.model.User@589b4807, com.exa (truncated)...]
+DEBUG - (EntitySelectFetchInitializer) Entity [com.example.topgamesdata.model.Game(178482819421600).developer#2] : 2 has being loaded by session.internalLoad.
+DEBUG - Extracted JDBC value [1] - [Cool game]
+DEBUG - Extracted JDBC value [3] - [The Last of Us]
+DEBUG - Extracted JDBC value [4] - [2013-06-14T00:00]
+DEBUG - (EntityResultInitializer) Done materializing entityInstance : com.example.topgamesdata.model.Game(178482819421600)#2
+DEBUG - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@3b6ba26b
+DEBUG - (EntityResultInitializer) Found existing loading entry [com.example.topgamesdata.model.Game(178482819421600)#2] - using loading instance
+DEBUG - Extracted JDBC value [0] - [3]
+DEBUG - (EntityResultInitializer) Hydrated EntityKey (com.example.topgamesdata.model.Game(178482819421600)): 3
+DEBUG - Extracted JDBC value [0] - [3]
+DEBUG - (DelayedCollectionInitializer) Current row collection key : com.example.topgamesdata.model.Game(178482819421600).genre#3
+DEBUG - Extracted JDBC value [0] - [3]
+DEBUG - (DelayedCollectionInitializer) Current row collection key : com.example.topgamesdata.model.Game(178482819421600).platform#3
+DEBUG - (EntityResultInitializer) Created new entity instance [com.example.topgamesdata.model.Game(178482819421600)#3] : com.example.topgamesdata.model.Game@42920e68
+DEBUG - Extracted JDBC value [2] - [3]
+DEBUG - (EntitySelectFetchInitializer) Invoking session#internalLoad for entity (com.example.topgamesdata.model.Game(178482819421600).developer#3) : 3
+DEBUG - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+DEBUG - Initializer list
+DEBUG -     com.example.topgamesdata.model.Developer -> EntityResultInitializer(com.example.topgamesdata.model.Developer)@1203205063 (SingleTableEntityPersister(com.example.topgamesdata.model.Developer))
+DEBUG - select d1_0.id,d1_0.country,d1_0.name from developer d1_0 where d1_0.id=?
+DEBUG - execute query: select d1_0.id,d1_0.country,d1_0.name from developer d1_0 where d1_0.id=?
+DEBUG - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+DEBUG - Completed 200 OK
+DEBUG - (EntityResultInitializer) Hydrated EntityKey (com.example.topgamesdata.model.Developer): 3
+DEBUG - (EntityResultInitializer) Created new entity instance [com.example.topgamesdata.model.Developer#3] : com.example.topgamesdata.model.Developer@39c10858
+DEBUG - Extracted JDBC value [1] - [America]
+DEBUG - Extracted JDBC value [2] - [Rockstar Games]
+DEBUG - (EntityResultInitializer) Done materializing entityInstance : com.example.topgamesdata.model.Developer#3
+DEBUG - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@45946dec
+DEBUG - (EntityResultInitializer) Found existing loading entry [com.example.topgamesdata.model.Developer#3] - using loading instance
+DEBUG - (EntitySelectFetchInitializer) Entity [com.example.topgamesdata.model.Game(178482819421600).developer#3] : 3 has being loaded by session.internalLoad.
+DEBUG - Extracted JDBC value [1] - [A game about a cowboy]
+DEBUG - Extracted JDBC value [3] - [Red Dead Redemption 2]
+DEBUG - Extracted JDBC value [4] - [2018-10-26T00:00]
+DEBUG - (EntityResultInitializer) Done materializing entityInstance : com.example.topgamesdata.model.Game(178482819421600)#3
+DEBUG - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@3b6ba26b
+DEBUG - (EntityResultInitializer) Found existing loading entry [com.example.topgamesdata.model.Game(178482819421600)#3] - using loading instance
+DEBUG - Extracted JDBC value [0] - [4]
+DEBUG - (EntityResultInitializer) Hydrated EntityKey (com.example.topgamesdata.model.Game(178482819421600)): 4
+DEBUG - Extracted JDBC value [0] - [4]
+DEBUG - (DelayedCollectionInitializer) Current row collection key : com.example.topgamesdata.model.Game(178482819421600).genre#4
+DEBUG - Extracted JDBC value [0] - [4]
+DEBUG - (DelayedCollectionInitializer) Current row collection key : com.example.topgamesdata.model.Game(178482819421600).platform#4
+DEBUG - (EntityResultInitializer) Created new entity instance [com.example.topgamesdata.model.Game(178482819421600)#4] : com.example.topgamesdata.model.Game@67fc1801
+DEBUG - Extracted JDBC value [2] - [4]
+DEBUG - (EntitySelectFetchInitializer) Invoking session#internalLoad for entity (com.example.topgamesdata.model.Game(178482819421600).developer#4) : 4
+DEBUG - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+DEBUG - Initializer list
+DEBUG -     com.example.topgamesdata.model.Developer -> EntityResultInitializer(com.example.topgamesdata.model.Developer)@31580703 (SingleTableEntityPersister(com.example.topgamesdata.model.Developer))
+DEBUG - select d1_0.id,d1_0.country,d1_0.name from developer d1_0 where d1_0.id=?
+DEBUG - execute query: select d1_0.id,d1_0.country,d1_0.name from developer d1_0 where d1_0.id=?
+DEBUG - (EntityResultInitializer) Hydrated EntityKey (com.example.topgamesdata.model.Developer): 4
+DEBUG - (EntityResultInitializer) Created new entity instance [com.example.topgamesdata.model.Developer#4] : com.example.topgamesdata.model.Developer@1c713643
+DEBUG - Extracted JDBC value [1] - [Poland]
+DEBUG - Extracted JDBC value [2] - [CD Projekt Red]
+DEBUG - (EntityResultInitializer) Done materializing entityInstance : com.example.topgamesdata.model.Developer#4
+DEBUG - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@120ecec8
+DEBUG - (EntityResultInitializer) Found existing loading entry [com.example.topgamesdata.model.Developer#4] - using loading instance
+DEBUG - (EntitySelectFetchInitializer) Entity [com.example.topgamesdata.model.Game(178482819421600).developer#4] : 4 has being loaded by session.internalLoad.
+DEBUG - Extracted JDBC value [1] - [A game about a witcher]
+DEBUG - Extracted JDBC value [3] - [The Witcher 3: Wild Hunt]
+DEBUG - Extracted JDBC value [4] - [2015-05-18T00:00]
+DEBUG - (EntityResultInitializer) Done materializing entityInstance : com.example.topgamesdata.model.Game(178482819421600)#4
+DEBUG - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@3b6ba26b
+DEBUG - (EntityResultInitializer) Found existing loading entry [com.example.topgamesdata.model.Game(178482819421600)#4] - using loading instance
+DEBUG - Extracted JDBC value [0] - [5]
+DEBUG - (EntityResultInitializer) Hydrated EntityKey (com.example.topgamesdata.model.Game(178482819421600)): 5
+DEBUG - Extracted JDBC value [0] - [5]
+DEBUG - (DelayedCollectionInitializer) Current row collection key : com.example.topgamesdata.model.Game(178482819421600).genre#5
+DEBUG - Extracted JDBC value [0] - [5]
+DEBUG - (DelayedCollectionInitializer) Current row collection key : com.example.topgamesdata.model.Game(178482819421600).platform#5
+DEBUG - (EntityResultInitializer) Created new entity instance [com.example.topgamesdata.model.Game(178482819421600)#5] : com.example.topgamesdata.model.Game@238d23db
+DEBUG - Extracted JDBC value [2] - [5]
+DEBUG - (EntitySelectFetchInitializer) Invoking session#internalLoad for entity (com.example.topgamesdata.model.Game(178482819421600).developer#5) : 5
+DEBUG - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+DEBUG - Initializer list
+DEBUG -     com.example.topgamesdata.model.Developer -> EntityResultInitializer(com.example.topgamesdata.model.Developer)@1200738796 (SingleTableEntityPersister(com.example.topgamesdata.model.Developer))
+DEBUG - select d1_0.id,d1_0.country,d1_0.name from developer d1_0 where d1_0.id=?
+DEBUG - execute query: select d1_0.id,d1_0.country,d1_0.name from developer d1_0 where d1_0.id=?
+DEBUG - (EntityResultInitializer) Hydrated EntityKey (com.example.topgamesdata.model.Developer): 5
+DEBUG - (EntityResultInitializer) Created new entity instance [com.example.topgamesdata.model.Developer#5] : com.example.topgamesdata.model.Developer@46787e5
+DEBUG - Extracted JDBC value [1] - [Canada]
+DEBUG - Extracted JDBC value [2] - [Ubisoft Montreal]
+DEBUG - (EntityResultInitializer) Done materializing entityInstance : com.example.topgamesdata.model.Developer#5
+DEBUG - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@4db02834
+DEBUG - (EntityResultInitializer) Found existing loading entry [com.example.topgamesdata.model.Developer#5] - using loading instance
+DEBUG - (EntitySelectFetchInitializer) Entity [com.example.topgamesdata.model.Game(178482819421600).developer#5] : 5 has being loaded by session.internalLoad.
+DEBUG - Extracted JDBC value [1] - [A game about a viking]
+DEBUG - Extracted JDBC value [3] - [Assassin's Creed Valhalla]
+DEBUG - Extracted JDBC value [4] - [2020-11-10T00:00]
+DEBUG - (EntityResultInitializer) Done materializing entityInstance : com.example.topgamesdata.model.Game(178482819421600)#5
+DEBUG - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@3b6ba26b
+DEBUG - (EntityResultInitializer) Found existing loading entry [com.example.topgamesdata.model.Game(178482819421600)#5] - using loading instance
+DEBUG - Extracted JDBC value [0] - [6]
+DEBUG - (EntityResultInitializer) Hydrated EntityKey (com.example.topgamesdata.model.Game(178482819421600)): 6
+DEBUG - Extracted JDBC value [0] - [6]
+DEBUG - (DelayedCollectionInitializer) Current row collection key : com.example.topgamesdata.model.Game(178482819421600).genre#6
+DEBUG - Extracted JDBC value [0] - [6]
+DEBUG - (DelayedCollectionInitializer) Current row collection key : com.example.topgamesdata.model.Game(178482819421600).platform#6
+DEBUG - (EntityResultInitializer) Created new entity instance [com.example.topgamesdata.model.Game(178482819421600)#6] : com.example.topgamesdata.model.Game@1c2dc9f6
+DEBUG - Extracted JDBC value [2] - [6]
+DEBUG - (EntitySelectFetchInitializer) Invoking session#internalLoad for entity (com.example.topgamesdata.model.Game(178482819421600).developer#6) : 6
+DEBUG - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+DEBUG - Initializer list
+DEBUG -     com.example.topgamesdata.model.Developer -> EntityResultInitializer(com.example.topgamesdata.model.Developer)@1351656399 (SingleTableEntityPersister(com.example.topgamesdata.model.Developer))
+DEBUG - select d1_0.id,d1_0.country,d1_0.name from developer d1_0 where d1_0.id=?
+DEBUG - execute query: select d1_0.id,d1_0.country,d1_0.name from developer d1_0 where d1_0.id=?
+DEBUG - (EntityResultInitializer) Hydrated EntityKey (com.example.topgamesdata.model.Developer): 6
+DEBUG - (EntityResultInitializer) Created new entity instance [com.example.topgamesdata.model.Developer#6] : com.example.topgamesdata.model.Developer@24eff180
+DEBUG - Extracted JDBC value [1] - [Japan]
+DEBUG - Extracted JDBC value [2] - [FromSoftware]
+DEBUG - (EntityResultInitializer) Done materializing entityInstance : com.example.topgamesdata.model.Developer#6
+DEBUG - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@7134a009
+DEBUG - (EntityResultInitializer) Found existing loading entry [com.example.topgamesdata.model.Developer#6] - using loading instance
+DEBUG - (EntitySelectFetchInitializer) Entity [com.example.topgamesdata.model.Game(178482819421600).developer#6] : 6 has being loaded by session.internalLoad.
+DEBUG - Extracted JDBC value [1] - [Cool game]
+DEBUG - Extracted JDBC value [3] - [Dark Souls]
+DEBUG - Extracted JDBC value [4] - [2011-09-22T00:00]
+DEBUG - (EntityResultInitializer) Done materializing entityInstance : com.example.topgamesdata.model.Game(178482819421600)#6
+DEBUG - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@3b6ba26b
+DEBUG - (EntityResultInitializer) Found existing loading entry [com.example.topgamesdata.model.Game(178482819421600)#6] - using loading instance
+DEBUG - Initiating transaction commit
+DEBUG - Committing JPA transaction on EntityManager [SessionImpl(1889509276<open>)]
+DEBUG - committing
+DEBUG - execute query: COMMIT
+DEBUG - execute query: set autocommit=1
+DEBUG - System variable change:  autocommit = ON
+DEBUG - Resetting read-only flag of JDBC Connection [HikariProxyConnection@1956648279 wrapping org.mariadb.jdbc.Connection@1ac0cdb0]
+DEBUG - Not closing pre-bound JPA EntityManager after transaction
+DEBUG - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+DEBUG - Writing [[com.example.topgamesdata.model.Game@23ba1bd3, com.example.topgamesdata.model.Game@389eb6a3, com.exa (truncated)...]
+DEBUG - DomainResult Graph:
+ \-CollectionDomainResult [com.example.topgamesdata.model.Game.genre]
+
+DEBUG - SQL AST Tree:
+    SelectStatement {
+      FromClause {
+        CollectionTableGroup (g1 : com.example.topgamesdata.model.Game.genre) {
+          primaryTableReference : game_genre as g1_0
+        }
+      }
+    }
+
+DEBUG - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+DEBUG - Initializer list
+DEBUG -     com.example.topgamesdata.model.Game.genre -> BagInitializer(com.example.topgamesdata.model.Game.genre)@429528400 (PluralAttribute(com.example.topgamesdata.model.Game.genre))
+DEBUG - select g1_0.game_id,g1_0.genre from game_genre g1_0 where g1_0.game_id=?
+DEBUG - execute query: select g1_0.game_id,g1_0.genre from game_genre g1_0 where g1_0.game_id=?
+DEBUG - Extracted JDBC value [0] - [1]
+DEBUG - (DelayedCollectionInitializer) Current row collection key : com.example.topgamesdata.model.Game.genre#1
+DEBUG - Extracted JDBC value [0] - [1]
+DEBUG - (BagInitializer) Responsible for loading collection [com.example.topgamesdata.model.Game.genre#1] : org.hibernate.collection.spi.PersistentBag@409524509
+DEBUG - (BagInitializer) Reading element from row for collection [com.example.topgamesdata.model.Game.genre#1] -> org.hibernate.collection.spi.PersistentBag@409524509
+DEBUG - Extracted JDBC value [1] - [0]
+DEBUG - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.collection.internal.EagerCollectionAssembler@3f925aa4
+DEBUG - Extracted JDBC value [0] - [1]
+DEBUG - (DelayedCollectionInitializer) Current row collection key : com.example.topgamesdata.model.Game.genre#1
+DEBUG - Extracted JDBC value [0] - [1]
+DEBUG - (BagInitializer) Found existing loading collection entry [com.example.topgamesdata.model.Game.genre#1]; using loading collection instance - org.hibernate.collection.spi.PersistentBag@409524509
+DEBUG - (BagInitializer) Responsible for loading collection [com.example.topgamesdata.model.Game.genre#1] : org.hibernate.collection.spi.PersistentBag@409524509
+DEBUG - (BagInitializer) Reading element from row for collection [com.example.topgamesdata.model.Game.genre#1] -> org.hibernate.collection.spi.PersistentBag@409524509
+DEBUG - Extracted JDBC value [1] - [1]
+DEBUG - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.collection.internal.EagerCollectionAssembler@3f925aa4
+DEBUG - Collection fully initialized: [com.example.topgamesdata.model.Game.genre#1]
+DEBUG - DomainResult Graph:
+ \-CollectionDomainResult [com.example.topgamesdata.model.Game.platform]
+
+DEBUG - SQL AST Tree:
+    SelectStatement {
+      FromClause {
+        CollectionTableGroup (p1 : com.example.topgamesdata.model.Game.platform) {
+          primaryTableReference : game_platform as p1_0
+        }
+      }
+    }
+
+DEBUG - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+DEBUG - Initializer list
+DEBUG -     com.example.topgamesdata.model.Game.platform -> BagInitializer(com.example.topgamesdata.model.Game.platform)@1986783379 (PluralAttribute(com.example.topgamesdata.model.Game.platform))
+DEBUG - select p1_0.game_id,p1_0.platform from game_platform p1_0 where p1_0.game_id=?
+DEBUG - execute query: select p1_0.game_id,p1_0.platform from game_platform p1_0 where p1_0.game_id=?
+DEBUG - Extracted JDBC value [0] - [1]
+DEBUG - (DelayedCollectionInitializer) Current row collection key : com.example.topgamesdata.model.Game.platform#1
+DEBUG - Extracted JDBC value [0] - [1]
+DEBUG - (BagInitializer) Responsible for loading collection [com.example.topgamesdata.model.Game.platform#1] : org.hibernate.collection.spi.PersistentBag@1398706427
+DEBUG - (BagInitializer) Reading element from row for collection [com.example.topgamesdata.model.Game.platform#1] -> org.hibernate.collection.spi.PersistentBag@1398706427
+DEBUG - Extracted JDBC value [1] - [2]
+DEBUG - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.collection.internal.EagerCollectionAssembler@44050b56
+DEBUG - Collection fully initialized: [com.example.topgamesdata.model.Game.platform#1]
+DEBUG - DomainResult Graph:
+ \-CollectionDomainResult [com.example.topgamesdata.model.Game.genre]
+
+DEBUG - SQL AST Tree:
+    SelectStatement {
+      FromClause {
+        CollectionTableGroup (g1 : com.example.topgamesdata.model.Game.genre) {
+          primaryTableReference : game_genre as g1_0
+        }
+      }
+    }
+
+DEBUG - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+DEBUG - Initializer list
+DEBUG -     com.example.topgamesdata.model.Game.genre -> BagInitializer(com.example.topgamesdata.model.Game.genre)@1828932661 (PluralAttribute(com.example.topgamesdata.model.Game.genre))
+DEBUG - select g1_0.game_id,g1_0.genre from game_genre g1_0 where g1_0.game_id=?
+DEBUG - execute query: select g1_0.game_id,g1_0.genre from game_genre g1_0 where g1_0.game_id=?
+DEBUG - Extracted JDBC value [0] - [2]
+DEBUG - (DelayedCollectionInitializer) Current row collection key : com.example.topgamesdata.model.Game.genre#2
+DEBUG - Extracted JDBC value [0] - [2]
+DEBUG - (BagInitializer) Responsible for loading collection [com.example.topgamesdata.model.Game.genre#2] : org.hibernate.collection.spi.PersistentBag@248986222
+DEBUG - (BagInitializer) Reading element from row for collection [com.example.topgamesdata.model.Game.genre#2] -> org.hibernate.collection.spi.PersistentBag@248986222
+DEBUG - Extracted JDBC value [1] - [0]
+DEBUG - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.collection.internal.EagerCollectionAssembler@59ed20c1
+DEBUG - Extracted JDBC value [0] - [2]
+DEBUG - (DelayedCollectionInitializer) Current row collection key : com.example.topgamesdata.model.Game.genre#2
+DEBUG - Extracted JDBC value [0] - [2]
+DEBUG - (BagInitializer) Found existing loading collection entry [com.example.topgamesdata.model.Game.genre#2]; using loading collection instance - org.hibernate.collection.spi.PersistentBag@248986222
+DEBUG - (BagInitializer) Responsible for loading collection [com.example.topgamesdata.model.Game.genre#2] : org.hibernate.collection.spi.PersistentBag@248986222
+DEBUG - (BagInitializer) Reading element from row for collection [com.example.topgamesdata.model.Game.genre#2] -> org.hibernate.collection.spi.PersistentBag@248986222
+DEBUG - Extracted JDBC value [1] - [1]
+DEBUG - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.collection.internal.EagerCollectionAssembler@59ed20c1
+DEBUG - Collection fully initialized: [com.example.topgamesdata.model.Game.genre#2]
+DEBUG - DomainResult Graph:
+ \-CollectionDomainResult [com.example.topgamesdata.model.Game.platform]
+
+DEBUG - SQL AST Tree:
+    SelectStatement {
+      FromClause {
+        CollectionTableGroup (p1 : com.example.topgamesdata.model.Game.platform) {
+          primaryTableReference : game_platform as p1_0
+        }
+      }
+    }
+
+DEBUG - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+DEBUG - Initializer list
+DEBUG -     com.example.topgamesdata.model.Game.platform -> BagInitializer(com.example.topgamesdata.model.Game.platform)@779660589 (PluralAttribute(com.example.topgamesdata.model.Game.platform))
+DEBUG - select p1_0.game_id,p1_0.platform from game_platform p1_0 where p1_0.game_id=?
+DEBUG - execute query: select p1_0.game_id,p1_0.platform from game_platform p1_0 where p1_0.game_id=?
+DEBUG - Extracted JDBC value [0] - [2]
+DEBUG - (DelayedCollectionInitializer) Current row collection key : com.example.topgamesdata.model.Game.platform#2
+DEBUG - Extracted JDBC value [0] - [2]
+DEBUG - (BagInitializer) Responsible for loading collection [com.example.topgamesdata.model.Game.platform#2] : org.hibernate.collection.spi.PersistentBag@2003347480
+DEBUG - (BagInitializer) Reading element from row for collection [com.example.topgamesdata.model.Game.platform#2] -> org.hibernate.collection.spi.PersistentBag@2003347480
+DEBUG - Extracted JDBC value [1] - [2]
+DEBUG - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.collection.internal.EagerCollectionAssembler@1f28849e
+DEBUG - Collection fully initialized: [com.example.topgamesdata.model.Game.platform#2]
+DEBUG - DomainResult Graph:
+ \-CollectionDomainResult [com.example.topgamesdata.model.Game.genre]
+
+DEBUG - SQL AST Tree:
+    SelectStatement {
+      FromClause {
+        CollectionTableGroup (g1 : com.example.topgamesdata.model.Game.genre) {
+          primaryTableReference : game_genre as g1_0
+        }
+      }
+    }
+
+DEBUG - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+DEBUG - Initializer list
+DEBUG -     com.example.topgamesdata.model.Game.genre -> BagInitializer(com.example.topgamesdata.model.Game.genre)@1951552403 (PluralAttribute(com.example.topgamesdata.model.Game.genre))
+DEBUG - select g1_0.game_id,g1_0.genre from game_genre g1_0 where g1_0.game_id=?
+DEBUG - execute query: select g1_0.game_id,g1_0.genre from game_genre g1_0 where g1_0.game_id=?
+DEBUG - Extracted JDBC value [0] - [3]
+DEBUG - (DelayedCollectionInitializer) Current row collection key : com.example.topgamesdata.model.Game.genre#3
+DEBUG - Extracted JDBC value [0] - [3]
+DEBUG - (BagInitializer) Responsible for loading collection [com.example.topgamesdata.model.Game.genre#3] : org.hibernate.collection.spi.PersistentBag@1006556930
+DEBUG - (BagInitializer) Reading element from row for collection [com.example.topgamesdata.model.Game.genre#3] -> org.hibernate.collection.spi.PersistentBag@1006556930
+DEBUG - Extracted JDBC value [1] - [0]
+DEBUG - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.collection.internal.EagerCollectionAssembler@25e9e886
+DEBUG - Extracted JDBC value [0] - [3]
+DEBUG - (DelayedCollectionInitializer) Current row collection key : com.example.topgamesdata.model.Game.genre#3
+DEBUG - Extracted JDBC value [0] - [3]
+DEBUG - (BagInitializer) Found existing loading collection entry [com.example.topgamesdata.model.Game.genre#3]; using loading collection instance - org.hibernate.collection.spi.PersistentBag@1006556930
+DEBUG - (BagInitializer) Responsible for loading collection [com.example.topgamesdata.model.Game.genre#3] : org.hibernate.collection.spi.PersistentBag@1006556930
+DEBUG - (BagInitializer) Reading element from row for collection [com.example.topgamesdata.model.Game.genre#3] -> org.hibernate.collection.spi.PersistentBag@1006556930
+DEBUG - Extracted JDBC value [1] - [1]
+DEBUG - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.collection.internal.EagerCollectionAssembler@25e9e886
+DEBUG - Collection fully initialized: [com.example.topgamesdata.model.Game.genre#3]
+DEBUG - DomainResult Graph:
+ \-CollectionDomainResult [com.example.topgamesdata.model.Game.platform]
+
+DEBUG - SQL AST Tree:
+    SelectStatement {
+      FromClause {
+        CollectionTableGroup (p1 : com.example.topgamesdata.model.Game.platform) {
+          primaryTableReference : game_platform as p1_0
+        }
+      }
+    }
+
+DEBUG - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+DEBUG - Initializer list
+DEBUG -     com.example.topgamesdata.model.Game.platform -> BagInitializer(com.example.topgamesdata.model.Game.platform)@1136781667 (PluralAttribute(com.example.topgamesdata.model.Game.platform))
+DEBUG - select p1_0.game_id,p1_0.platform from game_platform p1_0 where p1_0.game_id=?
+DEBUG - execute query: select p1_0.game_id,p1_0.platform from game_platform p1_0 where p1_0.game_id=?
+DEBUG - Extracted JDBC value [0] - [3]
+DEBUG - (DelayedCollectionInitializer) Current row collection key : com.example.topgamesdata.model.Game.platform#3
+DEBUG - Extracted JDBC value [0] - [3]
+DEBUG - (BagInitializer) Responsible for loading collection [com.example.topgamesdata.model.Game.platform#3] : org.hibernate.collection.spi.PersistentBag@689505997
+DEBUG - (BagInitializer) Reading element from row for collection [com.example.topgamesdata.model.Game.platform#3] -> org.hibernate.collection.spi.PersistentBag@689505997
+DEBUG - Extracted JDBC value [1] - [2]
+DEBUG - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.collection.internal.EagerCollectionAssembler@bd164e6
+DEBUG - Collection fully initialized: [com.example.topgamesdata.model.Game.platform#3]
+DEBUG - DomainResult Graph:
+ \-CollectionDomainResult [com.example.topgamesdata.model.Game.genre]
+
+DEBUG - SQL AST Tree:
+    SelectStatement {
+      FromClause {
+        CollectionTableGroup (g1 : com.example.topgamesdata.model.Game.genre) {
+          primaryTableReference : game_genre as g1_0
+        }
+      }
+    }
+
+DEBUG - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+DEBUG - Initializer list
+DEBUG -     com.example.topgamesdata.model.Game.genre -> BagInitializer(com.example.topgamesdata.model.Game.genre)@1201081870 (PluralAttribute(com.example.topgamesdata.model.Game.genre))
+DEBUG - select g1_0.game_id,g1_0.genre from game_genre g1_0 where g1_0.game_id=?
+DEBUG - execute query: select g1_0.game_id,g1_0.genre from game_genre g1_0 where g1_0.game_id=?
+DEBUG - Extracted JDBC value [0] - [4]
+DEBUG - (DelayedCollectionInitializer) Current row collection key : com.example.topgamesdata.model.Game.genre#4
+DEBUG - Extracted JDBC value [0] - [4]
+DEBUG - (BagInitializer) Responsible for loading collection [com.example.topgamesdata.model.Game.genre#4] : org.hibernate.collection.spi.PersistentBag@672318688
+DEBUG - (BagInitializer) Reading element from row for collection [com.example.topgamesdata.model.Game.genre#4] -> org.hibernate.collection.spi.PersistentBag@672318688
+DEBUG - Extracted JDBC value [1] - [0]
+DEBUG - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.collection.internal.EagerCollectionAssembler@5261add
+DEBUG - Extracted JDBC value [0] - [4]
+DEBUG - (DelayedCollectionInitializer) Current row collection key : com.example.topgamesdata.model.Game.genre#4
+DEBUG - Extracted JDBC value [0] - [4]
+DEBUG - (BagInitializer) Found existing loading collection entry [com.example.topgamesdata.model.Game.genre#4]; using loading collection instance - org.hibernate.collection.spi.PersistentBag@672318688
+DEBUG - (BagInitializer) Responsible for loading collection [com.example.topgamesdata.model.Game.genre#4] : org.hibernate.collection.spi.PersistentBag@672318688
+DEBUG - (BagInitializer) Reading element from row for collection [com.example.topgamesdata.model.Game.genre#4] -> org.hibernate.collection.spi.PersistentBag@672318688
+DEBUG - Extracted JDBC value [1] - [1]
+DEBUG - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.collection.internal.EagerCollectionAssembler@5261add
+DEBUG - Extracted JDBC value [0] - [4]
+DEBUG - (DelayedCollectionInitializer) Current row collection key : com.example.topgamesdata.model.Game.genre#4
+DEBUG - Extracted JDBC value [0] - [4]
+DEBUG - (BagInitializer) Found existing loading collection entry [com.example.topgamesdata.model.Game.genre#4]; using loading collection instance - org.hibernate.collection.spi.PersistentBag@672318688
+DEBUG - (BagInitializer) Responsible for loading collection [com.example.topgamesdata.model.Game.genre#4] : org.hibernate.collection.spi.PersistentBag@672318688
+DEBUG - (BagInitializer) Reading element from row for collection [com.example.topgamesdata.model.Game.genre#4] -> org.hibernate.collection.spi.PersistentBag@672318688
+DEBUG - Extracted JDBC value [1] - [6]
+DEBUG - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.collection.internal.EagerCollectionAssembler@5261add
+DEBUG - Extracted JDBC value [0] - [4]
+DEBUG - (DelayedCollectionInitializer) Current row collection key : com.example.topgamesdata.model.Game.genre#4
+DEBUG - Extracted JDBC value [0] - [4]
+DEBUG - (BagInitializer) Found existing loading collection entry [com.example.topgamesdata.model.Game.genre#4]; using loading collection instance - org.hibernate.collection.spi.PersistentBag@672318688
+DEBUG - (BagInitializer) Responsible for loading collection [com.example.topgamesdata.model.Game.genre#4] : org.hibernate.collection.spi.PersistentBag@672318688
+DEBUG - (BagInitializer) Reading element from row for collection [com.example.topgamesdata.model.Game.genre#4] -> org.hibernate.collection.spi.PersistentBag@672318688
+DEBUG - Extracted JDBC value [1] - [11]
+DEBUG - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.collection.internal.EagerCollectionAssembler@5261add
+DEBUG - Collection fully initialized: [com.example.topgamesdata.model.Game.genre#4]
+DEBUG - DomainResult Graph:
+ \-CollectionDomainResult [com.example.topgamesdata.model.Game.platform]
+
+DEBUG - SQL AST Tree:
+    SelectStatement {
+      FromClause {
+        CollectionTableGroup (p1 : com.example.topgamesdata.model.Game.platform) {
+          primaryTableReference : game_platform as p1_0
+        }
+      }
+    }
+
+DEBUG - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+DEBUG - Initializer list
+DEBUG -     com.example.topgamesdata.model.Game.platform -> BagInitializer(com.example.topgamesdata.model.Game.platform)@2050921225 (PluralAttribute(com.example.topgamesdata.model.Game.platform))
+DEBUG - select p1_0.game_id,p1_0.platform from game_platform p1_0 where p1_0.game_id=?
+DEBUG - execute query: select p1_0.game_id,p1_0.platform from game_platform p1_0 where p1_0.game_id=?
+DEBUG - Extracted JDBC value [0] - [4]
+DEBUG - (DelayedCollectionInitializer) Current row collection key : com.example.topgamesdata.model.Game.platform#4
+DEBUG - Extracted JDBC value [0] - [4]
+DEBUG - (BagInitializer) Responsible for loading collection [com.example.topgamesdata.model.Game.platform#4] : org.hibernate.collection.spi.PersistentBag@1447975256
+DEBUG - (BagInitializer) Reading element from row for collection [com.example.topgamesdata.model.Game.platform#4] -> org.hibernate.collection.spi.PersistentBag@1447975256
+DEBUG - Extracted JDBC value [1] - [2]
+DEBUG - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.collection.internal.EagerCollectionAssembler@43b226d6
+DEBUG - Collection fully initialized: [com.example.topgamesdata.model.Game.platform#4]
+DEBUG - DomainResult Graph:
+ \-CollectionDomainResult [com.example.topgamesdata.model.Game.genre]
+
+DEBUG - SQL AST Tree:
+    SelectStatement {
+      FromClause {
+        CollectionTableGroup (g1 : com.example.topgamesdata.model.Game.genre) {
+          primaryTableReference : game_genre as g1_0
+        }
+      }
+    }
+
+DEBUG - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+DEBUG - Initializer list
+DEBUG -     com.example.topgamesdata.model.Game.genre -> BagInitializer(com.example.topgamesdata.model.Game.genre)@1301955442 (PluralAttribute(com.example.topgamesdata.model.Game.genre))
+DEBUG - select g1_0.game_id,g1_0.genre from game_genre g1_0 where g1_0.game_id=?
+DEBUG - execute query: select g1_0.game_id,g1_0.genre from game_genre g1_0 where g1_0.game_id=?
+DEBUG - Extracted JDBC value [0] - [5]
+DEBUG - (DelayedCollectionInitializer) Current row collection key : com.example.topgamesdata.model.Game.genre#5
+DEBUG - Extracted JDBC value [0] - [5]
+DEBUG - (BagInitializer) Responsible for loading collection [com.example.topgamesdata.model.Game.genre#5] : org.hibernate.collection.spi.PersistentBag@2098431413
+DEBUG - (BagInitializer) Reading element from row for collection [com.example.topgamesdata.model.Game.genre#5] -> org.hibernate.collection.spi.PersistentBag@2098431413
+DEBUG - Extracted JDBC value [1] - [0]
+DEBUG - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.collection.internal.EagerCollectionAssembler@2bae4725
+DEBUG - Extracted JDBC value [0] - [5]
+DEBUG - (DelayedCollectionInitializer) Current row collection key : com.example.topgamesdata.model.Game.genre#5
+DEBUG - Extracted JDBC value [0] - [5]
+DEBUG - (BagInitializer) Found existing loading collection entry [com.example.topgamesdata.model.Game.genre#5]; using loading collection instance - org.hibernate.collection.spi.PersistentBag@2098431413
+DEBUG - (BagInitializer) Responsible for loading collection [com.example.topgamesdata.model.Game.genre#5] : org.hibernate.collection.spi.PersistentBag@2098431413
+DEBUG - (BagInitializer) Reading element from row for collection [com.example.topgamesdata.model.Game.genre#5] -> org.hibernate.collection.spi.PersistentBag@2098431413
+DEBUG - Extracted JDBC value [1] - [1]
+DEBUG - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.collection.internal.EagerCollectionAssembler@2bae4725
+DEBUG - Collection fully initialized: [com.example.topgamesdata.model.Game.genre#5]
+DEBUG - DomainResult Graph:
+ \-CollectionDomainResult [com.example.topgamesdata.model.Game.platform]
+
+DEBUG - SQL AST Tree:
+    SelectStatement {
+      FromClause {
+        CollectionTableGroup (p1 : com.example.topgamesdata.model.Game.platform) {
+          primaryTableReference : game_platform as p1_0
+        }
+      }
+    }
+
+DEBUG - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+DEBUG - Initializer list
+DEBUG -     com.example.topgamesdata.model.Game.platform -> BagInitializer(com.example.topgamesdata.model.Game.platform)@883949809 (PluralAttribute(com.example.topgamesdata.model.Game.platform))
+DEBUG - select p1_0.game_id,p1_0.platform from game_platform p1_0 where p1_0.game_id=?
+DEBUG - execute query: select p1_0.game_id,p1_0.platform from game_platform p1_0 where p1_0.game_id=?
+DEBUG - Extracted JDBC value [0] - [5]
+DEBUG - (DelayedCollectionInitializer) Current row collection key : com.example.topgamesdata.model.Game.platform#5
+DEBUG - Extracted JDBC value [0] - [5]
+DEBUG - (BagInitializer) Responsible for loading collection [com.example.topgamesdata.model.Game.platform#5] : org.hibernate.collection.spi.PersistentBag@911984765
+DEBUG - (BagInitializer) Reading element from row for collection [com.example.topgamesdata.model.Game.platform#5] -> org.hibernate.collection.spi.PersistentBag@911984765
+DEBUG - Extracted JDBC value [1] - [2]
+DEBUG - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.collection.internal.EagerCollectionAssembler@6f820db2
+DEBUG - Collection fully initialized: [com.example.topgamesdata.model.Game.platform#5]
+DEBUG - DomainResult Graph:
+ \-CollectionDomainResult [com.example.topgamesdata.model.Game.genre]
+
+DEBUG - SQL AST Tree:
+    SelectStatement {
+      FromClause {
+        CollectionTableGroup (g1 : com.example.topgamesdata.model.Game.genre) {
+          primaryTableReference : game_genre as g1_0
+        }
+      }
+    }
+
+DEBUG - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+DEBUG - Initializer list
+DEBUG -     com.example.topgamesdata.model.Game.genre -> BagInitializer(com.example.topgamesdata.model.Game.genre)@1535196987 (PluralAttribute(com.example.topgamesdata.model.Game.genre))
+DEBUG - select g1_0.game_id,g1_0.genre from game_genre g1_0 where g1_0.game_id=?
+DEBUG - execute query: select g1_0.game_id,g1_0.genre from game_genre g1_0 where g1_0.game_id=?
+DEBUG - Extracted JDBC value [0] - [6]
+DEBUG - (DelayedCollectionInitializer) Current row collection key : com.example.topgamesdata.model.Game.genre#6
+DEBUG - Extracted JDBC value [0] - [6]
+DEBUG - (BagInitializer) Responsible for loading collection [com.example.topgamesdata.model.Game.genre#6] : org.hibernate.collection.spi.PersistentBag@494588414
+DEBUG - (BagInitializer) Reading element from row for collection [com.example.topgamesdata.model.Game.genre#6] -> org.hibernate.collection.spi.PersistentBag@494588414
+DEBUG - Extracted JDBC value [1] - [0]
+DEBUG - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.collection.internal.EagerCollectionAssembler@16bd2bd6
+DEBUG - Extracted JDBC value [0] - [6]
+DEBUG - (DelayedCollectionInitializer) Current row collection key : com.example.topgamesdata.model.Game.genre#6
+DEBUG - Extracted JDBC value [0] - [6]
+DEBUG - (BagInitializer) Found existing loading collection entry [com.example.topgamesdata.model.Game.genre#6]; using loading collection instance - org.hibernate.collection.spi.PersistentBag@494588414
+DEBUG - (BagInitializer) Responsible for loading collection [com.example.topgamesdata.model.Game.genre#6] : org.hibernate.collection.spi.PersistentBag@494588414
+DEBUG - (BagInitializer) Reading element from row for collection [com.example.topgamesdata.model.Game.genre#6] -> org.hibernate.collection.spi.PersistentBag@494588414
+DEBUG - Extracted JDBC value [1] - [1]
+DEBUG - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.collection.internal.EagerCollectionAssembler@16bd2bd6
+DEBUG - Collection fully initialized: [com.example.topgamesdata.model.Game.genre#6]
+DEBUG - DomainResult Graph:
+ \-CollectionDomainResult [com.example.topgamesdata.model.Game.platform]
+
+DEBUG - SQL AST Tree:
+    SelectStatement {
+      FromClause {
+        CollectionTableGroup (p1 : com.example.topgamesdata.model.Game.platform) {
+          primaryTableReference : game_platform as p1_0
+        }
+      }
+    }
+
+DEBUG - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+DEBUG - Initializer list
+DEBUG -     com.example.topgamesdata.model.Game.platform -> BagInitializer(com.example.topgamesdata.model.Game.platform)@1142404829 (PluralAttribute(com.example.topgamesdata.model.Game.platform))
+DEBUG - select p1_0.game_id,p1_0.platform from game_platform p1_0 where p1_0.game_id=?
+DEBUG - execute query: select p1_0.game_id,p1_0.platform from game_platform p1_0 where p1_0.game_id=?
+DEBUG - Extracted JDBC value [0] - [6]
+DEBUG - (DelayedCollectionInitializer) Current row collection key : com.example.topgamesdata.model.Game.platform#6
+DEBUG - Extracted JDBC value [0] - [6]
+DEBUG - (BagInitializer) Responsible for loading collection [com.example.topgamesdata.model.Game.platform#6] : org.hibernate.collection.spi.PersistentBag@609036853
+DEBUG - (BagInitializer) Reading element from row for collection [com.example.topgamesdata.model.Game.platform#6] -> org.hibernate.collection.spi.PersistentBag@609036853
+DEBUG - Extracted JDBC value [1] - [2]
+DEBUG - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.collection.internal.EagerCollectionAssembler@4bb1cdfd
+DEBUG - Collection fully initialized: [com.example.topgamesdata.model.Game.platform#6]
+DEBUG - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+DEBUG - Completed 200 OK
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
