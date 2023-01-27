@@ -7,6 +7,7 @@ import {HttpErrorResponse} from "@angular/common/http";
 import {NgForm} from "@angular/forms";
 import {Developer} from "./developer";
 import {ActivatedRoute, Router} from '@angular/router';
+import {DeveloperService} from "./developer.service";
 
 @Component({
   selector: 'app-root',
@@ -17,11 +18,13 @@ export class AppComponent implements OnInit {
   title = 'topgames-frontend';
   public games: Game[] = [];
   public users: User[] = [];
+  public developers: Developer[] = [];
   showMainContent: boolean = true;
-  constructor(private gameService: GameService, private userService: UserService, private router: Router, public route: ActivatedRoute) { }
+  constructor(private developerService: DeveloperService, private gameService: GameService, private userService: UserService, private router: Router, public route: ActivatedRoute) { }
   ngOnInit() {
     this.getGames();
     this.getUsers();
+    this.getDevelopers();
   }
   public refreshPagePls(){
     window.location.reload();
@@ -37,6 +40,13 @@ export class AppComponent implements OnInit {
     this.userService.getUsers().subscribe(
       (response: User[]) => {
         this.users = response;
+      }
+    );
+  }
+  public getDevelopers(): void {
+    this.developerService.getDevelopers().subscribe(
+      (response: Developer[]) => {
+        this.developers = response;
       }
     );
   }
@@ -103,8 +113,33 @@ export class AppComponent implements OnInit {
   // @ts-ignore
     modal.style.display = 'block';
   }
+  public openEditGameModal(game: Game): void {
+    const modal = document.getElementById('modalGame'+game.id);
+    // @ts-ignore
+    modal.style.display = 'block';
+  }
+  public editGameById(gameId: number, form: NgForm): void{
+    this.gameService.editGame(gameId, form.value).subscribe(
+      (response: Game) => {
+        console.log(response);
+        this.getGames();
+        this.closeEditGameModal(gameId);
+        form.reset();
+      }
+    );
+  }
+  public closeEditGameModal(gameid: number): void {
+    const modal = document.getElementById('modalGame'+gameid);
+    // @ts-ignore
+    modal.style.display = 'none';
+  }
   public closeModal(user: User): void {
     const modal = document.getElementById('modal'+user.id);
+    // @ts-ignore
+    modal.style.display = 'none';
+  }
+  public closeGameModal(game: Game): void {
+    const modal = document.getElementById('modalGame'+game.id);
     // @ts-ignore
     modal.style.display = 'none';
   }

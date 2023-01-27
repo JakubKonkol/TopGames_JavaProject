@@ -24,8 +24,11 @@ public class GameService {
     public List<Game> getAllGames(){
         return gameRepository.findAll();
     }
-    public Game updateGame(Long id, Game gameToUpdate) {
-        //todo
+    public Game updateGame(Long id, Game game) {
+        Game gameToUpdate = getGameById(id);
+        gameToUpdate.setName(game.getName());
+        gameToUpdate.setDescription(game.getDescription());
+//        gameToUpdate.setDeveloper(game.getDeveloper());
 
 
         return gameRepository.save(gameToUpdate);

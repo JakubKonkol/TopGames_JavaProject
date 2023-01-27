@@ -36,9 +36,26 @@
         <p> {{game.description}} </p>
       </div>
       <div class="buttons">
-        <button class="edit" id="editbutton"> EDIT</button> <br>
+        <button (click)="openEditGameModal(game)" class="edit" id="editbutton"> EDIT</button> <br>
       <button (click)="deleteGame(game.id); refreshPagePls()" class="delete"> DELETE</button>
       </div>
+<!--      EditGameModal -->
+      <dialog id="modalGame{{game.id}}">
+        <div class="modal-container"style="--m-background: var(--global-background);">
+          <div class="modal" style="--m-shadow: 0 0 10rem 0">
+            <h1 class="modal__title">Edit game</h1>
+            <form #editGame="ngForm" (ngSubmit)="editGameById(game.id, editGame)">
+              <p class="modal__text"> name: </p><input ngModel name="username" type="text" placeholder="{{game.name}}"> <br>
+              <p class="modal__text">description:</p> <input type="text" ngModel name="firstName" placeholder="{{game.description}}"><br>
+              <p class="modal__text">developer:</p> <select ngModel name="selectedDev"> <option *ngFor="let developer of developers" value="{{developer}}"> {{developer.name}}</option> </select><br>
+              <input  type="submit" class="modal__btn" value="Update">
+              <button type="button" class="modal__btn" (click)="closeEditGameModal(game.id)">Close</button>
+            </form>
+          </div>
+        </div>
+
+      </dialog>
+<!--      End of EditGameModal -->
     </div>
     <dialog id="createUserModal">
       <div class="modal-container" style="--m-background: var(--global-background);">
