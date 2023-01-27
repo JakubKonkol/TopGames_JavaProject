@@ -3887,3 +3887,33 @@ DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently
 WARN  - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=14m21s113ms).
 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
 DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+DEBUG - Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+DEBUG - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@68ead359, started on Fri Jan 27 16:49:37 CET 2023
+DEBUG - Stopping beans in phase 2147482623
+DEBUG - Bean 'webServerGracefulShutdown' completed its stop procedure
+DEBUG - Stopping beans in phase 2147481599
+DEBUG - Bean 'webServerStartStop' completed its stop procedure
+DEBUG - Stopping beans in phase -2147483647
+DEBUG - Bean 'springBootLoggingLifecycle' completed its stop procedure
+DEBUG - Unregistering JMX-exposed beans on shutdown
+DEBUG - Unregistering JMX-exposed beans
+DEBUG - Shutting down ExecutorService 'applicationTaskExecutor'
+INFO  - Closing JPA EntityManagerFactory for persistence unit 'default'
+DEBUG - HHH000031: Closing
+DEBUG - Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@6bc6ed0a] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@fb2c2f3]
+DEBUG - Implicitly destroying ServiceRegistry on de-registration of all child ServiceRegistries
+DEBUG - Implicitly destroying Boot-strap registry on de-registration of all child ServiceRegistries
+INFO  - HikariPool-1 - Shutdown initiated...
+DEBUG - HikariPool-1 - Before shutdown stats (total=10, active=0, idle=10, waiting=0)
+DEBUG - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@145a821d: (connection evicted)
+DEBUG - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@19ebfac4: (connection evicted)
+DEBUG - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@58d6f0ff: (connection evicted)
+DEBUG - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@694489d3: (connection evicted)
+DEBUG - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@38f90fb0: (connection evicted)
+DEBUG - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@3cb753e8: (connection evicted)
+DEBUG - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@49376e27: (connection evicted)
+DEBUG - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@19063f79: (connection evicted)
+DEBUG - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@597cfe0f: (connection evicted)
+DEBUG - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@2e655320: (connection evicted)
+DEBUG - HikariPool-1 - After shutdown stats (total=0, active=0, idle=0, waiting=0)
+INFO  - HikariPool-1 - Shutdown completed.
