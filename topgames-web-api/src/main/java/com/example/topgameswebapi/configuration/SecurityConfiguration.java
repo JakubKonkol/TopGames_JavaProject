@@ -11,15 +11,19 @@ import static org.springframework.security.config.Customizer.withDefaults;
 
 @Configuration
 public class SecurityConfiguration{
-//    @Bean
-//    public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
-//        http
-//                .cors(withDefaults()).oauth2Login();
-//        return http.build();
-//    }
     @Bean
-    public WebSecurityCustomizer webSecurityCustomizer() {
-        return (web) -> web.ignoring().requestMatchers("/api/**", "/logs/**");
+    public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
+        http
+                .authorizeHttpRequests()
+                .requestMatchers("/api/**", "/logs/**", "/logs")
+                .permitAll()
+                .and()
+                .authorizeHttpRequests()
+                .anyRequest().authenticated();
+
+        http
+                .oauth2Login();
+        return http.build();
     }
 
 

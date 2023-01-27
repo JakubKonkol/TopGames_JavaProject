@@ -2,7 +2,7 @@ DEBUG - Creating shared instance of singleton bean 'securityConfiguration'
 DEBUG - Creating shared instance of singleton bean 'developerController'
 DEBUG - Creating shared instance of singleton bean 'developerService'
 DEBUG - Creating shared instance of singleton bean 'developerRepository'
-DEBUG - Creating shared instance of singleton bean 'jpa.named-queries#3'
+DEBUG - Creating shared instance of singleton bean 'jpa.named-queries#0'
 DEBUG - Creating shared instance of singleton bean 'jpa.DeveloperRepository.fragments#0'
 DEBUG - Creating shared instance of singleton bean 'jpaSharedEM_entityManagerFactory'
 DEBUG - Creating shared instance of singleton bean 'jpaMappingContext'
@@ -19,7 +19,7 @@ DEBUG - Autowiring by type from bean name 'developerController' via constructor 
 DEBUG - Creating shared instance of singleton bean 'gameController'
 DEBUG - Creating shared instance of singleton bean 'gameService'
 DEBUG - Creating shared instance of singleton bean 'gameRepository'
-DEBUG - Creating shared instance of singleton bean 'jpa.named-queries#2'
+DEBUG - Creating shared instance of singleton bean 'jpa.named-queries#4'
 DEBUG - Creating shared instance of singleton bean 'jpa.GameRepository.fragments#0'
 DEBUG - Creating new EntityManager for shared EntityManager invocation
 DEBUG - Initializing repository instance for com.example.topgamesdata.repositories.GameRepository…
@@ -32,7 +32,7 @@ DEBUG - Creating shared instance of singleton bean 'secretController'
 DEBUG - Creating shared instance of singleton bean 'userController'
 DEBUG - Creating shared instance of singleton bean 'userService'
 DEBUG - Creating shared instance of singleton bean 'userRepository'
-DEBUG - Creating shared instance of singleton bean 'jpa.named-queries#0'
+DEBUG - Creating shared instance of singleton bean 'jpa.named-queries#1'
 DEBUG - Creating shared instance of singleton bean 'jpa.UserRepository.fragments#0'
 DEBUG - Creating new EntityManager for shared EntityManager invocation
 DEBUG - Initializing repository instance for com.example.topgamesdata.repositories.UserRepository…
@@ -47,7 +47,7 @@ java.lang.Exception: exception just for purpose of providing stack trace
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:360)
-	at jdk.proxy2/jdk.proxy2.$Proxy109.createNamedQuery(Unknown Source)
+	at jdk.proxy2/jdk.proxy2.$Proxy108.createNamedQuery(Unknown Source)
 	at org.springframework.data.jpa.repository.query.NamedQuery.hasNamedQuery(NamedQuery.java:115)
 	at org.springframework.data.jpa.repository.query.NamedQuery.lookupFrom(NamedQuery.java:144)
 	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$DeclaredQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:180)
@@ -116,10 +116,164 @@ DEBUG - Finished creation of repository instance for com.example.topgamesdata.re
 DEBUG - Autowiring by type from bean name 'userService' via constructor to bean named 'userRepository'
 DEBUG - Autowiring by type from bean name 'userController' via constructor to bean named 'userService'
 DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.AutoConfigurationPackages'
-DEBUG - Creating shared instance of singleton bean 'webSecurityCustomizer'
+DEBUG - Creating shared instance of singleton bean 'filterChain'
+DEBUG - Creating shared instance of singleton bean 'org.springframework.security.config.annotation.web.configuration.HttpSecurityConfiguration'
+DEBUG - Creating shared instance of singleton bean 'objectPostProcessor'
+DEBUG - Creating shared instance of singleton bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration'
+DEBUG - Autowiring by type from bean name 'objectPostProcessor' via factory method to bean named 'org.springframework.beans.factory.support.DefaultListableBeanFactory@2cf92cc7'
+DEBUG - Creating shared instance of singleton bean 'org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration'
+DEBUG - Creating shared instance of singleton bean 'enableGlobalAuthenticationAutowiredConfigurer'
+DEBUG - Autowiring by type from bean name 'enableGlobalAuthenticationAutowiredConfigurer' via factory method to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@a43ce46'
+DEBUG - Creating shared instance of singleton bean 'initializeUserDetailsBeanManagerConfigurer'
+DEBUG - Autowiring by type from bean name 'initializeUserDetailsBeanManagerConfigurer' via factory method to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@a43ce46'
+DEBUG - Creating shared instance of singleton bean 'initializeAuthenticationProviderBeanManagerConfigurer'
+DEBUG - Autowiring by type from bean name 'initializeAuthenticationProviderBeanManagerConfigurer' via factory method to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@a43ce46'
+DEBUG - Creating shared instance of singleton bean 'mvcContentNegotiationManager'
+DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration'
+DEBUG - Creating shared instance of singleton bean 'spring.web-org.springframework.boot.autoconfigure.web.WebProperties'
+DEBUG - Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration' via constructor to bean named 'spring.mvc-org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties'
+DEBUG - Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration' via constructor to bean named 'spring.web-org.springframework.boot.autoconfigure.web.WebProperties'
+DEBUG - Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration' via constructor to bean named 'org.springframework.beans.factory.support.DefaultListableBeanFactory@2cf92cc7'
+DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter'
+DEBUG - Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter' via constructor to bean named 'spring.web-org.springframework.boot.autoconfigure.web.WebProperties'
+DEBUG - Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter' via constructor to bean named 'spring.mvc-org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties'
+DEBUG - Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter' via constructor to bean named 'org.springframework.beans.factory.support.DefaultListableBeanFactory@2cf92cc7'
+DEBUG - Creating shared instance of singleton bean 'resourceHandlerRegistrationCustomizer'
+DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$ResourceChainCustomizerConfiguration'
+DEBUG - Autowiring by type from bean name 'resourceHandlerRegistrationCustomizer' via factory method to bean named 'spring.web-org.springframework.boot.autoconfigure.web.WebProperties'
+DEBUG - Creating shared instance of singleton bean 'openEntityManagerInViewInterceptorConfigurer'
+DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration'
+DEBUG - Autowiring by type from bean name 'org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration' via constructor to bean named 'spring.jpa-org.springframework.boot.autoconfigure.orm.jpa.JpaProperties'
+DEBUG - Creating shared instance of singleton bean 'openEntityManagerInViewInterceptor'
+WARN  - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+DEBUG - Autowiring by type from bean name 'openEntityManagerInViewInterceptorConfigurer' via factory method to bean named 'openEntityManagerInViewInterceptor'
+DEBUG - Creating shared instance of singleton bean 'org.springframework.data.web.config.SpringDataWebConfiguration'
+DEBUG - Autowiring by type from bean name 'org.springframework.data.web.config.SpringDataWebConfiguration' via constructor to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@a43ce46'
+DEBUG - Creating shared instance of singleton bean 'org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration'
+DEBUG - Creating shared instance of singleton bean 'org.springframework.security.config.annotation.web.configuration.OAuth2ClientConfiguration$OAuth2ClientWebMvcSecurityConfiguration'
+DEBUG - Creating shared instance of singleton bean 'clientRegistrationRepository'
+DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.security.oauth2.client.servlet.OAuth2ClientRegistrationRepositoryConfiguration'
+DEBUG - Creating shared instance of singleton bean 'spring.security.oauth2.client-org.springframework.boot.autoconfigure.security.oauth2.client.OAuth2ClientProperties'
+DEBUG - Autowiring by type from bean name 'clientRegistrationRepository' via factory method to bean named 'spring.security.oauth2.client-org.springframework.boot.autoconfigure.security.oauth2.client.OAuth2ClientProperties'
+DEBUG - Creating shared instance of singleton bean 'authorizedClientRepository'
+DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.security.oauth2.client.servlet.OAuth2WebSecurityConfiguration'
+DEBUG - Creating shared instance of singleton bean 'authorizedClientService'
+DEBUG - Autowiring by type from bean name 'authorizedClientService' via factory method to bean named 'clientRegistrationRepository'
+DEBUG - Autowiring by type from bean name 'authorizedClientRepository' via factory method to bean named 'authorizedClientService'
+DEBUG - Creating shared instance of singleton bean 'authenticationManagerBuilder'
+DEBUG - Autowiring by type from bean name 'authenticationManagerBuilder' via factory method to bean named 'objectPostProcessor'
+DEBUG - Autowiring by type from bean name 'authenticationManagerBuilder' via factory method to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@a43ce46'
+DEBUG - Creating shared instance of singleton bean 'authenticationEventPublisher'
+DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration'
+DEBUG - Autowiring by type from bean name 'authenticationEventPublisher' via factory method to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@a43ce46'
+DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.security.servlet.SpringBootWebSecurityConfiguration$WebSecurityEnablerConfiguration'
+DEBUG - No authenticationProviders and no parentAuthenticationManager defined. Returning null.
+DEBUG - Autowiring by type from bean name 'filterChain' via factory method to bean named 'org.springframework.security.config.annotation.web.configuration.HttpSecurityConfiguration.httpSecurity'
+DEBUG - Creating shared instance of singleton bean 'mvcHandlerMappingIntrospector'
+DEBUG - Creating shared instance of singleton bean 'welcomePageHandlerMapping'
+DEBUG - Creating shared instance of singleton bean 'mvcConversionService'
+DEBUG - Creating shared instance of singleton bean 'mvcResourceUrlProvider'
+DEBUG - Autowiring by type from bean name 'welcomePageHandlerMapping' via factory method to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@a43ce46'
+DEBUG - Autowiring by type from bean name 'welcomePageHandlerMapping' via factory method to bean named 'mvcConversionService'
+DEBUG - Autowiring by type from bean name 'welcomePageHandlerMapping' via factory method to bean named 'mvcResourceUrlProvider'
+DEBUG - Creating shared instance of singleton bean 'requestMappingHandlerMapping'
+DEBUG - Autowiring by type from bean name 'requestMappingHandlerMapping' via factory method to bean named 'mvcContentNegotiationManager'
+DEBUG - Autowiring by type from bean name 'requestMappingHandlerMapping' via factory method to bean named 'mvcConversionService'
+DEBUG - Autowiring by type from bean name 'requestMappingHandlerMapping' via factory method to bean named 'mvcResourceUrlProvider'
+DEBUG - 
+	c.e.t.c.DeveloperController:
+	{GET [/api/developer/getAll]}: getAllDevelopers()
+DEBUG - 
+	c.e.t.c.GameController:
+	{DELETE [/api/game/delete/{id}]}: deleteGame(Long)
+	{PUT [/api/game/update/{id}]}: updateGame(Game,Long)
+	{POST [/api/game/add]}: createGame(Game)
+	{POST [/api/game/dev/addSamples]}: addSamples()
+	{GET [/api/game/getAll]}: getAllGames()
+	{GET [/api/game/{id}]}: getGameById(Long)
+	{POST [/api/game/dev/deleteAll]}: deleteAllGames()
+DEBUG - 
+	c.e.t.c.LogController:
+	{GET [/logs/all]}: getLogs()
+	{GET [/logs/info]}: getInfoLogs()
+	{GET [/logs/warning]}: getWarningLogs()
+	{GET [/logs/error]}: getErrorLogs()
+	{GET [/logs/debug]}: getDebugLogs()
+DEBUG - 
+	c.e.t.c.SecretController:
+	{GET [/secret]}: wowYouAreLoggedInSoCool()
+DEBUG - 
+	c.e.t.c.UserController:
+	{POST [/api/user/dev/addSamples]}: addSamples()
+	{POST [/api/user/add]}: createUser(User)
+	{GET [/api/user/{id}]}: getUserById(Long)
+	{GET [/api/user/getAll]}: getAllUsers()
+	{PUT [/api/user/update/{id}]}: updateUserById(Long,User)
+	{POST [/api/user/dev/deleteAll]}: deleteAllUsers()
+	{DELETE [/api/user/delete/{id}]}: deleteUserById(Long)
+DEBUG - 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error]}: error(HttpServletRequest)
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+DEBUG - 23 mappings in 'requestMappingHandlerMapping'
+DEBUG - Creating shared instance of singleton bean 'viewControllerHandlerMapping'
+DEBUG - Autowiring by type from bean name 'viewControllerHandlerMapping' via factory method to bean named 'mvcConversionService'
+DEBUG - Autowiring by type from bean name 'viewControllerHandlerMapping' via factory method to bean named 'mvcResourceUrlProvider'
+DEBUG - Creating shared instance of singleton bean 'beanNameHandlerMapping'
+DEBUG - Autowiring by type from bean name 'beanNameHandlerMapping' via factory method to bean named 'mvcConversionService'
+DEBUG - Autowiring by type from bean name 'beanNameHandlerMapping' via factory method to bean named 'mvcResourceUrlProvider'
+DEBUG - 'beanNameHandlerMapping' {}
+DEBUG - Creating shared instance of singleton bean 'routerFunctionMapping'
+DEBUG - Autowiring by type from bean name 'routerFunctionMapping' via factory method to bean named 'mvcConversionService'
+DEBUG - Autowiring by type from bean name 'routerFunctionMapping' via factory method to bean named 'mvcResourceUrlProvider'
+DEBUG - Creating shared instance of singleton bean 'messageConverters'
+DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration'
+DEBUG - Creating shared instance of singleton bean 'stringHttpMessageConverter'
+DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration$StringHttpMessageConverterConfiguration'
+DEBUG - Autowiring by type from bean name 'stringHttpMessageConverter' via factory method to bean named 'environment'
+DEBUG - Creating shared instance of singleton bean 'mappingJackson2HttpMessageConverter'
+DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.http.JacksonHttpMessageConvertersConfiguration$MappingJackson2HttpMessageConverterConfiguration'
+DEBUG - Creating shared instance of singleton bean 'jacksonObjectMapper'
+DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration'
+DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration'
+DEBUG - Creating shared instance of singleton bean 'standardJacksonObjectMapperBuilderCustomizer'
+DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration'
+DEBUG - Creating shared instance of singleton bean 'spring.jackson-org.springframework.boot.autoconfigure.jackson.JacksonProperties'
+DEBUG - Autowiring by type from bean name 'standardJacksonObjectMapperBuilderCustomizer' via factory method to bean named 'spring.jackson-org.springframework.boot.autoconfigure.jackson.JacksonProperties'
+DEBUG - Creating shared instance of singleton bean 'parameterNamesModule'
+DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration'
+DEBUG - Creating shared instance of singleton bean 'jsonMixinModule'
+DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonMixinConfiguration'
+DEBUG - Creating shared instance of singleton bean 'jsonMixinModuleEntries'
+DEBUG - Autowiring by type from bean name 'jsonMixinModuleEntries' via factory method to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@a43ce46'
+DEBUG - @EnableAutoConfiguration was declared on a class in the package 'com.example.topgamesdata,com.example.topgameswebapi'. Automatic @Repository and @Entity scanning is enabled.
+DEBUG - Autowiring by type from bean name 'jsonMixinModule' via factory method to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@a43ce46'
+DEBUG - Autowiring by type from bean name 'jsonMixinModule' via factory method to bean named 'jsonMixinModuleEntries'
+DEBUG - Creating shared instance of singleton bean 'jsonComponentModule'
+DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration'
+DEBUG - Creating shared instance of singleton bean 'jacksonGeoModule'
+DEBUG - Creating shared instance of singleton bean 'org.springframework.data.web.config.SpringDataJacksonConfiguration'
+DEBUG - Autowiring by type from bean name 'jacksonObjectMapperBuilder' via factory method to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@a43ce46'
+DEBUG - Autowiring by type from bean name 'jacksonObjectMapperBuilder' via factory method to bean named 'standardJacksonObjectMapperBuilderCustomizer'
+DEBUG - Autowiring by type from bean name 'jacksonObjectMapper' via factory method to bean named 'jacksonObjectMapperBuilder'
+DEBUG - Autowiring by type from bean name 'mappingJackson2HttpMessageConverter' via factory method to bean named 'jacksonObjectMapper'
+DEBUG - Creating shared instance of singleton bean 'resourceHandlerMapping'
+DEBUG - Autowiring by type from bean name 'resourceHandlerMapping' via factory method to bean named 'mvcContentNegotiationManager'
+DEBUG - Autowiring by type from bean name 'resourceHandlerMapping' via factory method to bean named 'mvcConversionService'
+DEBUG - Autowiring by type from bean name 'resourceHandlerMapping' via factory method to bean named 'mvcResourceUrlProvider'
+DEBUG - 'resourceHandlerMapping' {/webjars/**=ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]], /**=ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]}
+DEBUG - Creating shared instance of singleton bean 'defaultServletHandlerMapping'
+INFO  - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@27b84c9a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@21abd3a3, org.springframework.security.web.context.SecurityContextHolderFilter@620e0d36, org.springframework.security.web.header.HeaderWriterFilter@1315befe, org.springframework.security.web.csrf.CsrfFilter@d164938, org.springframework.security.web.authentication.logout.LogoutFilter@e7ddf8d, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@662b199, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@3a678e40, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@76641439, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@6d514259, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3df4cd96, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@753c7411, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@77e1b84c, org.springframework.security.web.access.ExceptionTranslationFilter@7d76d72a, org.springframework.security.web.access.intercept.AuthorizationFilter@46c61d1]
 DEBUG - Creating shared instance of singleton bean 'org.springframework.data.jpa.util.JpaMetamodelCacheCleanup'
 DEBUG - Creating shared instance of singleton bean 'org.springframework.data.jpa.repository.support.JpaEvaluationContextExtension'
-DEBUG - Creating shared instance of singleton bean 'jpa.named-queries#1'
+DEBUG - Creating shared instance of singleton bean 'jpa.named-queries#2'
+DEBUG - Creating shared instance of singleton bean 'jpa.OrderRepository.fragments#0'
+DEBUG - Creating shared instance of singleton bean 'orderRepository'
+DEBUG - Creating new EntityManager for shared EntityManager invocation
+DEBUG - Initializing repository instance for com.example.topgamesdata.repositories.OrderRepository…
+DEBUG - Creating new EntityManager for shared EntityManager invocation
+DEBUG - Finished creation of repository instance for com.example.topgamesdata.repositories.OrderRepository.
+DEBUG - Creating shared instance of singleton bean 'jpa.named-queries#3'
 DEBUG - Creating shared instance of singleton bean 'jpa.AdminsRepository.fragments#0'
 DEBUG - Creating shared instance of singleton bean 'adminsRepository'
 DEBUG - Creating new EntityManager for shared EntityManager invocation
@@ -135,7 +289,7 @@ java.lang.Exception: exception just for purpose of providing stack trace
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:360)
-	at jdk.proxy2/jdk.proxy2.$Proxy109.createNamedQuery(Unknown Source)
+	at jdk.proxy2/jdk.proxy2.$Proxy108.createNamedQuery(Unknown Source)
 	at org.springframework.data.jpa.repository.query.NamedQuery.hasNamedQuery(NamedQuery.java:115)
 	at org.springframework.data.jpa.repository.query.NamedQuery.lookupFrom(NamedQuery.java:144)
 	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$DeclaredQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:180)
@@ -173,13 +327,6 @@ java.lang.Exception: exception just for purpose of providing stack trace
 DEBUG - Did not find named query Admins.findByUsername
 DEBUG - Creating new EntityManager for shared EntityManager invocation
 DEBUG - Finished creation of repository instance for com.example.topgamesdata.repositories.AdminsRepository.
-DEBUG - Creating shared instance of singleton bean 'jpa.named-queries#4'
-DEBUG - Creating shared instance of singleton bean 'jpa.OrderRepository.fragments#0'
-DEBUG - Creating shared instance of singleton bean 'orderRepository'
-DEBUG - Creating new EntityManager for shared EntityManager invocation
-DEBUG - Initializing repository instance for com.example.topgamesdata.repositories.OrderRepository…
-DEBUG - Creating new EntityManager for shared EntityManager invocation
-DEBUG - Finished creation of repository instance for com.example.topgamesdata.repositories.OrderRepository.
 DEBUG - Creating shared instance of singleton bean 'data-jpa.repository-aot-processor'
 DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration'
 DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.websocket.servlet.WebSocketServletAutoConfiguration'
@@ -193,46 +340,13 @@ DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.aut
 DEBUG - Creating shared instance of singleton bean 'error'
 DEBUG - Creating shared instance of singleton bean 'beanNameViewResolver'
 DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration$DefaultErrorViewResolverConfiguration'
-DEBUG - Creating shared instance of singleton bean 'spring.web-org.springframework.boot.autoconfigure.web.WebProperties'
 DEBUG - Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration$DefaultErrorViewResolverConfiguration' via constructor to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@a43ce46'
 DEBUG - Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration$DefaultErrorViewResolverConfiguration' via constructor to bean named 'spring.web-org.springframework.boot.autoconfigure.web.WebProperties'
 DEBUG - Creating shared instance of singleton bean 'conventionErrorViewResolver'
 DEBUG - Creating shared instance of singleton bean 'errorAttributes'
 DEBUG - Creating shared instance of singleton bean 'basicErrorController'
 DEBUG - Autowiring by type from bean name 'basicErrorController' via factory method to bean named 'errorAttributes'
-DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration'
-DEBUG - Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration' via constructor to bean named 'spring.mvc-org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties'
-DEBUG - Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration' via constructor to bean named 'spring.web-org.springframework.boot.autoconfigure.web.WebProperties'
-DEBUG - Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration' via constructor to bean named 'org.springframework.beans.factory.support.DefaultListableBeanFactory@30ea8c23'
-DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter'
-DEBUG - Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter' via constructor to bean named 'spring.web-org.springframework.boot.autoconfigure.web.WebProperties'
-DEBUG - Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter' via constructor to bean named 'spring.mvc-org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties'
-DEBUG - Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter' via constructor to bean named 'org.springframework.beans.factory.support.DefaultListableBeanFactory@30ea8c23'
-DEBUG - Creating shared instance of singleton bean 'resourceHandlerRegistrationCustomizer'
-DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$ResourceChainCustomizerConfiguration'
-DEBUG - Autowiring by type from bean name 'resourceHandlerRegistrationCustomizer' via factory method to bean named 'spring.web-org.springframework.boot.autoconfigure.web.WebProperties'
-DEBUG - Creating shared instance of singleton bean 'openEntityManagerInViewInterceptorConfigurer'
-DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration'
-DEBUG - Autowiring by type from bean name 'org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration' via constructor to bean named 'spring.jpa-org.springframework.boot.autoconfigure.orm.jpa.JpaProperties'
-DEBUG - Creating shared instance of singleton bean 'openEntityManagerInViewInterceptor'
-WARN  - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-DEBUG - Autowiring by type from bean name 'openEntityManagerInViewInterceptorConfigurer' via factory method to bean named 'openEntityManagerInViewInterceptor'
-DEBUG - Creating shared instance of singleton bean 'org.springframework.data.web.config.SpringDataWebConfiguration'
-DEBUG - Autowiring by type from bean name 'org.springframework.data.web.config.SpringDataWebConfiguration' via constructor to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@a43ce46'
-DEBUG - Creating shared instance of singleton bean 'org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration'
-DEBUG - Creating shared instance of singleton bean 'org.springframework.security.config.annotation.web.configuration.OAuth2ClientConfiguration$OAuth2ClientWebMvcSecurityConfiguration'
-DEBUG - Creating shared instance of singleton bean 'clientRegistrationRepository'
-DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.security.oauth2.client.servlet.OAuth2ClientRegistrationRepositoryConfiguration'
-DEBUG - Creating shared instance of singleton bean 'spring.security.oauth2.client-org.springframework.boot.autoconfigure.security.oauth2.client.OAuth2ClientProperties'
-DEBUG - Autowiring by type from bean name 'clientRegistrationRepository' via factory method to bean named 'spring.security.oauth2.client-org.springframework.boot.autoconfigure.security.oauth2.client.OAuth2ClientProperties'
-DEBUG - Creating shared instance of singleton bean 'authorizedClientRepository'
-DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.security.oauth2.client.servlet.OAuth2WebSecurityConfiguration'
-DEBUG - Creating shared instance of singleton bean 'authorizedClientService'
-DEBUG - Autowiring by type from bean name 'authorizedClientService' via factory method to bean named 'clientRegistrationRepository'
-DEBUG - Autowiring by type from bean name 'authorizedClientRepository' via factory method to bean named 'authorizedClientService'
 DEBUG - Creating shared instance of singleton bean 'requestMappingHandlerAdapter'
-DEBUG - Creating shared instance of singleton bean 'mvcContentNegotiationManager'
-DEBUG - Creating shared instance of singleton bean 'mvcConversionService'
 DEBUG - Creating shared instance of singleton bean 'mvcValidator'
 WARN  - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
 DEBUG - Failed to set up a Bean Validation provider
@@ -276,37 +390,6 @@ jakarta.validation.NoProviderFoundException: Unable to create a Configuration, b
 DEBUG - Autowiring by type from bean name 'requestMappingHandlerAdapter' via factory method to bean named 'mvcContentNegotiationManager'
 DEBUG - Autowiring by type from bean name 'requestMappingHandlerAdapter' via factory method to bean named 'mvcConversionService'
 DEBUG - Autowiring by type from bean name 'requestMappingHandlerAdapter' via factory method to bean named 'mvcValidator'
-DEBUG - Creating shared instance of singleton bean 'messageConverters'
-DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration'
-DEBUG - Creating shared instance of singleton bean 'stringHttpMessageConverter'
-DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration$StringHttpMessageConverterConfiguration'
-DEBUG - Autowiring by type from bean name 'stringHttpMessageConverter' via factory method to bean named 'environment'
-DEBUG - Creating shared instance of singleton bean 'mappingJackson2HttpMessageConverter'
-DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.http.JacksonHttpMessageConvertersConfiguration$MappingJackson2HttpMessageConverterConfiguration'
-DEBUG - Creating shared instance of singleton bean 'jacksonObjectMapper'
-DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration'
-DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration'
-DEBUG - Creating shared instance of singleton bean 'standardJacksonObjectMapperBuilderCustomizer'
-DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration'
-DEBUG - Creating shared instance of singleton bean 'spring.jackson-org.springframework.boot.autoconfigure.jackson.JacksonProperties'
-DEBUG - Autowiring by type from bean name 'standardJacksonObjectMapperBuilderCustomizer' via factory method to bean named 'spring.jackson-org.springframework.boot.autoconfigure.jackson.JacksonProperties'
-DEBUG - Creating shared instance of singleton bean 'parameterNamesModule'
-DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration'
-DEBUG - Creating shared instance of singleton bean 'jsonMixinModule'
-DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonMixinConfiguration'
-DEBUG - Creating shared instance of singleton bean 'jsonMixinModuleEntries'
-DEBUG - Autowiring by type from bean name 'jsonMixinModuleEntries' via factory method to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@a43ce46'
-DEBUG - @EnableAutoConfiguration was declared on a class in the package 'com.example.topgamesdata,com.example.topgameswebapi'. Automatic @Repository and @Entity scanning is enabled.
-DEBUG - Autowiring by type from bean name 'jsonMixinModule' via factory method to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@a43ce46'
-DEBUG - Autowiring by type from bean name 'jsonMixinModule' via factory method to bean named 'jsonMixinModuleEntries'
-DEBUG - Creating shared instance of singleton bean 'jsonComponentModule'
-DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration'
-DEBUG - Creating shared instance of singleton bean 'jacksonGeoModule'
-DEBUG - Creating shared instance of singleton bean 'org.springframework.data.web.config.SpringDataJacksonConfiguration'
-DEBUG - Autowiring by type from bean name 'jacksonObjectMapperBuilder' via factory method to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@a43ce46'
-DEBUG - Autowiring by type from bean name 'jacksonObjectMapperBuilder' via factory method to bean named 'standardJacksonObjectMapperBuilderCustomizer'
-DEBUG - Autowiring by type from bean name 'jacksonObjectMapper' via factory method to bean named 'jacksonObjectMapperBuilder'
-DEBUG - Autowiring by type from bean name 'mappingJackson2HttpMessageConverter' via factory method to bean named 'jacksonObjectMapper'
 DEBUG - Creating shared instance of singleton bean 'sortResolver'
 DEBUG - Creating shared instance of singleton bean 'sortCustomizer'
 DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.data.web.SpringDataWebAutoConfiguration'
@@ -318,73 +401,12 @@ DEBUG - Creating shared instance of singleton bean 'applicationTaskExecutor'
 DEBUG - Autowiring by type from bean name 'applicationTaskExecutor' via factory method to bean named 'taskExecutorBuilder'
 DEBUG - Initializing ExecutorService 'applicationTaskExecutor'
 DEBUG - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-DEBUG - Creating shared instance of singleton bean 'welcomePageHandlerMapping'
-DEBUG - Creating shared instance of singleton bean 'mvcResourceUrlProvider'
-DEBUG - Autowiring by type from bean name 'welcomePageHandlerMapping' via factory method to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@a43ce46'
-DEBUG - Autowiring by type from bean name 'welcomePageHandlerMapping' via factory method to bean named 'mvcConversionService'
-DEBUG - Autowiring by type from bean name 'welcomePageHandlerMapping' via factory method to bean named 'mvcResourceUrlProvider'
 DEBUG - Creating shared instance of singleton bean 'localeResolver'
 DEBUG - Creating shared instance of singleton bean 'themeResolver'
 DEBUG - Creating shared instance of singleton bean 'flashMapManager'
-DEBUG - Creating shared instance of singleton bean 'requestMappingHandlerMapping'
-DEBUG - Autowiring by type from bean name 'requestMappingHandlerMapping' via factory method to bean named 'mvcContentNegotiationManager'
-DEBUG - Autowiring by type from bean name 'requestMappingHandlerMapping' via factory method to bean named 'mvcConversionService'
-DEBUG - Autowiring by type from bean name 'requestMappingHandlerMapping' via factory method to bean named 'mvcResourceUrlProvider'
-DEBUG - 
-	c.e.t.c.DeveloperController:
-	{GET [/api/developer/getAll]}: getAllDevelopers()
-DEBUG - 
-	c.e.t.c.GameController:
-	{GET [/api/game/getAll]}: getAllGames()
-	{GET [/api/game/{id}]}: getGameById(Long)
-	{POST [/api/game/dev/deleteAll]}: deleteAllGames()
-	{DELETE [/api/game/delete/{id}]}: deleteGame(Long)
-	{PUT [/api/game/update/{id}]}: updateGame(Game,Long)
-	{POST [/api/game/add]}: createGame(Game)
-	{POST [/api/game/dev/addSamples]}: addSamples()
-DEBUG - 
-	c.e.t.c.LogController:
-	{GET [/logs/info]}: getInfoLogs()
-	{GET [/logs/warning]}: getWarningLogs()
-	{GET [/logs/error]}: getErrorLogs()
-	{GET [/logs/debug]}: getDebugLogs()
-	{GET [/logs/all]}: getLogs()
-DEBUG - 
-	c.e.t.c.SecretController:
-	{GET [/secret]}: wowYouAreLoggedInSoCool()
-DEBUG - 
-	c.e.t.c.UserController:
-	{GET [/api/user/getAll]}: getAllUsers()
-	{GET [/api/user/{id}]}: getUserById(Long)
-	{DELETE [/api/user/delete/{id}]}: deleteUserById(Long)
-	{PUT [/api/user/update/{id}]}: updateUserById(Long,User)
-	{POST [/api/user/dev/deleteAll]}: deleteAllUsers()
-	{POST [/api/user/dev/addSamples]}: addSamples()
-	{POST [/api/user/add]}: createUser(User)
-DEBUG - 
-	o.s.b.a.w.s.e.BasicErrorController:
-	{ [/error]}: error(HttpServletRequest)
-	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
-DEBUG - 23 mappings in 'requestMappingHandlerMapping'
 DEBUG - Creating shared instance of singleton bean 'mvcPatternParser'
 DEBUG - Creating shared instance of singleton bean 'mvcUrlPathHelper'
 DEBUG - Creating shared instance of singleton bean 'mvcPathMatcher'
-DEBUG - Creating shared instance of singleton bean 'viewControllerHandlerMapping'
-DEBUG - Autowiring by type from bean name 'viewControllerHandlerMapping' via factory method to bean named 'mvcConversionService'
-DEBUG - Autowiring by type from bean name 'viewControllerHandlerMapping' via factory method to bean named 'mvcResourceUrlProvider'
-DEBUG - Creating shared instance of singleton bean 'beanNameHandlerMapping'
-DEBUG - Autowiring by type from bean name 'beanNameHandlerMapping' via factory method to bean named 'mvcConversionService'
-DEBUG - Autowiring by type from bean name 'beanNameHandlerMapping' via factory method to bean named 'mvcResourceUrlProvider'
-DEBUG - 'beanNameHandlerMapping' {}
-DEBUG - Creating shared instance of singleton bean 'routerFunctionMapping'
-DEBUG - Autowiring by type from bean name 'routerFunctionMapping' via factory method to bean named 'mvcConversionService'
-DEBUG - Autowiring by type from bean name 'routerFunctionMapping' via factory method to bean named 'mvcResourceUrlProvider'
-DEBUG - Creating shared instance of singleton bean 'resourceHandlerMapping'
-DEBUG - Autowiring by type from bean name 'resourceHandlerMapping' via factory method to bean named 'mvcContentNegotiationManager'
-DEBUG - Autowiring by type from bean name 'resourceHandlerMapping' via factory method to bean named 'mvcConversionService'
-DEBUG - Autowiring by type from bean name 'resourceHandlerMapping' via factory method to bean named 'mvcResourceUrlProvider'
-DEBUG - 'resourceHandlerMapping' {/webjars/**=ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]], /**=ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]}
-DEBUG - Creating shared instance of singleton bean 'defaultServletHandlerMapping'
 DEBUG - Creating shared instance of singleton bean 'handlerFunctionAdapter'
 DEBUG - Creating shared instance of singleton bean 'mvcUriComponentsContributor'
 DEBUG - Autowiring by type from bean name 'mvcUriComponentsContributor' via factory method to bean named 'mvcConversionService'
@@ -399,7 +421,7 @@ DEBUG - Autowiring by type from bean name 'mvcViewResolver' via factory method t
 DEBUG - Creating shared instance of singleton bean 'viewNameTranslator'
 DEBUG - Creating shared instance of singleton bean 'defaultViewResolver'
 DEBUG - Creating shared instance of singleton bean 'viewResolver'
-DEBUG - Autowiring by type from bean name 'viewResolver' via factory method to bean named 'org.springframework.beans.factory.support.DefaultListableBeanFactory@30ea8c23'
+DEBUG - Autowiring by type from bean name 'viewResolver' via factory method to bean named 'org.springframework.beans.factory.support.DefaultListableBeanFactory@2cf92cc7'
 DEBUG - Creating shared instance of singleton bean 'viewResolver'
 DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration'
 DEBUG - Creating shared instance of singleton bean 'spring.jmx-org.springframework.boot.autoconfigure.jmx.JmxProperties'
@@ -407,7 +429,7 @@ DEBUG - Autowiring by type from bean name 'org.springframework.boot.autoconfigur
 DEBUG - Creating shared instance of singleton bean 'mbeanExporter'
 DEBUG - Creating shared instance of singleton bean 'objectNamingStrategy'
 DEBUG - Autowiring by type from bean name 'mbeanExporter' via factory method to bean named 'objectNamingStrategy'
-DEBUG - Autowiring by type from bean name 'mbeanExporter' via factory method to bean named 'org.springframework.beans.factory.support.DefaultListableBeanFactory@30ea8c23'
+DEBUG - Autowiring by type from bean name 'mbeanExporter' via factory method to bean named 'org.springframework.beans.factory.support.DefaultListableBeanFactory@2cf92cc7'
 DEBUG - Creating shared instance of singleton bean 'mbeanServer'
 DEBUG - Found MBeanServer: com.sun.jmx.mbeanserver.JmxMBeanServer@2a3046da
 DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.admin.SpringApplicationAdminJmxAutoConfiguration'
@@ -452,38 +474,10 @@ DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.aut
 DEBUG - Creating shared instance of singleton bean 'namedParameterJdbcTemplate'
 DEBUG - Autowiring by type from bean name 'namedParameterJdbcTemplate' via factory method to bean named 'jdbcTemplate'
 DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration'
-DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.security.oauth2.client.servlet.OAuth2WebSecurityConfiguration$OAuth2SecurityFilterChainConfiguration'
-DEBUG - Creating shared instance of singleton bean 'oauth2SecurityFilterChain'
-DEBUG - Creating shared instance of singleton bean 'org.springframework.security.config.annotation.web.configuration.HttpSecurityConfiguration'
-DEBUG - Creating shared instance of singleton bean 'objectPostProcessor'
-DEBUG - Creating shared instance of singleton bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration'
-DEBUG - Autowiring by type from bean name 'objectPostProcessor' via factory method to bean named 'org.springframework.beans.factory.support.DefaultListableBeanFactory@30ea8c23'
-DEBUG - Creating shared instance of singleton bean 'org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration'
-DEBUG - Creating shared instance of singleton bean 'enableGlobalAuthenticationAutowiredConfigurer'
-DEBUG - Autowiring by type from bean name 'enableGlobalAuthenticationAutowiredConfigurer' via factory method to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@a43ce46'
-DEBUG - Creating shared instance of singleton bean 'initializeUserDetailsBeanManagerConfigurer'
-DEBUG - Autowiring by type from bean name 'initializeUserDetailsBeanManagerConfigurer' via factory method to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@a43ce46'
-DEBUG - Creating shared instance of singleton bean 'initializeAuthenticationProviderBeanManagerConfigurer'
-DEBUG - Autowiring by type from bean name 'initializeAuthenticationProviderBeanManagerConfigurer' via factory method to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@a43ce46'
-DEBUG - Creating shared instance of singleton bean 'authenticationManagerBuilder'
-DEBUG - Autowiring by type from bean name 'authenticationManagerBuilder' via factory method to bean named 'objectPostProcessor'
-DEBUG - Autowiring by type from bean name 'authenticationManagerBuilder' via factory method to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@a43ce46'
-DEBUG - Creating shared instance of singleton bean 'authenticationEventPublisher'
-DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration'
-DEBUG - Autowiring by type from bean name 'authenticationEventPublisher' via factory method to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@a43ce46'
-DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.security.servlet.SpringBootWebSecurityConfiguration$WebSecurityEnablerConfiguration'
-DEBUG - No authenticationProviders and no parentAuthenticationManager defined. Returning null.
-DEBUG - Autowiring by type from bean name 'oauth2SecurityFilterChain' via factory method to bean named 'org.springframework.security.config.annotation.web.configuration.HttpSecurityConfiguration.httpSecurity'
-INFO  - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3d96b8fb, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1d208795, org.springframework.security.web.context.SecurityContextHolderFilter@755fdfad, org.springframework.security.web.header.HeaderWriterFilter@5aa2758a, org.springframework.security.web.csrf.CsrfFilter@2472ba04, org.springframework.security.web.authentication.logout.LogoutFilter@5da41d02, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@47462daf, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@3f36c191, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@43fdef43, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@4b8ac512, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@2f006edf, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2d91147b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4cb87009, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@20843604, org.springframework.security.oauth2.client.web.OAuth2AuthorizationCodeGrantFilter@20524816, org.springframework.security.web.access.ExceptionTranslationFilter@57cc0333, org.springframework.security.web.access.intercept.AuthorizationFilter@58fb5b8f]
 DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.security.oauth2.client.servlet.OAuth2ClientAutoConfiguration'
 DEBUG - Creating shared instance of singleton bean 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration'
 DEBUG - Creating shared instance of singleton bean 'delegatingApplicationListener'
 DEBUG - Creating shared instance of singleton bean 'springSecurityFilterChain'
-DEBUG - Creating shared instance of singleton bean 'mvcHandlerMappingIntrospector'
-WARN  - You are asking Spring Security to ignore Mvc [pattern='/api/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
-INFO  - Will not secure Mvc [pattern='/api/**']
-WARN  - You are asking Spring Security to ignore Mvc [pattern='/logs/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
-INFO  - Will not secure Mvc [pattern='/logs/**']
 DEBUG - Creating shared instance of singleton bean 'webSecurityExpressionHandler'
 DEBUG - Creating shared instance of singleton bean 'privilegeEvaluator'
 DEBUG - Creating shared instance of singleton bean 'requestDataValueProcessor'
@@ -761,9 +755,6 @@ Positive matches:
 
    OAuth2WebSecurityConfiguration#authorizedClientService matched:
       - @ConditionalOnMissingBean (types: org.springframework.security.oauth2.client.OAuth2AuthorizedClientService; SearchStrategy: all) did not find any beans (OnBeanCondition)
-
-   OAuth2WebSecurityConfiguration.OAuth2SecurityFilterChainConfiguration matched:
-      - AllNestedConditions 2 matched 0 did not; NestedCondition on DefaultWebSecurityCondition.Beans @ConditionalOnMissingBean (types: org.springframework.security.web.SecurityFilterChain; SearchStrategy: all) did not find any beans; NestedCondition on DefaultWebSecurityCondition.Classes @ConditionalOnClass found required classes 'org.springframework.security.web.SecurityFilterChain', 'org.springframework.security.config.annotation.web.builders.HttpSecurity' (DefaultWebSecurityCondition)
 
    PersistenceExceptionTranslationAutoConfiguration matched:
       - @ConditionalOnClass found required class 'org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor' (OnClassCondition)
@@ -1223,7 +1214,7 @@ Negative matches:
 
    JpaRepositoriesAutoConfiguration:
       Did not match:
-         - @ConditionalOnMissingBean (types: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean,org.springframework.data.jpa.repository.config.JpaRepositoryConfigExtension; SearchStrategy: all) found beans of type 'org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean' &userRepository, &adminsRepository, &gameRepository, &developerRepository, &orderRepository and found beans of type 'org.springframework.data.jpa.repository.config.JpaRepositoryConfigExtension' org.springframework.data.jpa.repository.config.JpaRepositoryConfigExtension#0 (OnBeanCondition)
+         - @ConditionalOnMissingBean (types: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean,org.springframework.data.jpa.repository.config.JpaRepositoryConfigExtension; SearchStrategy: all) found beans of type 'org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean' &developerRepository, &userRepository, &orderRepository, &adminsRepository, &gameRepository and found beans of type 'org.springframework.data.jpa.repository.config.JpaRepositoryConfigExtension' org.springframework.data.jpa.repository.config.JpaRepositoryConfigExtension#0 (OnBeanCondition)
       Matched:
          - @ConditionalOnClass found required class 'org.springframework.data.jpa.repository.JpaRepository' (OnClassCondition)
          - @ConditionalOnProperty (spring.data.jpa.repositories.enabled=true) matched (OnPropertyCondition)
@@ -1319,6 +1310,10 @@ Negative matches:
    OAuth2ResourceServerAutoConfiguration:
       Did not match:
          - @ConditionalOnClass did not find required class 'org.springframework.security.oauth2.server.resource.authentication.BearerTokenAuthenticationToken' (OnClassCondition)
+
+   OAuth2WebSecurityConfiguration.OAuth2SecurityFilterChainConfiguration:
+      Did not match:
+         - AllNestedConditions 1 matched 1 did not; NestedCondition on DefaultWebSecurityCondition.Beans @ConditionalOnMissingBean (types: org.springframework.security.web.SecurityFilterChain; SearchStrategy: all) found beans of type 'org.springframework.security.web.SecurityFilterChain' filterChain; NestedCondition on DefaultWebSecurityCondition.Classes @ConditionalOnClass found required classes 'org.springframework.security.web.SecurityFilterChain', 'org.springframework.security.config.annotation.web.builders.HttpSecurity' (DefaultWebSecurityCondition)
 
    ProjectInfoAutoConfiguration#buildProperties:
       Did not match:
@@ -1464,7 +1459,7 @@ Negative matches:
 
    SpringBootWebSecurityConfiguration.SecurityFilterChainConfiguration:
       Did not match:
-         - AllNestedConditions 1 matched 1 did not; NestedCondition on DefaultWebSecurityCondition.Beans @ConditionalOnMissingBean (types: org.springframework.security.web.SecurityFilterChain; SearchStrategy: all) found beans of type 'org.springframework.security.web.SecurityFilterChain' oauth2SecurityFilterChain; NestedCondition on DefaultWebSecurityCondition.Classes @ConditionalOnClass found required classes 'org.springframework.security.web.SecurityFilterChain', 'org.springframework.security.config.annotation.web.builders.HttpSecurity' (DefaultWebSecurityCondition)
+         - AllNestedConditions 1 matched 1 did not; NestedCondition on DefaultWebSecurityCondition.Beans @ConditionalOnMissingBean (types: org.springframework.security.web.SecurityFilterChain; SearchStrategy: all) found beans of type 'org.springframework.security.web.SecurityFilterChain' filterChain; NestedCondition on DefaultWebSecurityCondition.Classes @ConditionalOnClass found required classes 'org.springframework.security.web.SecurityFilterChain', 'org.springframework.security.config.annotation.web.builders.HttpSecurity' (DefaultWebSecurityCondition)
 
    TaskSchedulingAutoConfiguration#scheduledBeanLazyInitializationExcludeFilter:
       Did not match:
@@ -1574,7 +1569,7 @@ Unconditional classes:
 
 
 
-INFO  - Started TopgamesWebApiApplication in 10.672 seconds (process running for 12.675)
+INFO  - Started TopgamesWebApiApplication in 6.919 seconds (process running for 8.223)
 DEBUG - Application availability state LivenessState changed to CORRECT
 DEBUG - Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
 INFO  - Initializing Spring DispatcherServlet 'dispatcherServlet'
@@ -1582,92 +1577,199 @@ INFO  - Initializing Servlet 'dispatcherServlet'
 DEBUG - Detected StandardServletMultipartResolver
 DEBUG - Detected AcceptHeaderLocaleResolver
 DEBUG - Detected FixedThemeResolver
-DEBUG - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@4e3c0627
-DEBUG - Detected org.springframework.web.servlet.support.SessionFlashMapManager@3180131e
+DEBUG - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@396f3bf2
+DEBUG - Detected org.springframework.web.servlet.support.SessionFlashMapManager@737ae41a
 DEBUG - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-INFO  - Completed initialization in 3 ms
+INFO  - Completed initialization in 2 ms
+DEBUG - Securing GET /logs/all
+DEBUG - Mapped to com.example.topgameswebapi.controller.LogController#getLogs()
+DEBUG - Mapped to com.example.topgameswebapi.controller.LogController#getLogs()
+DEBUG - Secured GET /logs/all
+DEBUG - GET "/logs/all", parameters={}
+DEBUG - Mapped to com.example.topgameswebapi.controller.LogController#getLogs()
+DEBUG - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+DEBUG - Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, application/xml;q=0.9, */*;q=0.8] and supported [application/json, application/*+json]
+DEBUG - Writing [[DEBUG - Creating shared instance of singleton bean 'securityConfiguration', DEBUG - Creating shared (truncated)...]
+DEBUG - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+DEBUG - Completed 200 OK
+DEBUG - Set SecurityContextHolder to anonymous SecurityContext
+DEBUG - Securing GET /logs/all
+DEBUG - Mapped to com.example.topgameswebapi.controller.LogController#getLogs()
+DEBUG - Mapped to com.example.topgameswebapi.controller.LogController#getLogs()
+DEBUG - Secured GET /logs/all
+DEBUG - GET "/logs/all", parameters={}
+DEBUG - Mapped to com.example.topgameswebapi.controller.LogController#getLogs()
+DEBUG - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+DEBUG - Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, application/xml;q=0.9, */*;q=0.8] and supported [application/json, application/*+json]
+DEBUG - Writing [[DEBUG - Creating shared instance of singleton bean 'securityConfiguration', DEBUG - Creating shared (truncated)...]
+DEBUG - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+DEBUG - Completed 200 OK
+DEBUG - Set SecurityContextHolder to anonymous SecurityContext
+DEBUG - Securing GET /logs/info
+DEBUG - Mapped to com.example.topgameswebapi.controller.LogController#getInfoLogs()
+DEBUG - Mapped to com.example.topgameswebapi.controller.LogController#getInfoLogs()
+DEBUG - Secured GET /logs/info
+DEBUG - GET "/logs/info", parameters={}
+DEBUG - Mapped to com.example.topgameswebapi.controller.LogController#getInfoLogs()
+DEBUG - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+DEBUG - Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, application/xml;q=0.9, */*;q=0.8] and supported [application/json, application/*+json]
+DEBUG - Writing [[INFO  - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilt (truncated)...]
+DEBUG - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+DEBUG - Completed 200 OK
+DEBUG - Set SecurityContextHolder to anonymous SecurityContext
+DEBUG - Securing GET /api/game/getAll
+DEBUG - Mapped to com.example.topgameswebapi.controller.GameController#getAllGames()
+DEBUG - Secured GET /api/game/getAll
+DEBUG - GET "/api/game/getAll", parameters={}
+DEBUG - Mapped to com.example.topgameswebapi.controller.GameController#getAllGames()
+DEBUG - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+INFO  - Got all games
+DEBUG - Found thread-bound EntityManager [SessionImpl(190615889<open>)] for JPA transaction
+DEBUG - Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+DEBUG - Setting JDBC Connection [HikariProxyConnection@1473399989 wrapping com.mysql.cj.jdbc.ConnectionImpl@41167ded] read-only
+DEBUG - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+DEBUG - begin
+DEBUG - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@40e44514]
+DEBUG - Created new SQL alias : g1_0
+DEBUG - Registration of TableGroup [StandardTableGroup(com.example.topgamesdata.model.Game(63384369338276))] with identifierForTableGroup [com.example.topgamesdata.model.Game] for NavigablePath [com.example.topgamesdata.model.Game] 
+DEBUG - DomainResult Graph:
+ \-EntityResultImpl [com.example.topgamesdata.model.Game(63384369338276)]
+ |  +-BasicFetch [com.example.topgamesdata.model.Game(63384369338276).description]
+ |  +-EntityFetchSelectImpl [com.example.topgamesdata.model.Game(63384369338276).developer]
+ |  +-DelayedCollectionFetch [com.example.topgamesdata.model.Game(63384369338276).genre]
+ |  +-BasicFetch [com.example.topgamesdata.model.Game(63384369338276).name]
+ |  +-DelayedCollectionFetch [com.example.topgamesdata.model.Game(63384369338276).platform]
+ |  \-BasicFetch [com.example.topgamesdata.model.Game(63384369338276).releaseDate]
+
+DEBUG - SQL AST Tree:
+    SelectStatement {
+      FromClause {
+        StandardTableGroup (g1 : com.example.topgamesdata.model.Game(63384369338276)) {
+          primaryTableReference : game as g1_0
+        }
+      }
+    }
+
+DEBUG - Skipping reading Query result cache data: cache-enabled = false, cache-mode = NORMAL
+DEBUG - Initializer list
+DEBUG -     com.example.topgamesdata.model.Game(63384369338276).developer -> EntitySelectFetchInitializer(com.example.topgamesdata.model.Game(63384369338276).developer)@783449449 (ToOneAttributeMapping(NavigableRole[com.example.topgamesdata.model.Game.developer])@971484761)
+DEBUG -     com.example.topgamesdata.model.Game(63384369338276).genre -> DelayedCollectionInitializer(com.example.topgamesdata.model.Game(63384369338276).genre)@1341518316 (PluralAttribute(com.example.topgamesdata.model.Game.genre))
+DEBUG -     com.example.topgamesdata.model.Game(63384369338276).platform -> DelayedCollectionInitializer(com.example.topgamesdata.model.Game(63384369338276).platform)@1297287715 (PluralAttribute(com.example.topgamesdata.model.Game.platform))
+DEBUG -     com.example.topgamesdata.model.Game(63384369338276) -> EntityResultInitializer(com.example.topgamesdata.model.Game(63384369338276))@1465839334 (SingleTableEntityPersister(com.example.topgamesdata.model.Game))
+DEBUG - select g1_0.id,g1_0.description,g1_0.developer_id,g1_0.name,g1_0.release_date from game g1_0
+DEBUG - Initiating transaction commit
+DEBUG - Committing JPA transaction on EntityManager [SessionImpl(190615889<open>)]
+DEBUG - committing
+DEBUG - Resetting read-only flag of JDBC Connection [HikariProxyConnection@1473399989 wrapping com.mysql.cj.jdbc.ConnectionImpl@41167ded]
+DEBUG - Not closing pre-bound JPA EntityManager after transaction
+DEBUG - Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, application/xml;q=0.9, */*;q=0.8] and supported [application/json, application/*+json]
+DEBUG - Writing [[]]
+DEBUG - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+DEBUG - Completed 200 OK
+DEBUG - Set SecurityContextHolder to anonymous SecurityContext
+DEBUG - Securing GET /api/game/getAll
+DEBUG - Mapped to com.example.topgameswebapi.controller.GameController#getAllGames()
+DEBUG - Secured GET /api/game/getAll
+DEBUG - GET "/api/game/getAll", parameters={}
+DEBUG - Mapped to com.example.topgameswebapi.controller.GameController#getAllGames()
+DEBUG - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+INFO  - Got all games
+DEBUG - Found thread-bound EntityManager [SessionImpl(1909168678<open>)] for JPA transaction
+DEBUG - Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+DEBUG - Setting JDBC Connection [HikariProxyConnection@2131520111 wrapping com.mysql.cj.jdbc.ConnectionImpl@41167ded] read-only
+DEBUG - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+DEBUG - begin
+DEBUG - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@7b33f156]
+DEBUG - Created new SQL alias : g1_0
+DEBUG - Registration of TableGroup [StandardTableGroup(com.example.topgamesdata.model.Game(63385773967853))] with identifierForTableGroup [com.example.topgamesdata.model.Game] for NavigablePath [com.example.topgamesdata.model.Game] 
+DEBUG - DomainResult Graph:
+ \-EntityResultImpl [com.example.topgamesdata.model.Game(63385773967853)]
+ |  +-BasicFetch [com.example.topgamesdata.model.Game(63385773967853).description]
+ |  +-EntityFetchSelectImpl [com.example.topgamesdata.model.Game(63385773967853).developer]
+ |  +-DelayedCollectionFetch [com.example.topgamesdata.model.Game(63385773967853).genre]
+ |  +-BasicFetch [com.example.topgamesdata.model.Game(63385773967853).name]
+ |  +-DelayedCollectionFetch [com.example.topgamesdata.model.Game(63385773967853).platform]
+ |  \-BasicFetch [com.example.topgamesdata.model.Game(63385773967853).releaseDate]
+
+DEBUG - SQL AST Tree:
+    SelectStatement {
+      FromClause {
+        StandardTableGroup (g1 : com.example.topgamesdata.model.Game(63385773967853)) {
+          primaryTableReference : game as g1_0
+        }
+      }
+    }
+
+DEBUG - Skipping reading Query result cache data: cache-enabled = false, cache-mode = NORMAL
+DEBUG - Initializer list
+DEBUG -     com.example.topgamesdata.model.Game(63385773967853).developer -> EntitySelectFetchInitializer(com.example.topgamesdata.model.Game(63385773967853).developer)@1579065115 (ToOneAttributeMapping(NavigableRole[com.example.topgamesdata.model.Game.developer])@971484761)
+DEBUG -     com.example.topgamesdata.model.Game(63385773967853).genre -> DelayedCollectionInitializer(com.example.topgamesdata.model.Game(63385773967853).genre)@2072354289 (PluralAttribute(com.example.topgamesdata.model.Game.genre))
+DEBUG -     com.example.topgamesdata.model.Game(63385773967853).platform -> DelayedCollectionInitializer(com.example.topgamesdata.model.Game(63385773967853).platform)@1487079170 (PluralAttribute(com.example.topgamesdata.model.Game.platform))
+DEBUG -     com.example.topgamesdata.model.Game(63385773967853) -> EntityResultInitializer(com.example.topgamesdata.model.Game(63385773967853))@1880886011 (SingleTableEntityPersister(com.example.topgamesdata.model.Game))
+DEBUG - select g1_0.id,g1_0.description,g1_0.developer_id,g1_0.name,g1_0.release_date from game g1_0
+DEBUG - Initiating transaction commit
+DEBUG - Committing JPA transaction on EntityManager [SessionImpl(1909168678<open>)]
+DEBUG - committing
+DEBUG - Resetting read-only flag of JDBC Connection [HikariProxyConnection@2131520111 wrapping com.mysql.cj.jdbc.ConnectionImpl@41167ded]
+DEBUG - Not closing pre-bound JPA EntityManager after transaction
+DEBUG - Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, application/xml;q=0.9, */*;q=0.8] and supported [application/json, application/*+json]
+DEBUG - Writing [[]]
+DEBUG - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+DEBUG - Completed 200 OK
+DEBUG - Set SecurityContextHolder to anonymous SecurityContext
+DEBUG - Securing GET /secret?continue
 DEBUG - Mapped to com.example.topgameswebapi.controller.SecretController#wowYouAreLoggedInSoCool()
 DEBUG - Mapped to com.example.topgameswebapi.controller.SecretController#wowYouAreLoggedInSoCool()
+DEBUG - Mapped to com.example.topgameswebapi.controller.SecretController#wowYouAreLoggedInSoCool()
+DEBUG - Set SecurityContextHolder to anonymous SecurityContext
+DEBUG - Saved request http://localhost:8081/secret?continue&continue to session
+DEBUG - Trying to match using And [Not [RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]], Not [And [Or [Ant [pattern='/login'], Ant [pattern='/favicon.ico']], And [Not [RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@672f69f7, matchingMediaTypes=[application/xhtml+xml, image/*, text/html, text/plain], useEquals=false, ignoredMediaTypes=[*/*]]]]], org.springframework.security.config.annotation.web.configurers.oauth2.client.OAuth2LoginConfigurer$$Lambda$1460/0x0000000801497918@4d4db1c8]
+DEBUG - Match found! Executing org.springframework.security.web.authentication.LoginUrlAuthenticationEntryPoint@402436b9
+DEBUG - Redirecting to http://localhost:8081/oauth2/authorization/google
+DEBUG - Securing GET /oauth2/authorization/google
+DEBUG - Redirecting to https://accounts.google.com/o/oauth2/v2/auth?response_type=code&client_id=806856711257-r1i8bpofb8o2f0hhe3hoetef318k6vf1.apps.googleusercontent.com&scope=openid%20profile%20email&state=ax-GaqtD08bqmkN0kZ6hs1_fbbg36OE3fD2IUA2eiW0%3D&redirect_uri=http://localhost:8081/login/oauth2/code/google&nonce=LjsVIOs_rh5w9PIhJGIK0xH48simYWnJf72rvLPkC_4
 DEBUG - Securing GET /secret
+DEBUG - Mapped to com.example.topgameswebapi.controller.SecretController#wowYouAreLoggedInSoCool()
+DEBUG - Mapped to com.example.topgameswebapi.controller.SecretController#wowYouAreLoggedInSoCool()
+DEBUG - Mapped to com.example.topgameswebapi.controller.SecretController#wowYouAreLoggedInSoCool()
 DEBUG - Set SecurityContextHolder to anonymous SecurityContext
 DEBUG - Saved request http://localhost:8081/secret?continue to session
-DEBUG - Trying to match using And [Not [RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]], Not [And [Or [Ant [pattern='/login'], Ant [pattern='/favicon.ico']], And [Not [RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@4626f584, matchingMediaTypes=[application/xhtml+xml, image/*, text/html, text/plain], useEquals=false, ignoredMediaTypes=[*/*]]]]], org.springframework.security.config.annotation.web.configurers.oauth2.client.OAuth2LoginConfigurer$$Lambda$1493/0x00000008014d3fa0@71e47767]
-DEBUG - Match found! Executing org.springframework.security.web.authentication.LoginUrlAuthenticationEntryPoint@a9380c0
+DEBUG - Trying to match using And [Not [RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]], Not [And [Or [Ant [pattern='/login'], Ant [pattern='/favicon.ico']], And [Not [RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@672f69f7, matchingMediaTypes=[application/xhtml+xml, image/*, text/html, text/plain], useEquals=false, ignoredMediaTypes=[*/*]]]]], org.springframework.security.config.annotation.web.configurers.oauth2.client.OAuth2LoginConfigurer$$Lambda$1460/0x0000000801497918@4d4db1c8]
+DEBUG - Match found! Executing org.springframework.security.web.authentication.LoginUrlAuthenticationEntryPoint@402436b9
 DEBUG - Redirecting to http://localhost:8081/oauth2/authorization/google
-DEBUG - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
-DEBUG - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
 DEBUG - Securing GET /oauth2/authorization/google
-DEBUG - Redirecting to https://accounts.google.com/o/oauth2/v2/auth?response_type=code&client_id=806856711257-r1i8bpofb8o2f0hhe3hoetef318k6vf1.apps.googleusercontent.com&scope=openid%20profile%20email&state=YY392t-Ae_tVxcOElIZ3ROjjDSHxVZs5JAF2_ICPsWg%3D&redirect_uri=http://localhost:8081/login/oauth2/code/google&nonce=HqEFplC6UZsQUAq3t8i0bXd4ip1Fn-j8BxbzZu3bB-o
-DEBUG - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
-DEBUG - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
-DEBUG - Securing GET /login/oauth2/code/google?state=YY392t-Ae_tVxcOElIZ3ROjjDSHxVZs5JAF2_ICPsWg%3D&code=4%2F0AWtgzh6ebfPTnyeL9PjuesQ5klQ5R4o5GmTKLMBXJQ6jQj5rG0saXTxEdXWUChrTDwhCNw&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&authuser=0&hd=pjwstk.edu.pl&prompt=none
+DEBUG - Redirecting to https://accounts.google.com/o/oauth2/v2/auth?response_type=code&client_id=806856711257-r1i8bpofb8o2f0hhe3hoetef318k6vf1.apps.googleusercontent.com&scope=openid%20profile%20email&state=LmH03f_G4b4tF1N-t_Op991Sg1ApfbZYL9OpSQHLzUQ%3D&redirect_uri=http://localhost:8081/login/oauth2/code/google&nonce=E0arrQjx1XX1YH7BzL4gpGMDbVly_5TnLUV5SmHLT9M
+DEBUG - Securing GET /login/oauth2/code/google?state=LmH03f_G4b4tF1N-t_Op991Sg1ApfbZYL9OpSQHLzUQ%3D&code=4/0AWtgzh4Ri512TTr7swAQW5K_NxaJC5nzRcA6UQ74N2M6j9NYtYg98sOPIRaFf8Vec14Xyg&scope=email%20profile%20https://www.googleapis.com/auth/userinfo.profile%20openid%20https://www.googleapis.com/auth/userinfo.email&authuser=0&hd=pjwstk.edu.pl&prompt=none
 DEBUG - HTTP POST https://www.googleapis.com/oauth2/v4/token
 DEBUG - Accept=[application/json, application/*+json]
-DEBUG - Writing [{grant_type=[authorization_code], code=[4/0AWtgzh6ebfPTnyeL9PjuesQ5klQ5R4o5GmTKLMBXJQ6jQj5rG0saXTxEdXWUChrTDwhCNw], redirect_uri=[http://localhost:8081/login/oauth2/code/google]}] as "application/x-www-form-urlencoded;charset=UTF-8"
+DEBUG - Writing [{grant_type=[authorization_code], code=[4/0AWtgzh4Ri512TTr7swAQW5K_NxaJC5nzRcA6UQ74N2M6j9NYtYg98sOPIRaFf8Vec14Xyg], redirect_uri=[http://localhost:8081/login/oauth2/code/google]}] as "application/x-www-form-urlencoded;charset=UTF-8"
 DEBUG - Response 200 OK
 DEBUG - Reading to [org.springframework.security.oauth2.core.endpoint.OAuth2AccessTokenResponse] as "application/json;charset=utf-8"
 DEBUG - HTTP GET https://www.googleapis.com/oauth2/v3/certs
 DEBUG - Accept=[text/plain, application/json, application/*+json, */*]
 DEBUG - Response 200 OK
 DEBUG - Reading to [java.lang.String] as "application/json;charset=UTF-8"
-DEBUG - Changed session id from 86ECCEC886BDED7B3C802EAF3D71B4AE
-DEBUG - Stored SecurityContextImpl [Authentication=OAuth2AuthenticationToken [Principal=Name: [115468241347308553680], Granted Authorities: [[OIDC_USER, SCOPE_https://www.googleapis.com/auth/userinfo.email, SCOPE_https://www.googleapis.com/auth/userinfo.profile, SCOPE_openid]], User Attributes: [{at_hash=odWgrPYYmj2u94ycSe-b-g, sub=115468241347308553680, email_verified=true, iss=https://accounts.google.com, given_name=Jakub, locale=pl, nonce=HqEFplC6UZsQUAq3t8i0bXd4ip1Fn-j8BxbzZu3bB-o, picture=https://lh3.googleusercontent.com/a/AEdFTp42MTS-ymYRUlY83NLRThOrcw8pZ12D8UQ4qJdR=s96-c, aud=[806856711257-r1i8bpofb8o2f0hhe3hoetef318k6vf1.apps.googleusercontent.com], azp=806856711257-r1i8bpofb8o2f0hhe3hoetef318k6vf1.apps.googleusercontent.com, name=Jakub Konkol, hd=pjwstk.edu.pl, exp=2023-01-27T13:45:38Z, family_name=Konkol, iat=2023-01-27T12:45:38Z, email=s24406@pjwstk.edu.pl}], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=86ECCEC886BDED7B3C802EAF3D71B4AE], Granted Authorities=[OIDC_USER, SCOPE_https://www.googleapis.com/auth/userinfo.email, SCOPE_https://www.googleapis.com/auth/userinfo.profile, SCOPE_openid]]] to HttpSession [org.apache.catalina.session.StandardSessionFacade@63765661]
-DEBUG - Set SecurityContextHolder to OAuth2AuthenticationToken [Principal=Name: [115468241347308553680], Granted Authorities: [[OIDC_USER, SCOPE_https://www.googleapis.com/auth/userinfo.email, SCOPE_https://www.googleapis.com/auth/userinfo.profile, SCOPE_openid]], User Attributes: [{at_hash=odWgrPYYmj2u94ycSe-b-g, sub=115468241347308553680, email_verified=true, iss=https://accounts.google.com, given_name=Jakub, locale=pl, nonce=HqEFplC6UZsQUAq3t8i0bXd4ip1Fn-j8BxbzZu3bB-o, picture=https://lh3.googleusercontent.com/a/AEdFTp42MTS-ymYRUlY83NLRThOrcw8pZ12D8UQ4qJdR=s96-c, aud=[806856711257-r1i8bpofb8o2f0hhe3hoetef318k6vf1.apps.googleusercontent.com], azp=806856711257-r1i8bpofb8o2f0hhe3hoetef318k6vf1.apps.googleusercontent.com, name=Jakub Konkol, hd=pjwstk.edu.pl, exp=2023-01-27T13:45:38Z, family_name=Konkol, iat=2023-01-27T12:45:38Z, email=s24406@pjwstk.edu.pl}], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=86ECCEC886BDED7B3C802EAF3D71B4AE], Granted Authorities=[OIDC_USER, SCOPE_https://www.googleapis.com/auth/userinfo.email, SCOPE_https://www.googleapis.com/auth/userinfo.profile, SCOPE_openid]]
+DEBUG - Changed session id from D0BC5B08B886D7A26864BFECB311E6E1
+DEBUG - Stored SecurityContextImpl [Authentication=OAuth2AuthenticationToken [Principal=Name: [115468241347308553680], Granted Authorities: [[OIDC_USER, SCOPE_https://www.googleapis.com/auth/userinfo.email, SCOPE_https://www.googleapis.com/auth/userinfo.profile, SCOPE_openid]], User Attributes: [{at_hash=yCJo-yb5Ga7IPoqGHJHy4Q, sub=115468241347308553680, email_verified=true, iss=https://accounts.google.com, given_name=Jakub, locale=pl, nonce=E0arrQjx1XX1YH7BzL4gpGMDbVly_5TnLUV5SmHLT9M, picture=https://lh3.googleusercontent.com/a/AEdFTp42MTS-ymYRUlY83NLRThOrcw8pZ12D8UQ4qJdR=s96-c, aud=[806856711257-r1i8bpofb8o2f0hhe3hoetef318k6vf1.apps.googleusercontent.com], azp=806856711257-r1i8bpofb8o2f0hhe3hoetef318k6vf1.apps.googleusercontent.com, name=Jakub Konkol, hd=pjwstk.edu.pl, exp=2023-01-27T15:07:47Z, family_name=Konkol, iat=2023-01-27T14:07:47Z, email=s24406@pjwstk.edu.pl}], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=D0BC5B08B886D7A26864BFECB311E6E1], Granted Authorities=[OIDC_USER, SCOPE_https://www.googleapis.com/auth/userinfo.email, SCOPE_https://www.googleapis.com/auth/userinfo.profile, SCOPE_openid]]] to HttpSession [org.apache.catalina.session.StandardSessionFacade@74c9972b]
+DEBUG - Set SecurityContextHolder to OAuth2AuthenticationToken [Principal=Name: [115468241347308553680], Granted Authorities: [[OIDC_USER, SCOPE_https://www.googleapis.com/auth/userinfo.email, SCOPE_https://www.googleapis.com/auth/userinfo.profile, SCOPE_openid]], User Attributes: [{at_hash=yCJo-yb5Ga7IPoqGHJHy4Q, sub=115468241347308553680, email_verified=true, iss=https://accounts.google.com, given_name=Jakub, locale=pl, nonce=E0arrQjx1XX1YH7BzL4gpGMDbVly_5TnLUV5SmHLT9M, picture=https://lh3.googleusercontent.com/a/AEdFTp42MTS-ymYRUlY83NLRThOrcw8pZ12D8UQ4qJdR=s96-c, aud=[806856711257-r1i8bpofb8o2f0hhe3hoetef318k6vf1.apps.googleusercontent.com], azp=806856711257-r1i8bpofb8o2f0hhe3hoetef318k6vf1.apps.googleusercontent.com, name=Jakub Konkol, hd=pjwstk.edu.pl, exp=2023-01-27T15:07:47Z, family_name=Konkol, iat=2023-01-27T14:07:47Z, email=s24406@pjwstk.edu.pl}], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=D0BC5B08B886D7A26864BFECB311E6E1], Granted Authorities=[OIDC_USER, SCOPE_https://www.googleapis.com/auth/userinfo.email, SCOPE_https://www.googleapis.com/auth/userinfo.profile, SCOPE_openid]]
 DEBUG - Redirecting to http://localhost:8081/secret?continue
-DEBUG - Mapped to com.example.topgameswebapi.controller.SecretController#wowYouAreLoggedInSoCool()
-DEBUG - Mapped to com.example.topgameswebapi.controller.SecretController#wowYouAreLoggedInSoCool()
 DEBUG - Securing GET /secret?continue
-DEBUG - Retrieved SecurityContextImpl [Authentication=OAuth2AuthenticationToken [Principal=Name: [115468241347308553680], Granted Authorities: [[OIDC_USER, SCOPE_https://www.googleapis.com/auth/userinfo.email, SCOPE_https://www.googleapis.com/auth/userinfo.profile, SCOPE_openid]], User Attributes: [{at_hash=odWgrPYYmj2u94ycSe-b-g, sub=115468241347308553680, email_verified=true, iss=https://accounts.google.com, given_name=Jakub, locale=pl, nonce=HqEFplC6UZsQUAq3t8i0bXd4ip1Fn-j8BxbzZu3bB-o, picture=https://lh3.googleusercontent.com/a/AEdFTp42MTS-ymYRUlY83NLRThOrcw8pZ12D8UQ4qJdR=s96-c, aud=[806856711257-r1i8bpofb8o2f0hhe3hoetef318k6vf1.apps.googleusercontent.com], azp=806856711257-r1i8bpofb8o2f0hhe3hoetef318k6vf1.apps.googleusercontent.com, name=Jakub Konkol, hd=pjwstk.edu.pl, exp=2023-01-27T13:45:38Z, family_name=Konkol, iat=2023-01-27T12:45:38Z, email=s24406@pjwstk.edu.pl}], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=86ECCEC886BDED7B3C802EAF3D71B4AE], Granted Authorities=[OIDC_USER, SCOPE_https://www.googleapis.com/auth/userinfo.email, SCOPE_https://www.googleapis.com/auth/userinfo.profile, SCOPE_openid]]]
+DEBUG - Mapped to com.example.topgameswebapi.controller.SecretController#wowYouAreLoggedInSoCool()
+DEBUG - Mapped to com.example.topgameswebapi.controller.SecretController#wowYouAreLoggedInSoCool()
+DEBUG - Mapped to com.example.topgameswebapi.controller.SecretController#wowYouAreLoggedInSoCool()
+DEBUG - Retrieved SecurityContextImpl [Authentication=OAuth2AuthenticationToken [Principal=Name: [115468241347308553680], Granted Authorities: [[OIDC_USER, SCOPE_https://www.googleapis.com/auth/userinfo.email, SCOPE_https://www.googleapis.com/auth/userinfo.profile, SCOPE_openid]], User Attributes: [{at_hash=yCJo-yb5Ga7IPoqGHJHy4Q, sub=115468241347308553680, email_verified=true, iss=https://accounts.google.com, given_name=Jakub, locale=pl, nonce=E0arrQjx1XX1YH7BzL4gpGMDbVly_5TnLUV5SmHLT9M, picture=https://lh3.googleusercontent.com/a/AEdFTp42MTS-ymYRUlY83NLRThOrcw8pZ12D8UQ4qJdR=s96-c, aud=[806856711257-r1i8bpofb8o2f0hhe3hoetef318k6vf1.apps.googleusercontent.com], azp=806856711257-r1i8bpofb8o2f0hhe3hoetef318k6vf1.apps.googleusercontent.com, name=Jakub Konkol, hd=pjwstk.edu.pl, exp=2023-01-27T15:07:47Z, family_name=Konkol, iat=2023-01-27T14:07:47Z, email=s24406@pjwstk.edu.pl}], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=D0BC5B08B886D7A26864BFECB311E6E1], Granted Authorities=[OIDC_USER, SCOPE_https://www.googleapis.com/auth/userinfo.email, SCOPE_https://www.googleapis.com/auth/userinfo.profile, SCOPE_openid]]]
 DEBUG - Secured GET /secret?continue
 DEBUG - GET "/secret?continue", parameters={masked}
 DEBUG - Mapped to com.example.topgameswebapi.controller.SecretController#wowYouAreLoggedInSoCool()
 DEBUG - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
-DEBUG - Using 'text/html', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8] and supported [text/plain, */*, application/json, application/*+json]
+DEBUG - Using 'text/html', given [text/html, application/xhtml+xml, application/xml;q=0.9, */*;q=0.8] and supported [text/plain, */*, application/json, application/*+json]
 DEBUG - Writing ["<h1> This is secret endpoint for logged in users :))) </h1> <br> <marquee> <h2> Wow, so cool! </h2>  (truncated)..."]
 DEBUG - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
 DEBUG - Completed 200 OK
-DEBUG - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
-DEBUG - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
-DEBUG - Securing GET /
-DEBUG - Retrieved SecurityContextImpl [Authentication=OAuth2AuthenticationToken [Principal=Name: [115468241347308553680], Granted Authorities: [[OIDC_USER, SCOPE_https://www.googleapis.com/auth/userinfo.email, SCOPE_https://www.googleapis.com/auth/userinfo.profile, SCOPE_openid]], User Attributes: [{at_hash=odWgrPYYmj2u94ycSe-b-g, sub=115468241347308553680, email_verified=true, iss=https://accounts.google.com, given_name=Jakub, locale=pl, nonce=HqEFplC6UZsQUAq3t8i0bXd4ip1Fn-j8BxbzZu3bB-o, picture=https://lh3.googleusercontent.com/a/AEdFTp42MTS-ymYRUlY83NLRThOrcw8pZ12D8UQ4qJdR=s96-c, aud=[806856711257-r1i8bpofb8o2f0hhe3hoetef318k6vf1.apps.googleusercontent.com], azp=806856711257-r1i8bpofb8o2f0hhe3hoetef318k6vf1.apps.googleusercontent.com, name=Jakub Konkol, hd=pjwstk.edu.pl, exp=2023-01-27T13:45:38Z, family_name=Konkol, iat=2023-01-27T12:45:38Z, email=s24406@pjwstk.edu.pl}], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=86ECCEC886BDED7B3C802EAF3D71B4AE], Granted Authorities=[OIDC_USER, SCOPE_https://www.googleapis.com/auth/userinfo.email, SCOPE_https://www.googleapis.com/auth/userinfo.profile, SCOPE_openid]]]
-DEBUG - Secured GET /
-DEBUG - GET "/", parameters={}
-DEBUG - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
-DEBUG - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
-DEBUG - Resource not found
-DEBUG - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
-DEBUG - Completed 404 NOT_FOUND
-DEBUG - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
-DEBUG - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
-DEBUG - Securing GET /error
-DEBUG - Retrieved SecurityContextImpl [Authentication=OAuth2AuthenticationToken [Principal=Name: [115468241347308553680], Granted Authorities: [[OIDC_USER, SCOPE_https://www.googleapis.com/auth/userinfo.email, SCOPE_https://www.googleapis.com/auth/userinfo.profile, SCOPE_openid]], User Attributes: [{at_hash=odWgrPYYmj2u94ycSe-b-g, sub=115468241347308553680, email_verified=true, iss=https://accounts.google.com, given_name=Jakub, locale=pl, nonce=HqEFplC6UZsQUAq3t8i0bXd4ip1Fn-j8BxbzZu3bB-o, picture=https://lh3.googleusercontent.com/a/AEdFTp42MTS-ymYRUlY83NLRThOrcw8pZ12D8UQ4qJdR=s96-c, aud=[806856711257-r1i8bpofb8o2f0hhe3hoetef318k6vf1.apps.googleusercontent.com], azp=806856711257-r1i8bpofb8o2f0hhe3hoetef318k6vf1.apps.googleusercontent.com, name=Jakub Konkol, hd=pjwstk.edu.pl, exp=2023-01-27T13:45:38Z, family_name=Konkol, iat=2023-01-27T12:45:38Z, email=s24406@pjwstk.edu.pl}], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=86ECCEC886BDED7B3C802EAF3D71B4AE], Granted Authorities=[OIDC_USER, SCOPE_https://www.googleapis.com/auth/userinfo.email, SCOPE_https://www.googleapis.com/auth/userinfo.profile, SCOPE_openid]]]
-DEBUG - Secured GET /error
-DEBUG - "ERROR" dispatch for GET "/error", parameters={}
-DEBUG - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
-DEBUG - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
-DEBUG - Selected 'text/html' given [text/html, text/html;q=0.8]
-DEBUG - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
-DEBUG - Exiting from "ERROR" dispatch, status 404
-DEBUG - Mapped to com.example.topgameswebapi.controller.SecretController#wowYouAreLoggedInSoCool()
-DEBUG - Mapped to com.example.topgameswebapi.controller.SecretController#wowYouAreLoggedInSoCool()
-DEBUG - Securing GET /secret
-DEBUG - Set SecurityContextHolder to anonymous SecurityContext
-DEBUG - Saved request http://localhost:8081/secret?continue to session
-DEBUG - Trying to match using And [Not [RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]], Not [And [Or [Ant [pattern='/login'], Ant [pattern='/favicon.ico']], And [Not [RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@4626f584, matchingMediaTypes=[application/xhtml+xml, image/*, text/html, text/plain], useEquals=false, ignoredMediaTypes=[*/*]]]]], org.springframework.security.config.annotation.web.configurers.oauth2.client.OAuth2LoginConfigurer$$Lambda$1493/0x00000008014d3fa0@71e47767]
-DEBUG - Match found! Executing org.springframework.security.web.authentication.LoginUrlAuthenticationEntryPoint@a9380c0
-DEBUG - Redirecting to http://localhost:8081/oauth2/authorization/google
-DEBUG - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
-DEBUG - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
-DEBUG - Securing GET /oauth2/authorization/google
-DEBUG - Redirecting to https://accounts.google.com/o/oauth2/v2/auth?response_type=code&client_id=806856711257-r1i8bpofb8o2f0hhe3hoetef318k6vf1.apps.googleusercontent.com&scope=openid%20profile%20email&state=P66MiqMaE5C5nrN_YuHR8F-CCRgUaRDQZyfpDvCU1Jg%3D&redirect_uri=http://localhost:8081/login/oauth2/code/google&nonce=8sKS_jzNF23CxUfE3HJTSGEXk7umWc4uM7YT3aSMFq4
-DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
 DEBUG - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
 DEBUG - Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
-DEBUG - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@a43ce46, started on Fri Jan 27 13:45:23 CET 2023
+DEBUG - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@a43ce46, started on Fri Jan 27 15:07:17 CET 2023
 DEBUG - Stopping beans in phase 2147482623
 DEBUG - Bean 'webServerGracefulShutdown' completed its stop procedure
 DEBUG - Stopping beans in phase 2147481599
@@ -1679,20 +1781,20 @@ DEBUG - Unregistering JMX-exposed beans
 DEBUG - Shutting down ExecutorService 'applicationTaskExecutor'
 INFO  - Closing JPA EntityManagerFactory for persistence unit 'default'
 DEBUG - HHH000031: Closing
-DEBUG - Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@50307bb4] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@6b64bf61]
+DEBUG - Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@3bbf2513] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@11582db6]
 DEBUG - Implicitly destroying ServiceRegistry on de-registration of all child ServiceRegistries
 DEBUG - Implicitly destroying Boot-strap registry on de-registration of all child ServiceRegistries
 INFO  - HikariPool-1 - Shutdown initiated...
 DEBUG - HikariPool-1 - Before shutdown stats (total=10, active=0, idle=10, waiting=0)
-DEBUG - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@20c3b34b: (connection evicted)
-DEBUG - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@3bcc8577: (connection evicted)
-DEBUG - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@7af18f4c: (connection evicted)
-DEBUG - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@4bc1732c: (connection evicted)
-DEBUG - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@1ade7003: (connection evicted)
-DEBUG - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@1e908e7c: (connection evicted)
-DEBUG - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@1c901ee7: (connection evicted)
-DEBUG - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@4cb324f3: (connection evicted)
-DEBUG - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@4dda1122: (connection evicted)
-DEBUG - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@1bcb894c: (connection evicted)
+DEBUG - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@41167ded: (connection evicted)
+DEBUG - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@363dc261: (connection evicted)
+DEBUG - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@7700c85a: (connection evicted)
+DEBUG - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@463dd89d: (connection evicted)
+DEBUG - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@172f3715: (connection evicted)
+DEBUG - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@1361cc83: (connection evicted)
+DEBUG - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@358b659d: (connection evicted)
+DEBUG - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@136dfd94: (connection evicted)
+DEBUG - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@31e47c83: (connection evicted)
+DEBUG - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@6a236ce5: (connection evicted)
 DEBUG - HikariPool-1 - After shutdown stats (total=0, active=0, idle=0, waiting=0)
 INFO  - HikariPool-1 - Shutdown completed.
