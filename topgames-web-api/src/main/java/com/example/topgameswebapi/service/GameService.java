@@ -37,7 +37,7 @@ public class GameService {
             return g.get();
         }
 
-        throw new IllegalArgumentException();
+        return null;
     }
     public void deleteGame(Long id){
         gameRepository.deleteById(id);

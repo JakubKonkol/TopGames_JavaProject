@@ -2,8 +2,10 @@ package com.example.topgameswebapi.controller;
 
 import com.example.topgamesdata.model.Game;
 import com.example.topgameswebapi.service.GameService;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.server.ResponseStatusException;
 
 import java.util.List;
 import java.util.logging.Logger;
@@ -24,12 +26,24 @@ public class GameController {
     }
     @DeleteMapping("/delete/{id}")
     public ResponseEntity<String> deleteGame(@PathVariable("id") Long id){
+        if(gameService.getGameById(id) == null){
+            log.warning("Game with id " + id + " was not found");
+            throw new ResponseStatusException(
+                    HttpStatus.NOT_FOUND, "not found"
+            );
+        }
         gameService.deleteGame(id);
         log.warning("Game with id " + id + " was deleted");
         return ResponseEntity.ok("ok");
     }
     @PutMapping("/update/{id}")
     public ResponseEntity<String> updateGame(@RequestBody Game game, @PathVariable("id") Long id){
+        if(gameService.getGameById(id) == null){
+            log.warning("Game with id " + id + " was not found");
+            throw new ResponseStatusException(
+                    HttpStatus.NOT_FOUND, "not found"
+            );
+        }
         gameService.updateGame(id, game);
         log.info("Game with id " + id + " was updated");
         return ResponseEntity.ok("ok");
@@ -41,6 +55,12 @@ public class GameController {
     }
     @GetMapping("/{id}")
     public ResponseEntity<Game> getGameById(@PathVariable("id") Long id){
+        if(gameService.getGameById(id) == null){
+            log.warning("Game with id " + id + " was not found");
+            throw new ResponseStatusException(
+                    HttpStatus.NOT_FOUND, "not found"
+            );
+        }
         return ResponseEntity.ok(gameService.getGameById(id));
     }
     @PostMapping("/dev/deleteAll")
